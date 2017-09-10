@@ -77,10 +77,8 @@ public class DoencaAtual extends AbstractEntity<Long>{
     private String observacao;
 
     @OneToMany
+    @JoinColumn(name = "INFECCAO_ID")
     private List<Infeccao> infeccao;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
 
     @Override
     public Long getOid() {
@@ -258,13 +256,5 @@ public class DoencaAtual extends AbstractEntity<Long>{
 
     public void setInfeccao(List<Infeccao> infeccao) {
         this.infeccao = infeccao;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
     }
 }

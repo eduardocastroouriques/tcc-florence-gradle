@@ -29,10 +29,6 @@ public class Dva extends AbstractEntity<Long>{
     @Column(name = "INICIO")
     private Date inicio;
 
-    @OneToOne
-    @JoinColumn(name = "PROCESSO_DOACAO_ID")
-    private ProcessoDoacao processoDoacao;
-
     @Override
     public Long getOid() {
         return oid;
@@ -81,26 +77,5 @@ public class Dva extends AbstractEntity<Long>{
 
     public void setInicio(Date inicio) {
         this.inicio = inicio;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
-    }
-
-    @Override
-    public String toString() {
-        return "Dva{" +
-                "oid=" + oid +
-                ", nome='" + nome + '\'' +
-                ", amp='" + amp + '\'' +
-                ", mlPorHora=" + mlPorHora +
-                ", kg=" + kg +
-                ", inicio=" + inicio +
-                ", processoDoacao=" + processoDoacao +
-                '}';
     }
 }

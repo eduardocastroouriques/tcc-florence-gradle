@@ -39,9 +39,6 @@ public class InformacaoCirurgia extends AbstractEntity<Long>{
     @Column(name = "OBSERVACAO")
     private String observacao;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private Cirurgia cirurgia;
-
     @Override
     public Long getOid() {
         return oid;
@@ -106,13 +103,5 @@ public class InformacaoCirurgia extends AbstractEntity<Long>{
 
     public void setObservacao(String observacao) {
         this.observacao = observacao;
-    }
-
-    public Cirurgia getCirurgia() {
-        return cirurgia;
-    }
-
-    public void setCirurgia(Cirurgia cirurgia) {
-        this.cirurgia = cirurgia;
     }
 }

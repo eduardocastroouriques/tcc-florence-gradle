@@ -129,9 +129,9 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @JoinColumn(name = "CIRURGIA_ID")
     private Cirurgia cirurgia;
 
-    @OneToOne
+    @OneToMany
     @JoinColumn(name = "APROVACAO_ID")
-    private Aprovacao aprovacao;
+    private List<Aprovacao> aprovacao;
 
     @OneToOne
     @JoinColumn(name = "ENTREVISTA_FAMILIAR_ID")
@@ -148,6 +148,10 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @OneToMany
     @JoinColumn(name = "EXAME_COMPLEMENTAR_ID")
     private List<ExameComplementar> exameComplementar;
+
+    @OneToMany
+    @JoinColumn(name = "TESTE_CLINICO_ID")
+    private List<TesteClinico> testeClinico;
 
     @Override
     public Long getOid() {
@@ -439,11 +443,11 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
         this.cirurgia = cirurgia;
     }
 
-    public Aprovacao getAprovacao() {
+    public List<Aprovacao> getAprovacao() {
         return aprovacao;
     }
 
-    public void setAprovacao(Aprovacao aprovacao) {
+    public void setAprovacao(List<Aprovacao> aprovacao) {
         this.aprovacao = aprovacao;
     }
 
@@ -477,5 +481,13 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setExameComplementar(List<ExameComplementar> exameComplementar) {
         this.exameComplementar = exameComplementar;
+    }
+
+    public List<TesteClinico> getTesteClinico() {
+        return testeClinico;
+    }
+
+    public void setTesteClinico(List<TesteClinico> testeClinico) {
+        this.testeClinico = testeClinico;
     }
 }

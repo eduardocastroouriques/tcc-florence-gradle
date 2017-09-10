@@ -1,91 +1,227 @@
-INSERT INTO `processo_doacao` VALUES (1,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','2017-09-10 16:15:51','2017-09-10','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-10 16:15:19','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+-- MySQL dump 10.13  Distrib 5.7.13, for linux-glibc2.5 (x86_64)
+--
+-- Host: sql10.freemysqlhosting.net    Database: sql10193843
+-- ------------------------------------------------------
+-- Server version	5.5.53-0ubuntu0.14.04.1
 
-INSERT INTO sql10193843.obito (data_hora, tipo) VALUES ('2017-09-07 19:20:02', 1);
-INSERT INTO sql10193843.obito (data_hora, tipo) VALUES ('2017-09-07 19:20:02', 1);
-INSERT INTO sql10193843.obito (data_hora, tipo) VALUES ('2017-09-07 19:20:02', 1);
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-INSERT INTO sql10193843.entrevista_familiar (data_hora, entrevistador, motivo_negativa, observacao, resultado) VALUES ('2017-09-07 19:15:24', 'MOCK', 'MOCK', 'MOCK', 1);
-INSERT INTO sql10193843.entrevista_familiar (data_hora, entrevistador, motivo_negativa, observacao, resultado) VALUES ('2017-09-07 19:15:24', 'MOCK', 'MOCK', 'MOCK', 1);
-INSERT INTO sql10193843.entrevista_familiar (data_hora, entrevistador, motivo_negativa, observacao, resultado) VALUES ('2017-09-07 19:15:24', 'MOCK', 'MOCK', 'MOCK', 1);
+--
+-- Dumping data for table `aprovacao`
+--
 
-INSERT INTO sql10193843.situacao_clinica (data_hora, diurese, fio_dois, fr, peep, pins, sat, ta) VALUES ('2017-09-07 19:20:45', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK');
-INSERT INTO sql10193843.situacao_clinica (data_hora, diurese, fio_dois, fr, peep, pins, sat, ta) VALUES ('2017-09-07 19:20:45', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK');
-INSERT INTO sql10193843.situacao_clinica (data_hora, diurese, fio_dois, fr, peep, pins, sat, ta) VALUES ('2017-09-07 19:20:45', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK');
+LOCK TABLES `aprovacao` WRITE;
+/*!40000 ALTER TABLE `aprovacao` DISABLE KEYS */;
+INSERT INTO `aprovacao` VALUES (1,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,NULL),(2,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,NULL),(3,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,NULL),(4,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,NULL);
+/*!40000 ALTER TABLE `aprovacao` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO sql10193843.sorologia (anti_hiv, anti_hbc, anti_hbs, anti_hcv, calculo, chagas, cmv_igc, cmvigm, hbs_ag, hemodiluicao, hora_inicio, hora_resultado, htlv_primeiro, htlv_segundo, local, lues, toxo_igg, toxo_igm) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 1, 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '19:00:00', '19:00:00', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK');
-INSERT INTO sql10193843.sorologia (anti_hiv, anti_hbc, anti_hbs, anti_hcv, calculo, chagas, cmv_igc, cmvigm, hbs_ag, hemodiluicao, hora_inicio, hora_resultado, htlv_primeiro, htlv_segundo, local, lues, toxo_igg, toxo_igm) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 1, 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '19:00:00', '19:00:00', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK');
-INSERT INTO sql10193843.sorologia (anti_hiv, anti_hbc, anti_hbs, anti_hcv, calculo, chagas, cmv_igc, cmvigm, hbs_ag, hemodiluicao, hora_inicio, hora_resultado, htlv_primeiro, htlv_segundo, local, lues, toxo_igg, toxo_igm) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 1, 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '19:00:00', '19:00:00', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK');
+--
+-- Dumping data for table `cirurgia`
+--
 
+LOCK TABLES `cirurgia` WRITE;
+/*!40000 ALTER TABLE `cirurgia` DISABLE KEYS */;
+INSERT INTO `cirurgia` VALUES (1,'MOCK','MOCK','MOCK',1,2,NULL),(2,'MOCK','MOCK','MOCK',1,1,NULL);
+/*!40000 ALTER TABLE `cirurgia` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO sql10193843.aprovacao (amilase, bastoes, bil_direta, bil_total, ckmb, co_2, cpk, creatinina, data_hora, fos_alcalina, gama_gt, glicemia, hematocrito, hemoglobina, kttp, leucocitos, ph, plaquetas, po_2, potassio, sat, sodio, tgo, tgp, tipo, tp, ureias) VALUES (1, 1, 1, 1, 1, 1, 1, 1, '2017-09-07 19:07:58', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
-INSERT INTO sql10193843.aprovacao (amilase, bastoes, bil_direta, bil_total, ckmb, co_2, cpk, creatinina, data_hora, fos_alcalina, gama_gt, glicemia, hematocrito, hemoglobina, kttp, leucocitos, ph, plaquetas, po_2, potassio, sat, sodio, tgo, tgp, tipo, tp, ureias) VALUES (1, 1, 1, 1, 1, 1, 1, 1, '2017-09-07 19:07:58', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
-INSERT INTO sql10193843.aprovacao (amilase, bastoes, bil_direta, bil_total, ckmb, co_2, cpk, creatinina, data_hora, fos_alcalina, gama_gt, glicemia, hematocrito, hemoglobina, kttp, leucocitos, ph, plaquetas, po_2, potassio, sat, sodio, tgo, tgp, tipo, tp, ureias) VALUES (1, 1, 1, 1, 1, 1, 1, 1, '2017-09-07 19:07:58', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
-INSERT INTO sql10193843.aprovacao (amilase, bastoes, bil_direta, bil_total, ckmb, co_2, cpk, creatinina, data_hora, fos_alcalina, gama_gt, glicemia, hematocrito, hemoglobina, kttp, leucocitos, ph, plaquetas, po_2, potassio, sat, sodio, tgo, tgp, tipo, tp, ureias) VALUES (1, 1, 1, 1, 1, 1, 1, 1, '2017-09-07 19:07:58', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+--
+-- Dumping data for table `comunicacao_processo_doacao`
+--
 
+LOCK TABLES `comunicacao_processo_doacao` WRITE;
+/*!40000 ALTER TABLE `comunicacao_processo_doacao` DISABLE KEYS */;
+INSERT INTO `comunicacao_processo_doacao` VALUES (1,'2017-09-07 19:10:25','MOCK',1);
+/*!40000 ALTER TABLE `comunicacao_processo_doacao` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO sql10193843.hla (cross_hcpa_data_hora_inicio, cross_iscmpa_data_hora_inicio, data_inicio, hcpa_data_hora_fim, hora_inicio, hora_termino, iscmpa_data_hora_fim, laboratorio) VALUES ('2017-09-07 19:16:25', '2017-09-07 19:16:26', '2017-09-07', '2017-09-07 19:16:35', '19:00:00', '19:00:00', '2017-09-07 19:16:55', 'MOCK');
-INSERT INTO sql10193843.hla (cross_hcpa_data_hora_inicio, cross_iscmpa_data_hora_inicio, data_inicio, hcpa_data_hora_fim, hora_inicio, hora_termino, iscmpa_data_hora_fim, laboratorio) VALUES ('2017-09-07 19:16:25', '2017-09-07 19:16:26', '2017-09-07', '2017-09-07 19:16:35', '19:00:00', '19:00:00', '2017-09-07 19:16:55', 'MOCK');
-INSERT INTO sql10193843.hla (cross_hcpa_data_hora_inicio, cross_iscmpa_data_hora_inicio, data_inicio, hcpa_data_hora_fim, hora_inicio, hora_termino, iscmpa_data_hora_fim, laboratorio) VALUES ('2017-09-07 19:16:25', '2017-09-07 19:16:26', '2017-09-07', '2017-09-07 19:16:35', '19:00:00', '19:00:00', '2017-09-07 19:16:55', 'MOCK');
+--
+-- Dumping data for table `doenca_atual`
+--
 
-INSERT INTO sql10193843.orgao (nome) VALUES ('MOCK');
-INSERT INTO sql10193843.orgao (nome) VALUES ('MOCK');
-INSERT INTO sql10193843.orgao (nome) VALUES ('MOCK');
+LOCK TABLES `doenca_atual` WRITE;
+/*!40000 ALTER TABLE `doenca_atual` DISABLE KEYS */;
+INSERT INTO `doenca_atual` VALUES (1,'MOCK','MOCK','1','MOCK','MOCK','s','s','MOCK','MOCK','MOCK','MOCK','s',1,'MOCK','s','2017-09-07 19:11:52','MOCK','MOCK','MOCK','MOCK',1);
+/*!40000 ALTER TABLE `doenca_atual` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO sql10193843.dva (amp, inicio, kg, ml_por_hora, nome, processo_doacao_id) VALUES ('MOCK', '01:00:00', 1, 1, 'MOCK', 1);
+--
+-- Dumping data for table `doenca_atual_infeccao`
+--
 
-INSERT INTO sql10193843.comunicacao_processo_doacao (data_hora, rgct) VALUES ('2017-09-07 19:10:25', 'MOCK');
-INSERT INTO sql10193843.comunicacao_processo_doacao (data_hora, rgct) VALUES ('2017-09-07 19:10:25', 'MOCK');
-INSERT INTO sql10193843.comunicacao_processo_doacao (data_hora, rgct) VALUES ('2017-09-07 19:10:25', 'MOCK');
-INSERT INTO sql10193843.comunicacao_processo_doacao (data_hora, rgct) VALUES ('2017-09-07 19:10:25', 'MOCK');
+LOCK TABLES `doenca_atual_infeccao` WRITE;
+/*!40000 ALTER TABLE `doenca_atual_infeccao` DISABLE KEYS */;
+INSERT INTO `doenca_atual_infeccao` VALUES (1,1),(1,2);
+/*!40000 ALTER TABLE `doenca_atual_infeccao` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO sql10193843.teste_clinico (data_hora, medico, numero_teste, processo_doacao_id) VALUES ('2017-09-07 19:22:05', 'MOCK', 12, 1);
-INSERT INTO sql10193843.teste_clinico (data_hora, medico, numero_teste, processo_doacao_id) VALUES ('2017-09-07 19:22:05', 'MOCK', 12, 1);
+--
+-- Dumping data for table `doenca_previa`
+--
 
-INSERT INTO sql10193843.exame_complementar (data_hora, medico, resultado, tipo, tipo_outro, processo_doacao_id) VALUES ('2017-09-07 19:45:21', 'MOCK', 'MOCK', 1, 'MOCK', 1);
+LOCK TABLES `doenca_previa` WRITE;
+/*!40000 ALTER TABLE `doenca_previa` DISABLE KEYS */;
+INSERT INTO `doenca_previa` VALUES (1,'MOCK','MOCK','S','MOCK','MOCK','MOCK','MOCK',NULL,'2017-09-10 16:19:20','2017-09-10 16:19:02','MOCK','2017-09-10 16:19:25','MOCK','MOCK','MOCK','MOCK','2017-09-10 16:18:54','S','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL);
+/*!40000 ALTER TABLE `doenca_previa` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `dva`
+--
 
-INSERT INTO sql10193843.doenca_atual (aspecto, choque, craniotomia, ddavp, dialise, diurese_ultimas_seis_horas, diurese_ultimas_vinte_e_quatro_horas, febre, ira, medicacao_em_uso, observacao, pcr, pcr_numero, pcr_tempo_maximo, primeira_creatina, primeira_creatinina_data, secrecao_tot, trauma_de_abdome, trauma_de_torax, vm_inicio, processo_doacao_id) VALUES ('MOCK', 'MOCK', '1', 'MOCK', 'MOCK', 's', 's', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 's', 1, 'MOCK', 's', '2017-09-07 19:11:52', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
+LOCK TABLES `dva` WRITE;
+/*!40000 ALTER TABLE `dva` DISABLE KEYS */;
+INSERT INTO `dva` VALUES (1,'MOCK','01:00:00',1,1,'MOCK',1);
+/*!40000 ALTER TABLE `dva` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO `infeccao` VALUES (1,'MOCK','2017-09-10','MOCK'),(2,'MOCK','2017-09-10','MOCK');
+--
+-- Dumping data for table `entrevista_familiar`
+--
 
-INSERT INTO sql10193843.exame_doacao (ecq, eco_cardio, gaso_pulmao, rx, tce_co_abd, processo_doacao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
-INSERT INTO sql10193843.exame_doacao (ecq, eco_cardio, gaso_pulmao, rx, tce_co_abd, processo_doacao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
+LOCK TABLES `entrevista_familiar` WRITE;
+/*!40000 ALTER TABLE `entrevista_familiar` DISABLE KEYS */;
+INSERT INTO `entrevista_familiar` VALUES (1,'2017-09-07 19:15:24','MOCK','MOCK','MOCK',1,NULL),(2,'2017-09-07 19:15:24','MOCK','MOCK','MOCK',1,NULL),(3,'2017-09-07 19:15:24','MOCK','MOCK','MOCK',1,NULL);
+/*!40000 ALTER TABLE `entrevista_familiar` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `exame_complementar`
+--
 
-INSERT INTO sql10193843.doenca_previa (aptto, dvp, hiv, iam, ap, asma, cirurgia_previa, data_cura, data_diagn, data_transfusao, dm, dm_desde, doenca_ocular, doenca_snc, dpoc, has, has_desde, hapetite, homossexualismo, informante_nome, informante_parentesco, irc, maquiagem_definitiva, neoplasia, outras_doencas, piercing, quimio, radio, sistema_prisional, sistema_prisional_qdo, tatuagem, tranfusao, tuberculose, tuberculose_tto, vacinas_recentes, processo_doacao_id) VALUES ('MOCK', 'MOCK', 'S', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '2018-09-07 19:13:21', '2018-09-07 19:13:26', '2017-09-07 19:13:30', 'MOCK', '2017-09-07 19:13:40', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '2017-09-07 19:15:12', 'S', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
-INSERT INTO sql10193843.doenca_previa (aptto, dvp, hiv, iam, ap, asma, cirurgia_previa, data_cura, data_diagn, data_transfusao, dm, dm_desde, doenca_ocular, doenca_snc, dpoc, has, has_desde, hapetite, homossexualismo, informante_nome, informante_parentesco, irc, maquiagem_definitiva, neoplasia, outras_doencas, piercing, quimio, radio, sistema_prisional, sistema_prisional_qdo, tatuagem, tranfusao, tuberculose, tuberculose_tto, vacinas_recentes, processo_doacao_id) VALUES ('MOCK', 'MOCK', 'S', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '2018-09-07 19:13:21', '2018-09-07 19:13:26', '2017-09-07 19:13:30', 'MOCK', '2017-09-07 19:13:40', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '2017-09-07 19:15:12', 'S', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
+LOCK TABLES `exame_complementar` WRITE;
+/*!40000 ALTER TABLE `exame_complementar` DISABLE KEYS */;
+INSERT INTO `exame_complementar` VALUES (1,'2017-09-07 19:45:21','MOCK','MOCK',1,'MOCK',1,NULL);
+/*!40000 ALTER TABLE `exame_complementar` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO sql10193843.substancia_extra (nome, resultado, tempo, tipo_quanto, doenca_previa_id) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
-INSERT INTO sql10193843.substancia_extra (nome, resultado, tempo, tipo_quanto, doenca_previa_id) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 2);
+--
+-- Dumping data for table `exame_doacao`
+--
 
+LOCK TABLES `exame_doacao` WRITE;
+/*!40000 ALTER TABLE `exame_doacao` DISABLE KEYS */;
+INSERT INTO `exame_doacao` VALUES (1,'MOCK','MOCK','MOCK','MOCK','MOCK',1),(2,'MOCK','MOCK','MOCK','MOCK','MOCK',1);
+/*!40000 ALTER TABLE `exame_doacao` ENABLE KEYS */;
+UNLOCK TABLES;
 
-INSERT INTO sql10193843.informacao_cirurgia (dml_fim, dml_inicio, horario_fim, horario_inicio, horario_previsto, local_da_retirada, observacao) VALUES ('19:00:00', '19:00:00', '19:00:00', '19:00:00', '19:00:00', 'MOCK', 'MOCK');
-INSERT INTO sql10193843.informacao_cirurgia (dml_fim, dml_inicio, horario_fim, horario_inicio, horario_previsto, local_da_retirada, observacao) VALUES ('19:00:00', '19:00:00', '19:00:00', '19:00:00', '19:00:00', 'MOCK', 'MOCK');
-INSERT INTO sql10193843.informacao_cirurgia (dml_fim, dml_inicio, horario_fim, horario_inicio, horario_previsto, local_da_retirada, observacao) VALUES ('19:00:00', '19:00:00', '19:00:00', '19:00:00', '19:00:00', 'MOCK', 'MOCK');
+--
+-- Dumping data for table `hla`
+--
 
-INSERT INTO sql10193843.cirurgia (destino, motivo_nao_implante, motivo_nao_remocao, informacao_cirurgia_id, orgao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 1, 2);
-INSERT INTO sql10193843.cirurgia (destino, motivo_nao_implante, motivo_nao_remocao, informacao_cirurgia_id, orgao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 1, 1);
+LOCK TABLES `hla` WRITE;
+/*!40000 ALTER TABLE `hla` DISABLE KEYS */;
+INSERT INTO `hla` VALUES (1,'2017-09-07 19:16:25','2017-09-07 19:16:26','2017-09-07','2017-09-07 19:16:35','19:00:00','19:00:00','2017-09-07 19:16:55','MOCK',NULL),(2,'2017-09-07 19:16:25','2017-09-07 19:16:26','2017-09-07','2017-09-07 19:16:35','19:00:00','19:00:00','2017-09-07 19:16:55','MOCK',NULL),(3,'2017-09-07 19:16:25','2017-09-07 19:16:26','2017-09-07','2017-09-07 19:16:35','19:00:00','19:00:00','2017-09-07 19:16:55','MOCK',NULL);
+/*!40000 ALTER TABLE `hla` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `infeccao`
+--
 
+LOCK TABLES `infeccao` WRITE;
+/*!40000 ALTER TABLE `infeccao` DISABLE KEYS */;
+INSERT INTO `infeccao` VALUES (1,'MOCK','2017-09-10','MOCK',1),(2,'MOCK','2017-09-10','MOCK',1);
+/*!40000 ALTER TABLE `infeccao` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `informacao_cirurgia`
+--
 
+LOCK TABLES `informacao_cirurgia` WRITE;
+/*!40000 ALTER TABLE `informacao_cirurgia` DISABLE KEYS */;
+INSERT INTO `informacao_cirurgia` VALUES (1,'19:00:00','19:00:00','19:00:00','19:00:00','19:00:00','MOCK','MOCK',NULL),(2,'19:00:00','19:00:00','19:00:00','19:00:00','19:00:00','MOCK','MOCK',NULL),(3,'19:00:00','19:00:00','19:00:00','19:00:00','19:00:00','MOCK','MOCK',NULL);
+/*!40000 ALTER TABLE `informacao_cirurgia` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `obito`
+--
 
+LOCK TABLES `obito` WRITE;
+/*!40000 ALTER TABLE `obito` DISABLE KEYS */;
+INSERT INTO `obito` VALUES (1,'2017-09-07 19:20:02',1,NULL),(2,'2017-09-07 19:20:02',1,NULL),(3,'2017-09-07 19:20:02',1,NULL);
+/*!40000 ALTER TABLE `obito` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `orgao`
+--
 
+LOCK TABLES `orgao` WRITE;
+/*!40000 ALTER TABLE `orgao` DISABLE KEYS */;
+INSERT INTO `orgao` VALUES (1,'MOCK'),(2,'MOCK'),(3,'MOCK');
+/*!40000 ALTER TABLE `orgao` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `processo_doacao`
+--
 
+LOCK TABLES `processo_doacao` WRITE;
+/*!40000 ALTER TABLE `processo_doacao` DISABLE KEYS */;
+INSERT INTO `processo_doacao` VALUES (1,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','2017-09-10 16:15:51','2017-09-10','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-10 16:15:19','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',1,1,NULL,NULL,1,1,1,1,1);
+/*!40000 ALTER TABLE `processo_doacao` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `situacao_clinica`
+--
 
+LOCK TABLES `situacao_clinica` WRITE;
+/*!40000 ALTER TABLE `situacao_clinica` DISABLE KEYS */;
+INSERT INTO `situacao_clinica` VALUES (1,'2017-09-07 19:20:45','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL),(2,'2017-09-07 19:20:45','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL),(3,'2017-09-07 19:20:45','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL);
+/*!40000 ALTER TABLE `situacao_clinica` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `sorologia`
+--
 
+LOCK TABLES `sorologia` WRITE;
+/*!40000 ALTER TABLE `sorologia` DISABLE KEYS */;
+INSERT INTO `sorologia` VALUES (1,'MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','19:00:00','19:00:00','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL),(2,'MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','19:00:00','19:00:00','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL),(3,'MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','19:00:00','19:00:00','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL);
+/*!40000 ALTER TABLE `sorologia` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `substancia_extra`
+--
 
+LOCK TABLES `substancia_extra` WRITE;
+/*!40000 ALTER TABLE `substancia_extra` DISABLE KEYS */;
+INSERT INTO `substancia_extra` VALUES (2,'MOCK','MOCK','MOCK','MOCK',1);
+/*!40000 ALTER TABLE `substancia_extra` ENABLE KEYS */;
+UNLOCK TABLES;
 
+--
+-- Dumping data for table `teste_clinico`
+--
 
+LOCK TABLES `teste_clinico` WRITE;
+/*!40000 ALTER TABLE `teste_clinico` DISABLE KEYS */;
+INSERT INTO `teste_clinico` VALUES (1,'2017-09-07 19:22:05','MOCK',12,1),(2,'2017-09-07 19:22:05','MOCK',12,1);
+/*!40000 ALTER TABLE `teste_clinico` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-
-
-
-
+-- Dump completed on 2017-09-10 16:40:21

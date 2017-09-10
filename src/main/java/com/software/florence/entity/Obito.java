@@ -20,9 +20,6 @@ public class Obito extends AbstractEntity<Long>{
     @Column(name = "TIPO")
     private int tipo;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
-
     public Long getOid() {
         return oid;
     }
@@ -45,13 +42,5 @@ public class Obito extends AbstractEntity<Long>{
 
     public void setTipo(int tipo) {
         this.tipo = tipo;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
     }
 }

@@ -23,9 +23,6 @@ public class TesteClinico extends AbstractEntity<Long>{
     @Column(name = "MEDICO")
     private String medico;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
-
     @Override
     public Long getOid() {
         return oid;
@@ -58,13 +55,5 @@ public class TesteClinico extends AbstractEntity<Long>{
 
     public void setMedico(String medico) {
         this.medico = medico;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
     }
 }

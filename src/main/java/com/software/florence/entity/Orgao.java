@@ -3,6 +3,7 @@ package com.software.florence.entity;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "ORGAO")
 public class Orgao extends AbstractEntity<Long> {

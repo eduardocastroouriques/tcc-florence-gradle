@@ -29,9 +29,6 @@ public class ExameComplementar extends AbstractEntity<Long> {
     @Column(name = "MEDICO")
     private String medico;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
-
     @Override
     public Long getOid() {
         return oid;
@@ -80,26 +77,5 @@ public class ExameComplementar extends AbstractEntity<Long> {
 
     public void setMedico(String medico) {
         this.medico = medico;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
-    }
-
-    @Override
-    public String toString() {
-        return "ExameComplementar{" +
-                "oid=" + oid +
-                ", tipo=" + tipo +
-                ", tipoOutro='" + tipoOutro + '\'' +
-                ", dataHora=" + dataHora +
-                ", resultado='" + resultado + '\'' +
-                ", medico='" + medico + '\'' +
-                ", processoDoacao=" + processoDoacao +
-                '}';
     }
 }

@@ -44,9 +44,6 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "ISCMPA_DATA_HORA_FIM")
     private Date iscmpaDataHoraFim;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
-
     public Long getOid() {
         return oid;
     }
@@ -117,13 +114,5 @@ public class Hla extends AbstractEntity<Long>{
 
     public void setIscmpaDataHoraFim(Date iscmpaDataHoraFim) {
         this.iscmpaDataHoraFim = iscmpaDataHoraFim;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
     }
 }

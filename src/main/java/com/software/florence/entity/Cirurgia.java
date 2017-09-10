@@ -3,6 +3,7 @@ package com.software.florence.entity;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "CIRURGIA")
 public class Cirurgia extends AbstractEntity<Long> {
@@ -25,12 +26,9 @@ public class Cirurgia extends AbstractEntity<Long> {
     @JoinColumn(name = "INFORMACAO_CIRURGIA_ID", nullable = false)
     private InformacaoCirurgia informacaoCirurgia;
 
-    @OneToOne
+    @OneToMany
     @JoinColumn(name = "ORGAO_ID", nullable = false)
-    private Orgao orgao;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
+    private List<Orgao> orgao;
 
     @Override
     public Long getOid() {
@@ -74,19 +72,11 @@ public class Cirurgia extends AbstractEntity<Long> {
         this.informacaoCirurgia = informacaoCirurgia;
     }
 
-    public Orgao getOrgao() {
+    public List<Orgao> getOrgao() {
         return orgao;
     }
 
-    public void setOrgao(Orgao orgao) {
+    public void setOrgao(List<Orgao> orgao) {
         this.orgao = orgao;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
     }
 }

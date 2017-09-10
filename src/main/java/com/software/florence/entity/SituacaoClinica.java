@@ -38,9 +38,6 @@ public class SituacaoClinica extends AbstractEntity<Long> {
     @Column(name = "FIO_DOIS")
     private String fioDois;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
-
     @Override
     public Long getOid() {
         return oid;
@@ -113,13 +110,5 @@ public class SituacaoClinica extends AbstractEntity<Long> {
 
     public void setFioDois(String fioDois) {
         this.fioDois = fioDois;
-    }
-
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
     }
 }
