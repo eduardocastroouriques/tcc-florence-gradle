@@ -94,7 +94,7 @@ public class Aprovacao extends AbstractEntity<Long>{
     @Column(name = "SAT")
     private double sat;
 
-    @OneToOne(mappedBy = "aprovacao")
+    @OneToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     @Override

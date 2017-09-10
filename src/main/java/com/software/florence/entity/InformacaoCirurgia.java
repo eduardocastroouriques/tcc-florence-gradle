@@ -39,7 +39,7 @@ public class InformacaoCirurgia extends AbstractEntity<Long>{
     @Column(name = "OBSERVACAO")
     private String observacao;
 
-    @OneToOne(mappedBy = "informacaoCirurgia")
+    @OneToOne(cascade = CascadeType.ALL)
     private Cirurgia cirurgia;
 
     @Override

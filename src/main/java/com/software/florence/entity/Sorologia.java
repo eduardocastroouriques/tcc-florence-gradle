@@ -69,7 +69,7 @@ public class Sorologia extends AbstractEntity<Long>{
     @Column(name = "CALCULO")
     private Double calculo;
 
-    @OneToOne(mappedBy = "sorologia")
+    @OneToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     @Override

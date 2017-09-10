@@ -23,8 +23,7 @@ public class Infeccao extends AbstractEntity<Long> {
     @Column(name = "TTO")
     private String TTO;
 
-    @OneToOne
-    @JoinColumn(name = "DOENCA_ATUAL_ID")
+    @ManyToOne(cascade = CascadeType.ALL)
     private DoencaAtual doencaAtual;
 
     @Override

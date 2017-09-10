@@ -109,9 +109,9 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "PROTOCOLO_TA", nullable = false)
     private String protocoloTa;
 
-    @OneToMany
+    @OneToOne
     @JoinColumn(name = "DOENCA_ATUAL_ID")
-    private List<DoencaAtual> doencaAtual;
+    private DoencaAtual doencaAtual;
 
     @OneToOne
     @JoinColumn(name = "SITUACAO_CLINICA_ID")
@@ -144,6 +144,10 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @OneToOne
     @JoinColumn(name = "COMUNICACAO_PROCESSO_DOACAO_ID")
     private ComunicacaoProcessoDoacao comunicacaoProcessoDoacao;
+
+    @OneToMany
+    @JoinColumn(name = "EXAME_COMPLEMENTAR_ID")
+    private List<ExameComplementar> exameComplementar;
 
     @Override
     public Long getOid() {
@@ -395,11 +399,11 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
         this.protocoloTa = protocoloTa;
     }
 
-    public List<DoencaAtual> getDoencaAtual() {
+    public DoencaAtual getDoencaAtual() {
         return doencaAtual;
     }
 
-    public void setDoencaAtual(List<DoencaAtual> doencaAtual) {
+    public void setDoencaAtual(DoencaAtual doencaAtual) {
         this.doencaAtual = doencaAtual;
     }
 
@@ -465,5 +469,13 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setComunicacaoProcessoDoacao(ComunicacaoProcessoDoacao comunicacaoProcessoDoacao) {
         this.comunicacaoProcessoDoacao = comunicacaoProcessoDoacao;
+    }
+
+    public List<ExameComplementar> getExameComplementar() {
+        return exameComplementar;
+    }
+
+    public void setExameComplementar(List<ExameComplementar> exameComplementar) {
+        this.exameComplementar = exameComplementar;
     }
 }

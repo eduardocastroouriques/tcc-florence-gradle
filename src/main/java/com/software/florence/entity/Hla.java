@@ -44,7 +44,7 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "ISCMPA_DATA_HORA_FIM")
     private Date iscmpaDataHoraFim;
 
-    @OneToOne(mappedBy = "hla")
+    @OneToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     public Long getOid() {

@@ -20,7 +20,7 @@ public class ComunicacaoProcessoDoacao extends AbstractEntity<Long>{
     @Column(name = "RGCT")
     private String rgct;
 
-    @OneToOne(mappedBy = "comunicacaoProcessoDoacao")
+    @OneToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     @Override

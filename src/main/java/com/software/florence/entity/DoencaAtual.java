@@ -76,7 +76,10 @@ public class DoencaAtual extends AbstractEntity<Long>{
     @Column(name = "OBSERVACAO")
     private String observacao;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @OneToMany
+    private List<Infeccao> infeccao;
+
+    @OneToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     @Override
@@ -247,5 +250,21 @@ public class DoencaAtual extends AbstractEntity<Long>{
 
     public void setObservacao(String observacao) {
         this.observacao = observacao;
+    }
+
+    public List<Infeccao> getInfeccao() {
+        return infeccao;
+    }
+
+    public void setInfeccao(List<Infeccao> infeccao) {
+        this.infeccao = infeccao;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }

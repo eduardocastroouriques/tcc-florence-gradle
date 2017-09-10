@@ -29,8 +29,7 @@ public class ExameComplementar extends AbstractEntity<Long> {
     @Column(name = "MEDICO")
     private String medico;
 
-    @OneToOne
-    @JoinColumn(name = "PROCESSO_DOACAO_ID")
+    @ManyToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     @Override

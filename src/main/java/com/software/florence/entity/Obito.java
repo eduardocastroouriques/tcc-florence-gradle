@@ -20,7 +20,7 @@ public class Obito extends AbstractEntity<Long>{
     @Column(name = "TIPO")
     private int tipo;
 
-    @OneToOne(mappedBy = "obito")
+    @OneToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     public Long getOid() {

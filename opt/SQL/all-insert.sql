@@ -1,7 +1,4 @@
-INSERT INTO sql10193843.processo_doacao (altura, causa_da_morte, causa_da_morte_circunstancia, causa_da_morte_circunstancia_acidente, causa_da_morte_decorrente_de, causa_da_morte_outra, cns, cpf, data_internacao, data_nascimento, endereco, estado_civil, filiacao, hospital, idade, informante, leito, nome, peso, prontuario_hospital, protocolo_data_hora_suspensao, protocolo_sedacao, protocolo_ta, protocolo_temperatura, rg, setor, sexo, telefone, telefone_familiar, tipagem, aprovacao_id, cirurgia_id, comunicacao_processo_doacao_id, entrevista_familiar_id, hla_id, obito_id, situacao_clinica_id, sorologia_id) VALUES (1.00, 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', '2017-09-07 19:46:47', '2017-09-07', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1, 'MOCK', 'MOCK', 'MOCK', 1.00, 'MOCK', '2017-09-07 19:47:11', 'MOCK', 'MOCK', 1, '1', 'MOCK', 'MOCK', '12', '1212', 'MOCK', null, null, null, null, null, null, null, null);
-
-
-
+INSERT INTO `processo_doacao` VALUES (1,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','2017-09-10 16:15:51','2017-09-10','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-10 16:15:19','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 INSERT INTO sql10193843.obito (data_hora, tipo) VALUES ('2017-09-07 19:20:02', 1);
 INSERT INTO sql10193843.obito (data_hora, tipo) VALUES ('2017-09-07 19:20:02', 1);
@@ -47,7 +44,9 @@ INSERT INTO sql10193843.teste_clinico (data_hora, medico, numero_teste, processo
 INSERT INTO sql10193843.exame_complementar (data_hora, medico, resultado, tipo, tipo_outro, processo_doacao_id) VALUES ('2017-09-07 19:45:21', 'MOCK', 'MOCK', 1, 'MOCK', 1);
 
 
-INSERT INTO sql10193843.doenca_atual (aspecto, choque, craniotomia, ddavp, dialise, diurese_ultimas_seis_horas, diurese_ultimas_vinte_e_quatro_horas, febre, ira, medicacao_em_uso, observacao, pcr, pcr_numero, pcr_tempo_maximo, primeira_creatina, primeira_creatinina_data, secrecao_tot, trauma_de_abdome, trauma_de_torax, vm_inicio, processo_doacao_id, doenca_atual_id) VALUES ('MOCK', 'MOCK', '1', 'MOCK', 'MOCK', 's', 's', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 's', 1, 'MOCK', 's', '2017-09-07 19:11:52', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1, 1);
+INSERT INTO sql10193843.doenca_atual (aspecto, choque, craniotomia, ddavp, dialise, diurese_ultimas_seis_horas, diurese_ultimas_vinte_e_quatro_horas, febre, ira, medicacao_em_uso, observacao, pcr, pcr_numero, pcr_tempo_maximo, primeira_creatina, primeira_creatinina_data, secrecao_tot, trauma_de_abdome, trauma_de_torax, vm_inicio, processo_doacao_id) VALUES ('MOCK', 'MOCK', '1', 'MOCK', 'MOCK', 's', 's', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 's', 1, 'MOCK', 's', '2017-09-07 19:11:52', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
+
+INSERT INTO `infeccao` VALUES (1,'MOCK','2017-09-10','MOCK'),(2,'MOCK','2017-09-10','MOCK');
 
 INSERT INTO sql10193843.exame_doacao (ecq, eco_cardio, gaso_pulmao, rx, tce_co_abd, processo_doacao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
 INSERT INTO sql10193843.exame_doacao (ecq, eco_cardio, gaso_pulmao, rx, tce_co_abd, processo_doacao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 'MOCK', 'MOCK', 1);
@@ -66,11 +65,6 @@ INSERT INTO sql10193843.informacao_cirurgia (dml_fim, dml_inicio, horario_fim, h
 
 INSERT INTO sql10193843.cirurgia (destino, motivo_nao_implante, motivo_nao_remocao, informacao_cirurgia_id, orgao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 1, 2);
 INSERT INTO sql10193843.cirurgia (destino, motivo_nao_implante, motivo_nao_remocao, informacao_cirurgia_id, orgao_id) VALUES ('MOCK', 'MOCK', 'MOCK', 1, 1);
-
-
-
-
-
 
 
 

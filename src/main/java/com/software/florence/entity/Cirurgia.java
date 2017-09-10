@@ -29,7 +29,7 @@ public class Cirurgia extends AbstractEntity<Long> {
     @JoinColumn(name = "ORGAO_ID", nullable = false)
     private Orgao orgao;
 
-    @OneToOne(mappedBy = "cirurgia")
+    @OneToOne(cascade = CascadeType.ALL)
     private ProcessoDoacao processoDoacao;
 
     @Override
