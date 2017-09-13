@@ -114,10 +114,6 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     private DoencaAtual doencaAtual;
 
     @OneToOne
-    @JoinColumn(name = "SITUACAO_CLINICA_ID")
-    private SituacaoClinica situacaoClinica;
-
-    @OneToOne
     @JoinColumn(name = "SOROLOGIA_ID")
     private Sorologia sorologia;
 
@@ -409,14 +405,6 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setDoencaAtual(DoencaAtual doencaAtual) {
         this.doencaAtual = doencaAtual;
-    }
-
-    public SituacaoClinica getSituacaoClinica() {
-        return situacaoClinica;
-    }
-
-    public void setSituacaoClinica(SituacaoClinica situacaoClinica) {
-        this.situacaoClinica = situacaoClinica;
     }
 
     public Sorologia getSorologia() {
