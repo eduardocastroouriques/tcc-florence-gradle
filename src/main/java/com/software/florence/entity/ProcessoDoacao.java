@@ -141,13 +141,13 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @JoinColumn(name = "COMUNICACAO_PROCESSO_DOACAO_ID")
     private ComunicacaoProcessoDoacao comunicacaoProcessoDoacao;
 
-    @OneToMany
-    @JoinColumn(name = "EXAME_COMPLEMENTAR_ID")
-    private List<ExameComplementar> exameComplementar;
+//    @OneToMany
+//    @JoinColumn(name = "EXAME_COMPLEMENTAR_ID")
+//    private List<ExameComplementar> exameComplementar;
 
-    @OneToMany
-    @JoinColumn(name = "TESTE_CLINICO_ID")
-    private List<TesteClinico> testeClinico;
+//    @OneToMany
+//    @JoinColumn(name = "TESTE_CLINICO_ID")
+//    private List<TesteClinico> testeClinico;
 
     @Override
     public Long getOid() {
@@ -461,21 +461,5 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setComunicacaoProcessoDoacao(ComunicacaoProcessoDoacao comunicacaoProcessoDoacao) {
         this.comunicacaoProcessoDoacao = comunicacaoProcessoDoacao;
-    }
-
-    public List<ExameComplementar> getExameComplementar() {
-        return exameComplementar;
-    }
-
-    public void setExameComplementar(List<ExameComplementar> exameComplementar) {
-        this.exameComplementar = exameComplementar;
-    }
-
-    public List<TesteClinico> getTesteClinico() {
-        return testeClinico;
-    }
-
-    public void setTesteClinico(List<TesteClinico> testeClinico) {
-        this.testeClinico = testeClinico;
     }
 }

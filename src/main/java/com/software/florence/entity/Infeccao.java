@@ -23,8 +23,7 @@ public class Infeccao extends AbstractEntity<Long> {
     @Column(name = "TTO")
     private String TTO;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private DoencaAtual doencaAtual;
+    private Long doencaAtualId;
 
     @Override
     public Long getOid() {
@@ -60,11 +59,11 @@ public class Infeccao extends AbstractEntity<Long> {
         this.TTO = TTO;
     }
 
-    public DoencaAtual getDoencaAtual() {
-        return doencaAtual;
+    public Long getDoencaAtualId() {
+        return doencaAtualId;
     }
 
-    public void setDoencaAtual(DoencaAtual doencaAtual) {
-        this.doencaAtual = doencaAtual;
+    public void setDoencaAtualId(Long doencaAtualId) {
+        this.doencaAtualId = doencaAtualId;
     }
 }
