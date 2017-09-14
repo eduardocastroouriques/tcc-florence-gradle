@@ -77,7 +77,7 @@ public class DoencaAtual extends AbstractEntity<Long>{
     private String observacao;
 
     @OneToMany
-    @JoinColumn(name = "INFECCAO_ID")
+    @JoinColumn(name = "DA_FK_INF")
     private List<Infeccao> infeccao;
 
     @Override

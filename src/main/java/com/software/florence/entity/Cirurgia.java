@@ -23,11 +23,11 @@ public class Cirurgia extends AbstractEntity<Long> {
     private String motivoNaoImplante;
 
     @OneToOne
-    @JoinColumn(name = "INFORMACAO_CIRURGIA_ID", nullable = false)
+    @JoinColumn(name = "CIR_FK_INF")
     private InformacaoCirurgia informacaoCirurgia;
 
     @OneToMany
-    @JoinColumn(name = "ORGAO_ID", nullable = false)
+    @JoinColumn(name = "CIR_FK_ORG")
     private List<Orgao> orgao;
 
     @Override

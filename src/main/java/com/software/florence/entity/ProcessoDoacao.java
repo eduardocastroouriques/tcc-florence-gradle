@@ -4,7 +4,6 @@ import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.Date;
 import java.util.List;
 
@@ -117,16 +116,16 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @JoinColumn(name = "SOROLOGIA_ID")
     private Sorologia sorologia;
 
-    @OneToOne
-    @JoinColumn(name = "HLA_ID")
-    private Hla hla;
+    @OneToMany
+    @JoinColumn(name = "PD_FK_HLA")
+    private List<Hla> hla;
 
     @OneToOne
     @JoinColumn(name = "CIRURGIA_ID")
     private Cirurgia cirurgia;
 
     @OneToMany
-    @JoinColumn(name = "APROVACAO_ID")
+    @JoinColumn(name = "PD_FK_APR")
     private List<Aprovacao> aprovacao;
 
     @OneToOne
@@ -142,12 +141,20 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     private ComunicacaoProcessoDoacao comunicacaoProcessoDoacao;
 
     @OneToMany
-    @JoinColumn(name = "EXAME_COMPLEMENTAR_ID")
+    @JoinColumn(name = "PD_FK_EC")
     private List<ExameComplementar> exameComplementar;
 
     @OneToMany
-    @JoinColumn(name = "TESTE_CLINICO_ID")
+    @JoinColumn(name = "PD_FK_TC")
     private List<TesteClinico> testeClinico;
+
+    @OneToMany
+    @JoinColumn(name = "PD_FK_DVA")
+    private List<Dva> dva;
+
+    @OneToMany
+    @JoinColumn(name = "PD_FK_SC")
+    private List<SituacaoClinica> situacaoClinica;
 
     @Override
     public Long getOid() {
@@ -415,11 +422,11 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
         this.sorologia = sorologia;
     }
 
-    public Hla getHla() {
+    public List<Hla> getHla() {
         return hla;
     }
 
-    public void setHla(Hla hla) {
+    public void setHla(List<Hla> hla) {
         this.hla = hla;
     }
 
@@ -477,5 +484,21 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setTesteClinico(List<TesteClinico> testeClinico) {
         this.testeClinico = testeClinico;
+    }
+
+    public List<Dva> getDva() {
+        return dva;
+    }
+
+    public void setDva(List<Dva> dva) {
+        this.dva = dva;
+    }
+
+    public List<SituacaoClinica> getSituacaoClinica() {
+        return situacaoClinica;
+    }
+
+    public void setSituacaoClinica(List<SituacaoClinica> situacaoClinica) {
+        this.situacaoClinica = situacaoClinica;
     }
 }

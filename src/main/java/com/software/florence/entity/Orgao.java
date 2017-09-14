@@ -17,6 +17,15 @@ public class Orgao extends AbstractEntity<Long> {
     @Column(name = "NOME")
     private String nome;
 
+    @Column(name = "MOTIVO_NAO_REMOCAO")
+    private String motivoNaoRemocao;
+
+    @Column(name = "DESTINO")
+    private String destino;
+
+    @Column(name = "MOTIVO_NAO_IMPLANTE")
+    private String motivoNaoImplante;
+
     @Override
     public Long getOid() {
         return oid;
@@ -33,5 +42,29 @@ public class Orgao extends AbstractEntity<Long> {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getMotivoNaoRemocao() {
+        return motivoNaoRemocao;
+    }
+
+    public void setMotivoNaoRemocao(String motivoNaoRemocao) {
+        this.motivoNaoRemocao = motivoNaoRemocao;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    public String getMotivoNaoImplante() {
+        return motivoNaoImplante;
+    }
+
+    public void setMotivoNaoImplante(String motivoNaoImplante) {
+        this.motivoNaoImplante = motivoNaoImplante;
     }
 }

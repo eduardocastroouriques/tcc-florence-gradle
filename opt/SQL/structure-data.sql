@@ -51,11 +51,11 @@ CREATE TABLE `aprovacao` (
   `tipo` int(11) DEFAULT NULL,
   `tp` double DEFAULT NULL,
   `ureias` double DEFAULT NULL,
-  `aprovacao_id` bigint(20) DEFAULT NULL,
+  `pd_fk_apr` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKoiasbjbfb3c31bussqkooaftn` (`aprovacao_id`),
-  CONSTRAINT `FKoiasbjbfb3c31bussqkooaftn` FOREIGN KEY (`aprovacao_id`) REFERENCES `processo_doacao` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  KEY `FKrv4ngc0o454b160fuu91ui4lc` (`pd_fk_apr`),
+  CONSTRAINT `FKrv4ngc0o454b160fuu91ui4lc` FOREIGN KEY (`pd_fk_apr`) REFERENCES `processo_doacao` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `aprovacao` (
 
 LOCK TABLES `aprovacao` WRITE;
 /*!40000 ALTER TABLE `aprovacao` DISABLE KEYS */;
-INSERT INTO `aprovacao` VALUES (1,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1),(2,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1),(3,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);
+INSERT INTO `aprovacao` VALUES (1,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1),(2,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1),(3,1,1,1,1,1,1,1,1,'2017-09-07 19:07:58',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2);
 /*!40000 ALTER TABLE `aprovacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,11 +80,11 @@ CREATE TABLE `cirurgia` (
   `destino` varchar(255) DEFAULT NULL,
   `motivo_nao_implante` varchar(255) DEFAULT NULL,
   `motivo_nao_remocao` varchar(255) DEFAULT NULL,
-  `informacao_cirurgia_id` bigint(20) NOT NULL,
+  `cir_fk_inf` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKd43kov4f1stxwnami4cqotpe8` (`informacao_cirurgia_id`),
-  CONSTRAINT `FKd43kov4f1stxwnami4cqotpe8` FOREIGN KEY (`informacao_cirurgia_id`) REFERENCES `informacao_cirurgia` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  KEY `FK9dwmawufhdt6n6gj4655g9dmw` (`cir_fk_inf`),
+  CONSTRAINT `FK9dwmawufhdt6n6gj4655g9dmw` FOREIGN KEY (`cir_fk_inf`) REFERENCES `informacao_cirurgia` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +93,7 @@ CREATE TABLE `cirurgia` (
 
 LOCK TABLES `cirurgia` WRITE;
 /*!40000 ALTER TABLE `cirurgia` DISABLE KEYS */;
-INSERT INTO `cirurgia` VALUES (1,'MOCK','MOCK','MOCK',1);
+INSERT INTO `cirurgia` VALUES (1,'MOCK','MOCK','MOCK',1),(2,'MOCK','MOCK','MOCK',1),(3,'MOCK','MOCK','MOCK',2);
 /*!40000 ALTER TABLE `cirurgia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,7 +109,7 @@ CREATE TABLE `comunicacao_processo_doacao` (
   `data_hora` datetime DEFAULT NULL,
   `rgct` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -118,7 +118,7 @@ CREATE TABLE `comunicacao_processo_doacao` (
 
 LOCK TABLES `comunicacao_processo_doacao` WRITE;
 /*!40000 ALTER TABLE `comunicacao_processo_doacao` DISABLE KEYS */;
-INSERT INTO `comunicacao_processo_doacao` VALUES (1,'2017-09-10 17:46:12','MOCK'),(2,'2017-09-10 17:46:12','MOCK');
+INSERT INTO `comunicacao_processo_doacao` VALUES (1,'2017-09-14 20:29:28','MOCK'),(2,'2017-09-14 20:29:28','MOCK'),(3,'2017-09-14 20:29:28','MOCK');
 /*!40000 ALTER TABLE `comunicacao_processo_doacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,7 +152,7 @@ CREATE TABLE `doenca_atual` (
   `trauma_de_torax` varchar(255) DEFAULT NULL,
   `vm_inicio` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +161,7 @@ CREATE TABLE `doenca_atual` (
 
 LOCK TABLES `doenca_atual` WRITE;
 /*!40000 ALTER TABLE `doenca_atual` DISABLE KEYS */;
-INSERT INTO `doenca_atual` VALUES (1,'MOCK','MOCK','1','MOCK','MOCK','s','s','MOCK','MOCK','MOCK','MOCK','s',1,'MOCK','s','2017-09-07 19:11:52','MOCK','MOCK','MOCK','MOCK');
+INSERT INTO `doenca_atual` VALUES (1,'MOCK','MOCK','1','MOCK','MOCK','s','s','MOCK','MOCK','MOCK','MOCK','s',1,'MOCK','s','2017-09-07 19:11:52','MOCK','MOCK','MOCK','MOCK'),(2,'MOCK','MOCK','1','MOCK','MOCK','s','s','MOCK','MOCK','MOCK','MOCK','s',1,'MOCK','s','2017-09-07 19:11:52','MOCK','MOCK','MOCK','MOCK');
 /*!40000 ALTER TABLE `doenca_atual` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -210,7 +210,7 @@ CREATE TABLE `doenca_previa` (
   `tuberculose_tto` varchar(255) DEFAULT NULL,
   `vacinas_recentes` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,7 +219,7 @@ CREATE TABLE `doenca_previa` (
 
 LOCK TABLES `doenca_previa` WRITE;
 /*!40000 ALTER TABLE `doenca_previa` DISABLE KEYS */;
-INSERT INTO `doenca_previa` VALUES (1,'MOCK','MOCK','S','MOCK','MOCK','MOCK','MOCK','2017-09-10 17:48:10','2017-09-10 17:48:13','2017-09-10 17:48:16','MOCK','2017-09-10 17:48:19','MOCK','MOCK','MOCK','MOCK','2017-09-10 17:48:24','S','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK');
+INSERT INTO `doenca_previa` VALUES (1,'MOCK','MOCK','S','MOCK','MOCK','MOCK','MOCK','2017-09-10 17:48:10','2017-09-10 17:48:13','2017-09-10 17:48:16','MOCK','2017-09-10 17:48:19','MOCK','MOCK','MOCK','MOCK','2017-09-10 17:48:24','S','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK'),(2,'MOCK','MOCK','S','MOCK','MOCK','MOCK','MOCK','2017-09-10 17:48:10','2017-09-10 17:48:13','2017-09-10 17:48:16','MOCK','2017-09-10 17:48:19','MOCK','MOCK','MOCK','MOCK','2017-09-10 17:48:24','S','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK');
 /*!40000 ALTER TABLE `doenca_previa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -237,8 +237,11 @@ CREATE TABLE `dva` (
   `kg` double DEFAULT NULL,
   `ml_por_hora` float DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `pd_fk_dva` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKc35pvp7gt14yh4nkllhur0945` (`pd_fk_dva`),
+  CONSTRAINT `FKc35pvp7gt14yh4nkllhur0945` FOREIGN KEY (`pd_fk_dva`) REFERENCES `processo_doacao` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -247,7 +250,7 @@ CREATE TABLE `dva` (
 
 LOCK TABLES `dva` WRITE;
 /*!40000 ALTER TABLE `dva` DISABLE KEYS */;
-INSERT INTO `dva` VALUES (1,'MOCK','01:00:00',1,1,'MOCK');
+INSERT INTO `dva` VALUES (1,'MOCK','01:00:00',1,1,'MOCK',1),(2,'MOCK','01:00:00',1,1,'MOCK',1),(3,'MOCK','01:00:00',1,1,'MOCK',2);
 /*!40000 ALTER TABLE `dva` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -266,7 +269,7 @@ CREATE TABLE `entrevista_familiar` (
   `observacao` varchar(255) DEFAULT NULL,
   `resultado` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -275,7 +278,7 @@ CREATE TABLE `entrevista_familiar` (
 
 LOCK TABLES `entrevista_familiar` WRITE;
 /*!40000 ALTER TABLE `entrevista_familiar` DISABLE KEYS */;
-INSERT INTO `entrevista_familiar` VALUES (1,'2017-09-10 17:50:11','MOCK','MOCK','MOCK',1);
+INSERT INTO `entrevista_familiar` VALUES (1,'2017-09-14 20:34:00','MOCK','MOCK','MOCK',1),(2,'2017-09-14 20:34:00','MOCK','MOCK','MOCK',1),(3,'2017-09-14 20:34:00','MOCK','MOCK','MOCK',2);
 /*!40000 ALTER TABLE `entrevista_familiar` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -293,10 +296,10 @@ CREATE TABLE `exame_complementar` (
   `resultado` varchar(255) DEFAULT NULL,
   `tipo` int(11) DEFAULT NULL,
   `tipo_outro` varchar(255) DEFAULT NULL,
-  `exame_complementar_id` bigint(20) DEFAULT NULL,
+  `pd_fk_ec` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKm8g94p1exxwu5dtan8vnd0t9k` (`exame_complementar_id`),
-  CONSTRAINT `FKm8g94p1exxwu5dtan8vnd0t9k` FOREIGN KEY (`exame_complementar_id`) REFERENCES `processo_doacao` (`id`)
+  KEY `FK3qaoanb9fcr3elvdu3mrbr95h` (`pd_fk_ec`),
+  CONSTRAINT `FK3qaoanb9fcr3elvdu3mrbr95h` FOREIGN KEY (`pd_fk_ec`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -306,7 +309,7 @@ CREATE TABLE `exame_complementar` (
 
 LOCK TABLES `exame_complementar` WRITE;
 /*!40000 ALTER TABLE `exame_complementar` DISABLE KEYS */;
-INSERT INTO `exame_complementar` VALUES (2,'2017-09-10 17:51:16','MOCK','MOCK',1,'MOCK',1),(3,'2017-09-10 17:51:16','MOCK','MOCK',1,'MOCK',1);
+INSERT INTO `exame_complementar` VALUES (1,'2017-09-14 20:34:23','MOCK','MOCK',1,'MOCK',1),(2,'2017-09-14 20:34:23','MOCK','MOCK',1,'MOCK',1),(3,'2017-09-14 20:34:23','MOCK','MOCK',1,'MOCK',2);
 /*!40000 ALTER TABLE `exame_complementar` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -328,7 +331,7 @@ CREATE TABLE `exame_doacao` (
   PRIMARY KEY (`id`),
   KEY `FKl26vt5vnkcgw8xaytiuil7eic` (`processo_doacao_id`),
   CONSTRAINT `FKl26vt5vnkcgw8xaytiuil7eic` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -337,7 +340,7 @@ CREATE TABLE `exame_doacao` (
 
 LOCK TABLES `exame_doacao` WRITE;
 /*!40000 ALTER TABLE `exame_doacao` DISABLE KEYS */;
-INSERT INTO `exame_doacao` VALUES (1,'MOCK','MOCK','MOCK','MOCK','MOCK',NULL);
+INSERT INTO `exame_doacao` VALUES (1,'MOCK','MOCK','MOCK','MOCK','MOCK',1),(2,'MOCK','MOCK','MOCK','MOCK','MOCK',1);
 /*!40000 ALTER TABLE `exame_doacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -358,8 +361,11 @@ CREATE TABLE `hla` (
   `hora_termino` time DEFAULT NULL,
   `iscmpa_data_hora_fim` datetime DEFAULT NULL,
   `laboratorio` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `pd_fk_hla` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKcmjwcp1nrbh4jvdoawfqyvaad` (`pd_fk_hla`),
+  CONSTRAINT `FKcmjwcp1nrbh4jvdoawfqyvaad` FOREIGN KEY (`pd_fk_hla`) REFERENCES `processo_doacao` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -368,7 +374,7 @@ CREATE TABLE `hla` (
 
 LOCK TABLES `hla` WRITE;
 /*!40000 ALTER TABLE `hla` DISABLE KEYS */;
-INSERT INTO `hla` VALUES (1,'2017-09-10 17:53:11','2017-09-10 17:53:13','2017-09-10','2017-09-10 17:53:18','17:00:00','17:00:00','2017-09-10 17:53:25','MOCK');
+INSERT INTO `hla` VALUES (1,'2017-09-14 20:35:01','2017-09-14 20:35:04','2017-09-14','2017-09-14 20:35:08','01:00:00','01:00:00','2017-09-14 20:35:13','MOCK',1),(2,'2017-09-14 20:35:01','2017-09-14 20:35:04','2017-09-14','2017-09-14 20:35:08','01:00:00','01:00:00','2017-09-14 20:35:13','MOCK',1);
 /*!40000 ALTER TABLE `hla` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -384,14 +390,11 @@ CREATE TABLE `infeccao` (
   `cult_local` varchar(255) DEFAULT NULL,
   `data` date DEFAULT NULL,
   `tto` varchar(255) DEFAULT NULL,
-  `doenca_atual_id` bigint(20) DEFAULT NULL,
-  `infeccao_id` bigint(20) DEFAULT NULL,
+  `da_fk_inf` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKprxaj0wry1m3bw4abaewxtlin` (`doenca_atual_id`),
-  KEY `FKhlhscocf9st0sjdwm2sfnanlk` (`infeccao_id`),
-  CONSTRAINT `FKhlhscocf9st0sjdwm2sfnanlk` FOREIGN KEY (`infeccao_id`) REFERENCES `doenca_atual` (`id`),
-  CONSTRAINT `FKprxaj0wry1m3bw4abaewxtlin` FOREIGN KEY (`doenca_atual_id`) REFERENCES `doenca_atual` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  KEY `FKc58mjupu0scynaj2caevvctul` (`da_fk_inf`),
+  CONSTRAINT `FKc58mjupu0scynaj2caevvctul` FOREIGN KEY (`da_fk_inf`) REFERENCES `doenca_atual` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -400,7 +403,7 @@ CREATE TABLE `infeccao` (
 
 LOCK TABLES `infeccao` WRITE;
 /*!40000 ALTER TABLE `infeccao` DISABLE KEYS */;
-INSERT INTO `infeccao` VALUES (1,'MOCK','2017-09-10','MOCK',1,NULL),(3,'MOCK','2017-09-10','MOCK',1,NULL);
+INSERT INTO `infeccao` VALUES (1,'MOCK','2017-09-07','MOCK',1),(2,'MOCK','2017-09-07','MOCK',1),(3,'MOCK','2017-09-07','MOCK',1),(4,'MOCK','2017-09-07','MOCK',2);
 /*!40000 ALTER TABLE `infeccao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -430,7 +433,7 @@ CREATE TABLE `informacao_cirurgia` (
 
 LOCK TABLES `informacao_cirurgia` WRITE;
 /*!40000 ALTER TABLE `informacao_cirurgia` DISABLE KEYS */;
-INSERT INTO `informacao_cirurgia` VALUES (1,'19:00:00','19:00:00','19:00:00','19:00:00','19:00:00','MOCK','MOCK'),(2,'19:00:00','19:00:00','19:00:00','19:00:00','19:00:00','MOCK','MOCK'),(3,'19:00:00','19:00:00','19:00:00','19:00:00','19:00:00','MOCK','MOCK');
+INSERT INTO `informacao_cirurgia` VALUES (1,'01:00:00','01:00:00','01:00:00','01:00:00','01:00:00','MOCK','MOCK'),(2,'01:00:00','01:00:00','01:00:00','01:00:00','01:00:00','MOCK','MOCK'),(3,'01:00:00','01:00:00','01:00:00','01:00:00','01:00:00','MOCK','MOCK');
 /*!40000 ALTER TABLE `informacao_cirurgia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -446,7 +449,7 @@ CREATE TABLE `obito` (
   `data_hora` datetime DEFAULT NULL,
   `tipo` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -455,7 +458,7 @@ CREATE TABLE `obito` (
 
 LOCK TABLES `obito` WRITE;
 /*!40000 ALTER TABLE `obito` DISABLE KEYS */;
-INSERT INTO `obito` VALUES (1,'2017-09-07 19:20:02',1),(2,'2017-09-07 19:20:02',1),(3,'2017-09-07 19:20:02',1);
+INSERT INTO `obito` VALUES (1,'2017-09-14 20:36:09',1),(2,'2017-09-14 20:36:09',1);
 /*!40000 ALTER TABLE `obito` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -468,11 +471,14 @@ DROP TABLE IF EXISTS `orgao`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `orgao` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `destino` varchar(255) DEFAULT NULL,
+  `motivo_nao_implante` varchar(255) DEFAULT NULL,
+  `motivo_nao_remocao` varchar(255) DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
-  `orgao_id` bigint(20) NOT NULL,
+  `cir_fk_org` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKg9vgqanuvtgn5crnr2738do07` (`orgao_id`),
-  CONSTRAINT `FKg9vgqanuvtgn5crnr2738do07` FOREIGN KEY (`orgao_id`) REFERENCES `cirurgia` (`id`)
+  KEY `FKpey9ux8gyygxr9fhkh36ybob8` (`cir_fk_org`),
+  CONSTRAINT `FKpey9ux8gyygxr9fhkh36ybob8` FOREIGN KEY (`cir_fk_org`) REFERENCES `cirurgia` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -482,7 +488,7 @@ CREATE TABLE `orgao` (
 
 LOCK TABLES `orgao` WRITE;
 /*!40000 ALTER TABLE `orgao` DISABLE KEYS */;
-INSERT INTO `orgao` VALUES (2,'MOCK',1),(3,'MOCK',1);
+INSERT INTO `orgao` VALUES (1,'MOCK','MOCK','MOCK','MOCK',1),(2,'MOCK','MOCK','MOCK','MOCK',1),(3,'MOCK','MOCK','MOCK','MOCK',2);
 /*!40000 ALTER TABLE `orgao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -529,28 +535,22 @@ CREATE TABLE `processo_doacao` (
   `comunicacao_processo_doacao_id` bigint(20) DEFAULT NULL,
   `doenca_atual_id` bigint(20) DEFAULT NULL,
   `entrevista_familiar_id` bigint(20) DEFAULT NULL,
-  `hla_id` bigint(20) DEFAULT NULL,
   `obito_id` bigint(20) DEFAULT NULL,
-  `situacao_clinica_id` bigint(20) DEFAULT NULL,
   `sorologia_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKslpfaxyduvkoygqumnfxkr54g` (`cirurgia_id`),
   KEY `FKbx282xft4y62yafban1oo8xgc` (`comunicacao_processo_doacao_id`),
   KEY `FKgpsiapp96hytd5431ufwgm7vo` (`doenca_atual_id`),
   KEY `FKte6l6s1bbk54cu64vra3hoix6` (`entrevista_familiar_id`),
-  KEY `FK4mcrcfh3x7hjyvk59n642wfg9` (`hla_id`),
   KEY `FKhuh28nxj7nc9l7uxtxep0418m` (`obito_id`),
-  KEY `FKfhjso2xulgi94wqjr1j2xlegh` (`situacao_clinica_id`),
   KEY `FKq6yyenaam5qqiqdsxfjp4g0k7` (`sorologia_id`),
-  CONSTRAINT `FK4mcrcfh3x7hjyvk59n642wfg9` FOREIGN KEY (`hla_id`) REFERENCES `hla` (`id`),
   CONSTRAINT `FKbx282xft4y62yafban1oo8xgc` FOREIGN KEY (`comunicacao_processo_doacao_id`) REFERENCES `comunicacao_processo_doacao` (`id`),
-  CONSTRAINT `FKfhjso2xulgi94wqjr1j2xlegh` FOREIGN KEY (`situacao_clinica_id`) REFERENCES `situacao_clinica` (`id`),
   CONSTRAINT `FKgpsiapp96hytd5431ufwgm7vo` FOREIGN KEY (`doenca_atual_id`) REFERENCES `doenca_atual` (`id`),
   CONSTRAINT `FKhuh28nxj7nc9l7uxtxep0418m` FOREIGN KEY (`obito_id`) REFERENCES `obito` (`id`),
   CONSTRAINT `FKq6yyenaam5qqiqdsxfjp4g0k7` FOREIGN KEY (`sorologia_id`) REFERENCES `sorologia` (`id`),
   CONSTRAINT `FKslpfaxyduvkoygqumnfxkr54g` FOREIGN KEY (`cirurgia_id`) REFERENCES `cirurgia` (`id`),
   CONSTRAINT `FKte6l6s1bbk54cu64vra3hoix6` FOREIGN KEY (`entrevista_familiar_id`) REFERENCES `entrevista_familiar` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -559,8 +559,33 @@ CREATE TABLE `processo_doacao` (
 
 LOCK TABLES `processo_doacao` WRITE;
 /*!40000 ALTER TABLE `processo_doacao` DISABLE KEYS */;
-INSERT INTO `processo_doacao` VALUES (1,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','2017-09-10 17:59:57','2017-09-10','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-10 18:00:16','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',1,1,1,1,1,1,1,1);
+INSERT INTO `processo_doacao` VALUES (1,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-14 20:25:06','2017-09-07','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-14 20:25:20','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL),(2,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-14 20:25:06','2017-09-07','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-14 20:25:20','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL),(3,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-14 20:25:06','2017-09-07','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-14 20:25:20','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL),(4,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-14 20:25:06','2017-09-07','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-14 20:25:20','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `processo_doacao` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `processo_doacao_situacao_clinica`
+--
+
+DROP TABLE IF EXISTS `processo_doacao_situacao_clinica`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `processo_doacao_situacao_clinica` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
+  `situacao_clinica_id` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UK_iusw217uuhlkqbyf4sm3bh1gg` (`situacao_clinica_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `processo_doacao_situacao_clinica`
+--
+
+LOCK TABLES `processo_doacao_situacao_clinica` WRITE;
+/*!40000 ALTER TABLE `processo_doacao_situacao_clinica` DISABLE KEYS */;
+/*!40000 ALTER TABLE `processo_doacao_situacao_clinica` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -580,8 +605,11 @@ CREATE TABLE `situacao_clinica` (
   `pins` varchar(255) DEFAULT NULL,
   `sat` varchar(255) DEFAULT NULL,
   `ta` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `pd_fk_sc` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK3q9hpm0gmpkk1gsxk1kq03s10` (`pd_fk_sc`),
+  CONSTRAINT `FK3q9hpm0gmpkk1gsxk1kq03s10` FOREIGN KEY (`pd_fk_sc`) REFERENCES `processo_doacao` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -590,7 +618,7 @@ CREATE TABLE `situacao_clinica` (
 
 LOCK TABLES `situacao_clinica` WRITE;
 /*!40000 ALTER TABLE `situacao_clinica` DISABLE KEYS */;
-INSERT INTO `situacao_clinica` VALUES (1,'2017-09-10 18:00:54','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK');
+INSERT INTO `situacao_clinica` VALUES (1,'2017-09-14 20:37:01','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',1),(2,'2017-09-14 20:37:01','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',1),(3,'2017-09-14 20:37:01','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',2);
 /*!40000 ALTER TABLE `situacao_clinica` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -652,7 +680,7 @@ CREATE TABLE `substancia_extra` (
   PRIMARY KEY (`id`),
   KEY `FK5sp1wr7jdvce27604gah630sx` (`doenca_previa_id`),
   CONSTRAINT `FK5sp1wr7jdvce27604gah630sx` FOREIGN KEY (`doenca_previa_id`) REFERENCES `doenca_previa` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -661,7 +689,7 @@ CREATE TABLE `substancia_extra` (
 
 LOCK TABLES `substancia_extra` WRITE;
 /*!40000 ALTER TABLE `substancia_extra` DISABLE KEYS */;
-INSERT INTO `substancia_extra` VALUES (2,'MOCK','MOCK','MOCK','MOCK',1);
+INSERT INTO `substancia_extra` VALUES (1,'MOCK','MOCK','MOCK','MOCK',1),(2,'MOCK','MOCK','MOCK','MOCK',2),(3,'MOCK','MOCK','MOCK','MOCK',1);
 /*!40000 ALTER TABLE `substancia_extra` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -677,11 +705,11 @@ CREATE TABLE `teste_clinico` (
   `data_hora` datetime DEFAULT NULL,
   `medico` varchar(255) DEFAULT NULL,
   `numero_teste` int(11) DEFAULT NULL,
-  `teste_clinico_id` bigint(20) DEFAULT NULL,
+  `pd_fk_tc` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK688kdlr3edba905rsgyx9jkhw` (`teste_clinico_id`),
-  CONSTRAINT `FK688kdlr3edba905rsgyx9jkhw` FOREIGN KEY (`teste_clinico_id`) REFERENCES `processo_doacao` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  KEY `FKly75wrs9nj9mxxl5i13vmatpf` (`pd_fk_tc`),
+  CONSTRAINT `FKly75wrs9nj9mxxl5i13vmatpf` FOREIGN KEY (`pd_fk_tc`) REFERENCES `processo_doacao` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -690,7 +718,7 @@ CREATE TABLE `teste_clinico` (
 
 LOCK TABLES `teste_clinico` WRITE;
 /*!40000 ALTER TABLE `teste_clinico` DISABLE KEYS */;
-INSERT INTO `teste_clinico` VALUES (1,'2017-09-10 18:02:17','MOCK',1,1),(2,'2017-09-10 18:02:17','MOCK',1,1);
+INSERT INTO `teste_clinico` VALUES (1,'2017-09-14 20:37:45','MOCK',1,1),(2,'2017-09-14 20:37:45','MOCK',1,2),(3,'2017-09-14 20:37:45','MOCK',1,1);
 /*!40000 ALTER TABLE `teste_clinico` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -703,4 +731,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-10 18:07:20
+-- Dump completed on 2017-09-14 20:39:18
