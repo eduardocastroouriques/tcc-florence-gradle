@@ -69,6 +69,10 @@ public class Sorologia extends AbstractEntity<Long>{
     @Column(name = "CALCULO")
     private Double calculo;
 
+    @OneToOne
+    @JoinColumn(nullable = false, unique = true)
+    private ProcessoDoacao processoDoacao;
+
     @Override
     public Long getOid() {
         return oid;
@@ -221,5 +225,13 @@ public class Sorologia extends AbstractEntity<Long>{
 
     public void setCalculo(Double calculo) {
         this.calculo = calculo;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }

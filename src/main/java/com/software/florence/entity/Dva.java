@@ -78,4 +78,5 @@ public class Dva extends AbstractEntity<Long>{
     public void setInicio(Date inicio) {
         this.inicio = inicio;
     }
+
 }

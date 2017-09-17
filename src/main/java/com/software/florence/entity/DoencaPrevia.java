@@ -123,6 +123,10 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "INFORMANTE_PARENTESCO")
     private String informanteParentesco;
 
+    @OneToOne
+    @JoinColumn(nullable = false, unique = true)
+    private ProcessoDoacao processoDoacao;
+
     @Override
     public Long getOid() {
         return oid;
@@ -411,5 +415,13 @@ public class DoencaPrevia extends AbstractEntity<Long>{
 
     public void setInformanteParentesco(String informanteParentesco) {
         this.informanteParentesco = informanteParentesco;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }

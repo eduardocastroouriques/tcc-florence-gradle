@@ -56,4 +56,5 @@ public class Infeccao extends AbstractEntity<Long> {
     public void setTTO(String TTO) {
         this.TTO = TTO;
     }
+
 }

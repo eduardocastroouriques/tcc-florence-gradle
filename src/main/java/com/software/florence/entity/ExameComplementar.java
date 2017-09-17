@@ -78,4 +78,5 @@ public class ExameComplementar extends AbstractEntity<Long> {
     public void setMedico(String medico) {
         this.medico = medico;
     }
+
 }

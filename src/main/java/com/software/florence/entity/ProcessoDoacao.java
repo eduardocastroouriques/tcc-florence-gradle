@@ -109,52 +109,60 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     private String protocoloTa;
 
     @OneToOne
-    @JoinColumn(name = "DOENCA_ATUAL_ID")
+    @JoinColumn
     private DoencaAtual doencaAtual;
 
     @OneToOne
-    @JoinColumn(name = "SOROLOGIA_ID")
+    @JoinColumn
     private Sorologia sorologia;
 
     @OneToMany
-    @JoinColumn(name = "PD_FK_HLA")
+    @JoinColumn(name = "PD_ID_HLA", nullable = false)
     private List<Hla> hla;
 
     @OneToOne
-    @JoinColumn(name = "CIRURGIA_ID")
+    @JoinColumn
     private Cirurgia cirurgia;
 
     @OneToMany
-    @JoinColumn(name = "PD_FK_APR")
+    @JoinColumn(name = "PD_ID_APROVACAO", nullable = false)
     private List<Aprovacao> aprovacao;
 
     @OneToOne
-    @JoinColumn(name = "ENTREVISTA_FAMILIAR_ID")
+    @JoinColumn
     private EntrevistaFamiliar entrevistaFamiliar;
 
     @OneToOne
-    @JoinColumn(name = "OBITO_ID")
+    @JoinColumn
     private Obito obito;
 
     @OneToOne
-    @JoinColumn(name = "COMUNICACAO_PROCESSO_DOACAO_ID")
+    @JoinColumn
     private ComunicacaoProcessoDoacao comunicacaoProcessoDoacao;
 
     @OneToMany
-    @JoinColumn(name = "PD_FK_EC")
+    @JoinColumn(name = "PD_ID_EXAME_COMPLEMENTAR", nullable = false)
     private List<ExameComplementar> exameComplementar;
 
     @OneToMany
-    @JoinColumn(name = "PD_FK_TC")
+    @JoinColumn(name = "PD_ID_TESTE_CLINICO", nullable = false)
     private List<TesteClinico> testeClinico;
 
     @OneToMany
-    @JoinColumn(name = "PD_FK_DVA")
+    @JoinColumn(name = "PD_ID_DVA", nullable = false)
     private List<Dva> dva;
 
     @OneToMany
-    @JoinColumn(name = "PD_FK_SC")
+    @JoinColumn(name = "PD_ID_SITUACAO_CLINICA", nullable = false)
     private List<SituacaoClinica> situacaoClinica;
+
+    @OneToMany
+    @JoinColumn(name = "PD_ID_EXAME_DOACAO", nullable = false)
+    private List<ExameDoacao> exameDoacao;
+
+    @OneToOne
+    @JoinColumn
+    private DoencaPrevia doencaPrevia;
 
     @Override
     public Long getOid() {
@@ -500,5 +508,21 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setSituacaoClinica(List<SituacaoClinica> situacaoClinica) {
         this.situacaoClinica = situacaoClinica;
+    }
+
+    public List<ExameDoacao> getExameDoacao() {
+        return exameDoacao;
+    }
+
+    public void setExameDoacao(List<ExameDoacao> exameDoacao) {
+        this.exameDoacao = exameDoacao;
+    }
+
+    public DoencaPrevia getDoencaPrevia() {
+        return doencaPrevia;
+    }
+
+    public void setDoencaPrevia(DoencaPrevia doencaPrevia) {
+        this.doencaPrevia = doencaPrevia;
     }
 }

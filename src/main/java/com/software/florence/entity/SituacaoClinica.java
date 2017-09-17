@@ -111,4 +111,5 @@ public class SituacaoClinica extends AbstractEntity<Long> {
     public void setFioDois(String fioDois) {
         this.fioDois = fioDois;
     }
+
 }

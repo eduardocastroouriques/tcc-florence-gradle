@@ -23,12 +23,16 @@ public class Cirurgia extends AbstractEntity<Long> {
     private String motivoNaoImplante;
 
     @OneToOne
-    @JoinColumn(name = "CIR_FK_INF")
+    @JoinColumn(name = "INFORMACAO_CIRURGIA_ID", unique = true)
     private InformacaoCirurgia informacaoCirurgia;
 
     @OneToMany
     @JoinColumn(name = "CIR_FK_ORG")
     private List<Orgao> orgao;
+
+    @OneToOne
+    @JoinColumn(nullable = false, unique = true)
+    private ProcessoDoacao processoDoacao;
 
     @Override
     public Long getOid() {
@@ -78,5 +82,13 @@ public class Cirurgia extends AbstractEntity<Long> {
 
     public void setOrgao(List<Orgao> orgao) {
         this.orgao = orgao;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }

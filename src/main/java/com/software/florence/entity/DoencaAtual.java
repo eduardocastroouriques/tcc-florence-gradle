@@ -80,6 +80,10 @@ public class DoencaAtual extends AbstractEntity<Long>{
     @JoinColumn(name = "DA_FK_INF")
     private List<Infeccao> infeccao;
 
+    @OneToOne
+    @JoinColumn(nullable = false, unique = true)
+    private ProcessoDoacao processoDoacao;
+
     @Override
     public Long getOid() {
         return oid;
@@ -256,5 +260,13 @@ public class DoencaAtual extends AbstractEntity<Long>{
 
     public void setInfeccao(List<Infeccao> infeccao) {
         this.infeccao = infeccao;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }

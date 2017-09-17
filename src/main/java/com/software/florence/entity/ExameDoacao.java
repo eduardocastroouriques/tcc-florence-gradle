@@ -27,9 +27,6 @@ public class ExameDoacao extends AbstractEntity<Long>{
     @Column(name = "GASO_PULMAO")
     private String gasoPulmao;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private ProcessoDoacao processoDoacao;
-
     @Override
     public Long getOid() {
         return oid;
@@ -80,11 +77,4 @@ public class ExameDoacao extends AbstractEntity<Long>{
         this.gasoPulmao = gasoPulmao;
     }
 
-    public ProcessoDoacao getProcessoDoacao() {
-        return processoDoacao;
-    }
-
-    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
-        this.processoDoacao = processoDoacao;
-    }
 }

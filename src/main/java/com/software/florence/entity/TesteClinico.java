@@ -56,4 +56,5 @@ public class TesteClinico extends AbstractEntity<Long>{
     public void setMedico(String medico) {
         this.medico = medico;
     }
+
 }

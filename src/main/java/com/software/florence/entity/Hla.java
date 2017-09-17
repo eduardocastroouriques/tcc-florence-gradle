@@ -115,4 +115,5 @@ public class Hla extends AbstractEntity<Long>{
     public void setIscmpaDataHoraFim(Date iscmpaDataHoraFim) {
         this.iscmpaDataHoraFim = iscmpaDataHoraFim;
     }
+    
 }

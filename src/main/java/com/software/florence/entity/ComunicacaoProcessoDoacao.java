@@ -20,6 +20,10 @@ public class ComunicacaoProcessoDoacao extends AbstractEntity<Long>{
     @Column(name = "RGCT")
     private String rgct;
 
+    @OneToOne
+    @JoinColumn(nullable = false, unique = true)
+    private ProcessoDoacao processoDoacao;
+
     @Override
     public Long getOid() {
         return oid;
@@ -44,5 +48,13 @@ public class ComunicacaoProcessoDoacao extends AbstractEntity<Long>{
 
     public void setRgct(String rgct) {
         this.rgct = rgct;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }

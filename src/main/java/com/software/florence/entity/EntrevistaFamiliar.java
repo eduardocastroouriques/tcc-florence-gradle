@@ -29,6 +29,10 @@ public class EntrevistaFamiliar extends AbstractEntity<Long> {
     @Column(name = "OBSERVACAO")
     private String observacao;
 
+    @OneToOne
+    @JoinColumn(nullable = false, unique = true)
+    private ProcessoDoacao processoDoacao;
+
     @Override
     public Long getOid() {
         return oid;
@@ -77,5 +81,13 @@ public class EntrevistaFamiliar extends AbstractEntity<Long> {
 
     public void setObservacao(String observacao) {
         this.observacao = observacao;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }
