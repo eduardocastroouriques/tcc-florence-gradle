@@ -51,10 +51,10 @@ CREATE TABLE `aprovacao` (
   `tipo` int(11) DEFAULT NULL,
   `tp` double DEFAULT NULL,
   `ureias` double DEFAULT NULL,
-  `pd_id_aprovacao` bigint(20) NOT NULL,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKfckdr7qtk5de2bay1uf5ra7j8` (`pd_id_aprovacao`),
-  CONSTRAINT `FKfckdr7qtk5de2bay1uf5ra7j8` FOREIGN KEY (`pd_id_aprovacao`) REFERENCES `processo_doacao` (`id`)
+  KEY `FKevkfefgxqlq0apfsgruwkcy0d` (`processo_doacao_id`),
+  CONSTRAINT `FKevkfefgxqlq0apfsgruwkcy0d` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -249,10 +249,10 @@ CREATE TABLE `dva` (
   `kg` double DEFAULT NULL,
   `ml_por_hora` float DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
-  `pd_id_dva` bigint(20) NOT NULL,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK5gaekv262xqxm4h4cdj2rljr` (`pd_id_dva`),
-  CONSTRAINT `FK5gaekv262xqxm4h4cdj2rljr` FOREIGN KEY (`pd_id_dva`) REFERENCES `processo_doacao` (`id`)
+  KEY `FKe59quetb5aipm3uyw6bm4rabf` (`processo_doacao_id`),
+  CONSTRAINT `FKe59quetb5aipm3uyw6bm4rabf` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -311,10 +311,10 @@ CREATE TABLE `exame_complementar` (
   `resultado` varchar(255) DEFAULT NULL,
   `tipo` int(11) DEFAULT NULL,
   `tipo_outro` varchar(255) DEFAULT NULL,
-  `pd_id_exame_complementar` bigint(20) NOT NULL,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKledcusxcyyn3wcq71fdyonyqk` (`pd_id_exame_complementar`),
-  CONSTRAINT `FKledcusxcyyn3wcq71fdyonyqk` FOREIGN KEY (`pd_id_exame_complementar`) REFERENCES `processo_doacao` (`id`)
+  KEY `FK7xiitphqrckofjsnl2xmgdxtf` (`processo_doacao_id`),
+  CONSTRAINT `FK7xiitphqrckofjsnl2xmgdxtf` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -324,7 +324,7 @@ CREATE TABLE `exame_complementar` (
 
 LOCK TABLES `exame_complementar` WRITE;
 /*!40000 ALTER TABLE `exame_complementar` DISABLE KEYS */;
-INSERT INTO `exame_complementar` VALUES (1,'2017-09-16 20:57:09','MOCK','MOCK',1,'MOCK',1),(2,'2017-09-16 20:57:09','MOCK','MOCK',1,'MOCK',1),(3,'2017-09-16 20:57:09','MOCK','MOCK',1,'MOCK',2);
+INSERT INTO `exame_complementar` VALUES (1,'2017-09-17 21:10:53','MOCK','MOCK',1,'MOCK',2),(2,'2017-09-17 21:10:53','MOCK','MOCK',1,'MOCK',2),(3,'2017-09-17 21:10:53','MOCK','MOCK',1,'MOCK',1);
 /*!40000 ALTER TABLE `exame_complementar` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -342,10 +342,10 @@ CREATE TABLE `exame_doacao` (
   `gaso_pulmao` varchar(255) DEFAULT NULL,
   `rx` varchar(255) DEFAULT NULL,
   `tce_co_abd` varchar(255) DEFAULT NULL,
-  `pd_id_exame_doacao` bigint(20) NOT NULL,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKd6rbx21681jdnw3uvobt1k191` (`pd_id_exame_doacao`),
-  CONSTRAINT `FKd6rbx21681jdnw3uvobt1k191` FOREIGN KEY (`pd_id_exame_doacao`) REFERENCES `processo_doacao` (`id`)
+  KEY `FKl26vt5vnkcgw8xaytiuil7eic` (`processo_doacao_id`),
+  CONSTRAINT `FKl26vt5vnkcgw8xaytiuil7eic` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -376,10 +376,10 @@ CREATE TABLE `hla` (
   `hora_termino` time DEFAULT NULL,
   `iscmpa_data_hora_fim` datetime DEFAULT NULL,
   `laboratorio` varchar(255) DEFAULT NULL,
-  `pd_id_hla` bigint(20) NOT NULL,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FKppriqg1yy5o6nir9qln60o807` (`pd_id_hla`),
-  CONSTRAINT `FKppriqg1yy5o6nir9qln60o807` FOREIGN KEY (`pd_id_hla`) REFERENCES `processo_doacao` (`id`)
+  KEY `FKh3yyn973fnl5cud6fi8ncdnj` (`processo_doacao_id`),
+  CONSTRAINT `FKh3yyn973fnl5cud6fi8ncdnj` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -552,28 +552,7 @@ CREATE TABLE `processo_doacao` (
   `telefone` varchar(255) NOT NULL,
   `telefone_familiar` varchar(255) NOT NULL,
   `tipagem` varchar(255) NOT NULL,
-  `cirurgia_id` bigint(20) DEFAULT NULL,
-  `comunicacao_processo_doacao_id` bigint(20) DEFAULT NULL,
-  `doenca_atual_id` bigint(20) DEFAULT NULL,
-  `doenca_previa_id` bigint(20) DEFAULT NULL,
-  `entrevista_familiar_id` bigint(20) DEFAULT NULL,
-  `obito_id` bigint(20) DEFAULT NULL,
-  `sorologia_id` bigint(20) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FKslpfaxyduvkoygqumnfxkr54g` (`cirurgia_id`),
-  KEY `FKbx282xft4y62yafban1oo8xgc` (`comunicacao_processo_doacao_id`),
-  KEY `FKgpsiapp96hytd5431ufwgm7vo` (`doenca_atual_id`),
-  KEY `FK9nsj4l13gm959l0kekuyf9b6x` (`doenca_previa_id`),
-  KEY `FKte6l6s1bbk54cu64vra3hoix6` (`entrevista_familiar_id`),
-  KEY `FKhuh28nxj7nc9l7uxtxep0418m` (`obito_id`),
-  KEY `FKq6yyenaam5qqiqdsxfjp4g0k7` (`sorologia_id`),
-  CONSTRAINT `FK9nsj4l13gm959l0kekuyf9b6x` FOREIGN KEY (`doenca_previa_id`) REFERENCES `doenca_previa` (`id`),
-  CONSTRAINT `FKbx282xft4y62yafban1oo8xgc` FOREIGN KEY (`comunicacao_processo_doacao_id`) REFERENCES `comunicacao_processo_doacao` (`id`),
-  CONSTRAINT `FKgpsiapp96hytd5431ufwgm7vo` FOREIGN KEY (`doenca_atual_id`) REFERENCES `doenca_atual` (`id`),
-  CONSTRAINT `FKhuh28nxj7nc9l7uxtxep0418m` FOREIGN KEY (`obito_id`) REFERENCES `obito` (`id`),
-  CONSTRAINT `FKq6yyenaam5qqiqdsxfjp4g0k7` FOREIGN KEY (`sorologia_id`) REFERENCES `sorologia` (`id`),
-  CONSTRAINT `FKslpfaxyduvkoygqumnfxkr54g` FOREIGN KEY (`cirurgia_id`) REFERENCES `cirurgia` (`id`),
-  CONSTRAINT `FKte6l6s1bbk54cu64vra3hoix6` FOREIGN KEY (`entrevista_familiar_id`) REFERENCES `entrevista_familiar` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -583,7 +562,7 @@ CREATE TABLE `processo_doacao` (
 
 LOCK TABLES `processo_doacao` WRITE;
 /*!40000 ALTER TABLE `processo_doacao` DISABLE KEYS */;
-INSERT INTO `processo_doacao` VALUES (1,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-16 19:53:15','2017-09-15','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-16 19:53:33','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(2,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-16 19:53:15','2017-09-15','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-16 19:53:33','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-16 19:53:15','2017-09-15','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-16 19:53:33','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `processo_doacao` VALUES (1,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-16 19:53:15','2017-09-15','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-16 19:53:33','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK'),(2,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-16 19:53:15','2017-09-15','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-16 19:53:33','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK'),(3,1.00,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK','1','2017-09-16 19:53:15','2017-09-15','MOCK','MOCK','MOCK','MOCK',1,'MOCK','MOCK','MOCK',1.00,'MOCK','2017-09-16 19:53:33','MOCK','MOCK',1,'MOCK','MOCK','MOCK','MOCK','MOCK','MOCK');
 /*!40000 ALTER TABLE `processo_doacao` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -629,10 +608,10 @@ CREATE TABLE `situacao_clinica` (
   `pins` varchar(255) DEFAULT NULL,
   `sat` varchar(255) DEFAULT NULL,
   `ta` varchar(255) DEFAULT NULL,
-  `pd_id_situacao_clinica` bigint(20) NOT NULL,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK63j3unfylkchehrgeskx8wigx` (`pd_id_situacao_clinica`),
-  CONSTRAINT `FK63j3unfylkchehrgeskx8wigx` FOREIGN KEY (`pd_id_situacao_clinica`) REFERENCES `processo_doacao` (`id`)
+  KEY `FKq4w4ude722brc067jw0cjwlvs` (`processo_doacao_id`),
+  CONSTRAINT `FKq4w4ude722brc067jw0cjwlvs` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -732,10 +711,10 @@ CREATE TABLE `teste_clinico` (
   `data_hora` datetime DEFAULT NULL,
   `medico` varchar(255) DEFAULT NULL,
   `numero_teste` int(11) DEFAULT NULL,
-  `pd_id_teste_clinico` bigint(20) NOT NULL,
+  `processo_doacao_id` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK1y887ytltmvs9gmwxqm2in35v` (`pd_id_teste_clinico`),
-  CONSTRAINT `FK1y887ytltmvs9gmwxqm2in35v` FOREIGN KEY (`pd_id_teste_clinico`) REFERENCES `processo_doacao` (`id`)
+  KEY `FK1g0e8h4cqhov5jyxoywfly9i2` (`processo_doacao_id`),
+  CONSTRAINT `FK1g0e8h4cqhov5jyxoywfly9i2` FOREIGN KEY (`processo_doacao_id`) REFERENCES `processo_doacao` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -758,4 +737,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-09-16 21:10:13
+-- Dump completed on 2017-09-18  0:10:01

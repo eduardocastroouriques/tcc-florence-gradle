@@ -4,6 +4,7 @@ import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity(name = "APROVACAO")
 public class Aprovacao extends AbstractEntity<Long>{
@@ -93,6 +94,10 @@ public class Aprovacao extends AbstractEntity<Long>{
 
     @Column(name = "SAT")
     private double sat;
+
+    @ManyToOne
+    @JoinColumn
+    private ProcessoDoacao processoDoacao;
 
     @Override
     public Long getOid() {
@@ -318,5 +323,13 @@ public class Aprovacao extends AbstractEntity<Long>{
 
     public void setSat(double sat) {
         this.sat = sat;
+    }
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
     }
 }

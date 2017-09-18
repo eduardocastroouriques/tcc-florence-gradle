@@ -3,6 +3,7 @@ package com.software.florence.entity;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "EXAME_DOACAO")
 public class ExameDoacao extends AbstractEntity<Long>{
@@ -26,6 +27,10 @@ public class ExameDoacao extends AbstractEntity<Long>{
 
     @Column(name = "GASO_PULMAO")
     private String gasoPulmao;
+
+    @ManyToOne
+    @JoinColumn
+    private ProcessoDoacao processoDoacao;
 
     @Override
     public Long getOid() {
@@ -77,4 +82,11 @@ public class ExameDoacao extends AbstractEntity<Long>{
         this.gasoPulmao = gasoPulmao;
     }
 
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
+    }
 }

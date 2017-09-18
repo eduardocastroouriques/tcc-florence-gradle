@@ -21,7 +21,7 @@ public class Obito extends AbstractEntity<Long>{
     private int tipo;
 
     @OneToOne
-    @JoinColumn(nullable = false, unique = true)
+    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     public Long getOid() {

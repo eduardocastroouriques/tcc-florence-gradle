@@ -31,7 +31,7 @@ public class Cirurgia extends AbstractEntity<Long> {
     private List<Orgao> orgao;
 
     @OneToOne
-    @JoinColumn(nullable = false, unique = true)
+    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override

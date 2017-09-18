@@ -21,7 +21,7 @@ public class ComunicacaoProcessoDoacao extends AbstractEntity<Long>{
     private String rgct;
 
     @OneToOne
-    @JoinColumn(nullable = false, unique = true)
+    @JoinColumn(unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override

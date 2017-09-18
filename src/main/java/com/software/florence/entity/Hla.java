@@ -4,6 +4,7 @@ import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity(name = "HLA")
 public class Hla extends AbstractEntity<Long>{
@@ -43,6 +44,10 @@ public class Hla extends AbstractEntity<Long>{
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "ISCMPA_DATA_HORA_FIM")
     private Date iscmpaDataHoraFim;
+
+    @ManyToOne
+    @JoinColumn
+    private ProcessoDoacao processoDoacao;
 
     public Long getOid() {
         return oid;
@@ -115,5 +120,12 @@ public class Hla extends AbstractEntity<Long>{
     public void setIscmpaDataHoraFim(Date iscmpaDataHoraFim) {
         this.iscmpaDataHoraFim = iscmpaDataHoraFim;
     }
-    
+
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
+    }
 }

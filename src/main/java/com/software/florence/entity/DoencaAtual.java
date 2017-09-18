@@ -81,7 +81,7 @@ public class DoencaAtual extends AbstractEntity<Long>{
     private List<Infeccao> infeccao;
 
     @OneToOne
-    @JoinColumn(nullable = false, unique = true)
+    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override

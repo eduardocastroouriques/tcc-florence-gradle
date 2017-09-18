@@ -29,6 +29,10 @@ public class Dva extends AbstractEntity<Long>{
     @Column(name = "INICIO")
     private Date inicio;
 
+    @ManyToOne
+    @JoinColumn
+    private ProcessoDoacao processoDoacao;
+
     @Override
     public Long getOid() {
         return oid;
@@ -79,4 +83,11 @@ public class Dva extends AbstractEntity<Long>{
         this.inicio = inicio;
     }
 
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
+    }
 }

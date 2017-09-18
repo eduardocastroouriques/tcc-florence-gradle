@@ -5,7 +5,6 @@ import com.software.florence.common.pattern.application.model.AbstractEntity;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
 
 @Entity(name = "PROCESSO_DOACAO")
 public class ProcessoDoacao extends AbstractEntity<Long> {
@@ -107,62 +106,6 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     @Column(name = "PROTOCOLO_TA", nullable = false)
     private String protocoloTa;
-
-    @OneToOne
-    @JoinColumn
-    private DoencaAtual doencaAtual;
-
-    @OneToOne
-    @JoinColumn
-    private Sorologia sorologia;
-
-    @OneToMany
-    @JoinColumn(name = "PD_ID_HLA", nullable = false)
-    private List<Hla> hla;
-
-    @OneToOne
-    @JoinColumn
-    private Cirurgia cirurgia;
-
-    @OneToMany
-    @JoinColumn(name = "PD_ID_APROVACAO", nullable = false)
-    private List<Aprovacao> aprovacao;
-
-    @OneToOne
-    @JoinColumn
-    private EntrevistaFamiliar entrevistaFamiliar;
-
-    @OneToOne
-    @JoinColumn
-    private Obito obito;
-
-    @OneToOne
-    @JoinColumn
-    private ComunicacaoProcessoDoacao comunicacaoProcessoDoacao;
-
-    @OneToMany
-    @JoinColumn(name = "PD_ID_EXAME_COMPLEMENTAR", nullable = false)
-    private List<ExameComplementar> exameComplementar;
-
-    @OneToMany
-    @JoinColumn(name = "PD_ID_TESTE_CLINICO", nullable = false)
-    private List<TesteClinico> testeClinico;
-
-    @OneToMany
-    @JoinColumn(name = "PD_ID_DVA", nullable = false)
-    private List<Dva> dva;
-
-    @OneToMany
-    @JoinColumn(name = "PD_ID_SITUACAO_CLINICA", nullable = false)
-    private List<SituacaoClinica> situacaoClinica;
-
-    @OneToMany
-    @JoinColumn(name = "PD_ID_EXAME_DOACAO", nullable = false)
-    private List<ExameDoacao> exameDoacao;
-
-    @OneToOne
-    @JoinColumn
-    private DoencaPrevia doencaPrevia;
 
     @Override
     public Long getOid() {
@@ -412,117 +355,5 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setProtocoloTa(String protocoloTa) {
         this.protocoloTa = protocoloTa;
-    }
-
-    public DoencaAtual getDoencaAtual() {
-        return doencaAtual;
-    }
-
-    public void setDoencaAtual(DoencaAtual doencaAtual) {
-        this.doencaAtual = doencaAtual;
-    }
-
-    public Sorologia getSorologia() {
-        return sorologia;
-    }
-
-    public void setSorologia(Sorologia sorologia) {
-        this.sorologia = sorologia;
-    }
-
-    public List<Hla> getHla() {
-        return hla;
-    }
-
-    public void setHla(List<Hla> hla) {
-        this.hla = hla;
-    }
-
-    public Cirurgia getCirurgia() {
-        return cirurgia;
-    }
-
-    public void setCirurgia(Cirurgia cirurgia) {
-        this.cirurgia = cirurgia;
-    }
-
-    public List<Aprovacao> getAprovacao() {
-        return aprovacao;
-    }
-
-    public void setAprovacao(List<Aprovacao> aprovacao) {
-        this.aprovacao = aprovacao;
-    }
-
-    public EntrevistaFamiliar getEntrevistaFamiliar() {
-        return entrevistaFamiliar;
-    }
-
-    public void setEntrevistaFamiliar(EntrevistaFamiliar entrevistaFamiliar) {
-        this.entrevistaFamiliar = entrevistaFamiliar;
-    }
-
-    public Obito getObito() {
-        return obito;
-    }
-
-    public void setObito(Obito obito) {
-        this.obito = obito;
-    }
-
-    public ComunicacaoProcessoDoacao getComunicacaoProcessoDoacao() {
-        return comunicacaoProcessoDoacao;
-    }
-
-    public void setComunicacaoProcessoDoacao(ComunicacaoProcessoDoacao comunicacaoProcessoDoacao) {
-        this.comunicacaoProcessoDoacao = comunicacaoProcessoDoacao;
-    }
-
-    public List<ExameComplementar> getExameComplementar() {
-        return exameComplementar;
-    }
-
-    public void setExameComplementar(List<ExameComplementar> exameComplementar) {
-        this.exameComplementar = exameComplementar;
-    }
-
-    public List<TesteClinico> getTesteClinico() {
-        return testeClinico;
-    }
-
-    public void setTesteClinico(List<TesteClinico> testeClinico) {
-        this.testeClinico = testeClinico;
-    }
-
-    public List<Dva> getDva() {
-        return dva;
-    }
-
-    public void setDva(List<Dva> dva) {
-        this.dva = dva;
-    }
-
-    public List<SituacaoClinica> getSituacaoClinica() {
-        return situacaoClinica;
-    }
-
-    public void setSituacaoClinica(List<SituacaoClinica> situacaoClinica) {
-        this.situacaoClinica = situacaoClinica;
-    }
-
-    public List<ExameDoacao> getExameDoacao() {
-        return exameDoacao;
-    }
-
-    public void setExameDoacao(List<ExameDoacao> exameDoacao) {
-        this.exameDoacao = exameDoacao;
-    }
-
-    public DoencaPrevia getDoencaPrevia() {
-        return doencaPrevia;
-    }
-
-    public void setDoencaPrevia(DoencaPrevia doencaPrevia) {
-        this.doencaPrevia = doencaPrevia;
     }
 }

@@ -29,6 +29,10 @@ public class ExameComplementar extends AbstractEntity<Long> {
     @Column(name = "MEDICO")
     private String medico;
 
+    @ManyToOne
+    @JoinColumn
+    private ProcessoDoacao processoDoacao;
+
     @Override
     public Long getOid() {
         return oid;
@@ -79,4 +83,11 @@ public class ExameComplementar extends AbstractEntity<Long> {
         this.medico = medico;
     }
 
+    public ProcessoDoacao getProcessoDoacao() {
+        return processoDoacao;
+    }
+
+    public void setProcessoDoacao(ProcessoDoacao processoDoacao) {
+        this.processoDoacao = processoDoacao;
+    }
 }

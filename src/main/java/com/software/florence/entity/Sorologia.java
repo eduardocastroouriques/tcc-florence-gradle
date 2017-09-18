@@ -70,7 +70,7 @@ public class Sorologia extends AbstractEntity<Long>{
     private Double calculo;
 
     @OneToOne
-    @JoinColumn(nullable = false, unique = true)
+    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override
