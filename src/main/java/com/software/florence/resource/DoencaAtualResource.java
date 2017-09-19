@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/doencaAtual")
+@RequestMapping(path = "/doenca-atual")
 public class DoencaAtualResource extends AbstractResource<DoencaAtual, Long> {
 
     @Autowired

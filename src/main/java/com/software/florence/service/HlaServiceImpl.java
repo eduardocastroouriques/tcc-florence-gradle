@@ -1,9 +1,10 @@
 package com.software.florence.service;
 
+import com.software.florence.common.exception.NegocioException;
 import com.software.florence.common.pattern.application.service.GenericService;
-import com.software.florence.entity.ExameDoacao;
+import com.software.florence.common.util.exception.MensagemUtil;
 import com.software.florence.entity.Hla;
-import com.software.florence.repository.ExameDoacaoRepository;
+import com.software.florence.entity.ProcessoDoacao;
 import com.software.florence.repository.HlaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
@@ -17,5 +18,15 @@ public class HlaServiceImpl extends GenericService<Hla, Long> implements HlaServ
 
     public HlaServiceImpl(CrudRepository<Hla, Long> repository) {
         super(repository);
+    }
+
+    public Iterable<Hla> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        Iterable<Hla> retorno = null;
+        try {
+            retorno = this.hlaRepository.findByProcessoDoacao(processoDoacao);
+        } catch (Exception e) {
+            MensagemUtil.lancarErro(getClass(), e);
+        }
+        return retorno;
     }
 }

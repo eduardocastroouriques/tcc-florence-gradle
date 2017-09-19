@@ -2,11 +2,8 @@ package com.software.florence.resource;
 
 import com.software.florence.common.exception.NegocioException;
 import com.software.florence.common.pattern.application.resource.AbstractResource;
-import com.software.florence.entity.Aprovacao;
-import com.software.florence.entity.Cirurgia;
 import com.software.florence.entity.ComunicacaoProcessoDoacao;
 import com.software.florence.entity.ProcessoDoacao;
-import com.software.florence.service.CirurgiaServiceImpl;
 import com.software.florence.service.ComunicacaoProcessoDoacaoService;
 import com.software.florence.service.ComunicacaoProcessoDoacaoServiceImpl;
 import com.software.florence.service.ProcessoDoacaoService;
@@ -19,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/comunicacaoProcessoDoacao")
+@RequestMapping(path = "/comunicacao-processo-doacao")
 public class ComunicacaoProcessoDoacaoResource extends AbstractResource<ComunicacaoProcessoDoacao, Long> {
 
     @Autowired
