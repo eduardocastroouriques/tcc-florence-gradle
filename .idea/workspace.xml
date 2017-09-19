@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc3eea6-96d1-4c3d-933c-befaa600011b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/software/florence/repository/AprovacaoRepository.class" afterPath="$PROJECT_DIR$/out/production/classes/com/software/florence/repository/AprovacaoRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/software/florence/resource/AprovacaoResource.class" afterPath="$PROJECT_DIR$/out/production/classes/com/software/florence/resource/AprovacaoResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/software/florence/service/AprovacaoService.class" afterPath="$PROJECT_DIR$/out/production/classes/com/software/florence/service/AprovacaoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/software/florence/service/AprovacaoServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/classes/com/software/florence/service/AprovacaoServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/application.properties" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/repository/AprovacaoRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/repository/AprovacaoRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/AprovacaoResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/AprovacaoResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c603b980-e931-42b3-aa80-0c2d08b9059e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c603b980-e931-42b3-aa80-0c2d08b9059e.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/repository/ComunicacaoProcessoDoacaoRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/repository/ComunicacaoProcessoDoacaoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ComunicacaoProcessoDoacaoResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ComunicacaoProcessoDoacaoResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,38 +66,18 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="78" lean-forward="false" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="78" />
+            <state relative-caret-position="180">
+              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AprovacaoRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/repository/AprovacaoRepository.java">
+      <file leaf-file-name="ComunicacaoProcessoDoacaoResource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/ComunicacaoProcessoDoacaoResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AprovacaoServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AprovacaoResource.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/AprovacaoResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+            <state relative-caret-position="360">
+              <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -539,6 +514,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/resource/AprovacaoResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/FlorenceApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/repository/ComunicacaoProcessoDoacaoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ComunicacaoProcessoDoacaoResource.java" />
       </list>
     </option>
   </component>
@@ -644,7 +623,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="SearchEverywhereHistoryKey" value="Aprov&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java&#10;AprovacaoS&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java&#10;App&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/FlorenceApplication.java&#10;AprovacaoRepo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/repository/AprovacaoRepository.java&#10;Apro&#9;PSI&#9;JAVA://com.software.florence.resource.AprovacaoResource&#10;Appli&#9;PSI&#9;JAVA://com.software.florence.FlorenceApplication&#10;Aprovac&#9;PSI&#9;JAVA://com.software.florence.repository.AprovacaoRepository&#10;app&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties&#10;Cirur&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;Sorologia&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Sorologia.java&#10;DoencaAtual&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/DoencaAtual.java&#10;Proce&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;pro&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;comu&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ComunicacaoProcessoDoacao.java&#10;Soro&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Sorologia.java&#10;proce&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;proc&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;processo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;Comun&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ComunicacaoProcessoDoacao.java&#10;ProcessoDO&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;exame&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameComplementar.java&#10;ProcessoD&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;DoencaA&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/DoencaAtual.java&#10;examecom&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameComplementar.java&#10;processoDo&#9;PSI&#9;JAVA://com.software.florence.resource.ProcessoDoacaoResource&#10;APP&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties&#10;iNFE&#9;PSI&#9;JAVA://com.software.florence.entity.Infeccao&#10;PROCESSO&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;PROCE&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;SUBS&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/SubstanciaExtra.java&#10;CIRUR&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;infor&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/InformacaoCirurgia.java&#10;cirur&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;DVA&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Dva.java&#10;ExameC&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameComplementar.java&#10;Process&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;doen&#9;PSI&#9;JAVA://com.software.florence.entity.DoencaAtual&#10;cirurgi&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;Hla&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Hla.java&#10;testec&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/TesteClinico.java&#10;subs&#9;PSI&#9;JAVA://com.software.florence.entity.SubstanciaExtra&#10;subst&#9;PSI&#9;JAVA://com.software.florence.repository.SubstanciaExtraRepository&#10;sorol&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Sorologia.java&#10;doenca&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/DoencaAtual.java&#10;ProcessoDoa&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;orga&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Orgao.java&#10;obito&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Obito.java&#10;info&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/InformacaoCirurgia.java&#10;infecc&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Infeccao.java&#10;hla&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Hla.java" />
+    <property name="SearchEverywhereHistoryKey" value="Aprova&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/resource/AprovacaoResource.java&#10;Com&#9;PSI&#9;JAVA://com.software.florence.resource.ComunicacaoProcessoDoacaoResource&#10;Aprov&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/service/AprovacaoService.java&#10;Comuni&#9;PSI&#9;JAVA://com.software.florence.service.ComunicacaoProcessoDoacaoServiceImpl&#10;COmu&#9;PSI&#9;JAVA://com.software.florence.repository.ComunicacaoProcessoDoacaoRepository&#10;app&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties&#10;AprovacaoS&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java&#10;App&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/FlorenceApplication.java&#10;AprovacaoRepo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/repository/AprovacaoRepository.java&#10;Apro&#9;PSI&#9;JAVA://com.software.florence.resource.AprovacaoResource&#10;Appli&#9;PSI&#9;JAVA://com.software.florence.FlorenceApplication&#10;Aprovac&#9;PSI&#9;JAVA://com.software.florence.repository.AprovacaoRepository&#10;Cirur&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;Sorologia&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Sorologia.java&#10;DoencaAtual&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/DoencaAtual.java&#10;Proce&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;pro&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;comu&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ComunicacaoProcessoDoacao.java&#10;Soro&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Sorologia.java&#10;proce&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;proc&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;processo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;Comun&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ComunicacaoProcessoDoacao.java&#10;ProcessoDO&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;exame&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameComplementar.java&#10;ProcessoD&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;DoencaA&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/DoencaAtual.java&#10;examecom&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameComplementar.java&#10;processoDo&#9;PSI&#9;JAVA://com.software.florence.resource.ProcessoDoacaoResource&#10;APP&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties&#10;iNFE&#9;PSI&#9;JAVA://com.software.florence.entity.Infeccao&#10;PROCESSO&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;PROCE&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;SUBS&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/SubstanciaExtra.java&#10;CIRUR&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;infor&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/InformacaoCirurgia.java&#10;cirur&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;DVA&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Dva.java&#10;ExameC&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameComplementar.java&#10;Process&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;doen&#9;PSI&#9;JAVA://com.software.florence.entity.DoencaAtual&#10;cirurgi&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Cirurgia.java&#10;Hla&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Hla.java&#10;testec&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/TesteClinico.java&#10;subs&#9;PSI&#9;JAVA://com.software.florence.entity.SubstanciaExtra&#10;subst&#9;PSI&#9;JAVA://com.software.florence.repository.SubstanciaExtraRepository&#10;sorol&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Sorologia.java&#10;doenca&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/DoencaAtual.java&#10;ProcessoDoa&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;orga&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Orgao.java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -789,12 +768,12 @@
       <workItem from="1504995879640" duration="234000" />
       <workItem from="1504996145438" duration="21595000" />
       <workItem from="1505599707886" duration="8162000" />
-      <workItem from="1505689805054" duration="16437000" />
+      <workItem from="1505689805054" duration="16906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51324000" />
+    <option name="totallyTimeSpent" value="51793000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -829,7 +808,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3437014" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20318726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3561753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -851,11 +830,11 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33545816" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33545816" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39968896" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968896" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34059098" sideWeight="0.49402392" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -867,7 +846,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3437014" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20318726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3561753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -892,71 +871,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/TesteClinico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/Dva.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="85" column="47" lean-forward="false" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-          <folding>
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/SituacaoClinica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/ExameDoacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="84" column="47" lean-forward="false" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
-          <folding>
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/Hla.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="123" column="47" lean-forward="false" selection-start-line="123" selection-start-column="47" selection-end-line="123" selection-end-column="47" />
-          <folding>
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3127#3128#0" expanded="true" />
-            <element signature="e#3179#3180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/33fbaa7276b774ef0925f541640f6ff23fbc62dc/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/JoinColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="107" column="11" lean-forward="false" selection-start-line="107" selection-start-column="11" selection-end-line="107" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9c5de216-649a-4eca-80a3-baa68fcc0153/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1207,14 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="78" lean-forward="false" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.10.RELEASE/e350109ba4a031049863e3e9d9f3d386ef73cfd9/spring-web-4.3.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/GetMapping.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1260,30 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/repository/AprovacaoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/FlorenceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1292,10 +1174,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/8fbafcc2/c603b980-e931-42b3-aa80-0c2d08b9059e/sql10193843.cirurgia">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/repository/AprovacaoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="72" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/repository/ComunicacaoProcessoDoacaoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/8fbafcc2/c603b980-e931-42b3-aa80-0c2d08b9059e/sql10193843.comunicacao_processo_doacao">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/AprovacaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="100" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/ComunicacaoProcessoDoacaoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/AprovacaoResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        <state relative-caret-position="472">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="44" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/ComunicacaoProcessoDoacaoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding />
         </state>
       </provider>
