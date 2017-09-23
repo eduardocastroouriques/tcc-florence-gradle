@@ -23,6 +23,10 @@ public class Infeccao extends AbstractEntity<Long> {
     @Column(name = "TTO")
     private String TTO;
 
+    @OneToOne
+    @JoinColumn(name = "DOENCA_ATUAL", nullable = false)
+    private DoencaAtual doencaAtual;
+
     @Override
     public Long getOid() {
         return oid;
@@ -57,4 +61,11 @@ public class Infeccao extends AbstractEntity<Long> {
         this.TTO = TTO;
     }
 
+    public DoencaAtual getDoencaAtual() {
+        return doencaAtual;
+    }
+
+    public void setDoencaAtual(DoencaAtual doencaAtual) {
+        this.doencaAtual = doencaAtual;
+    }
 }

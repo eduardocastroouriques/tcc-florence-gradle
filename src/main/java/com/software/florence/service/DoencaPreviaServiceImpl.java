@@ -1,9 +1,10 @@
 package com.software.florence.service;
 
+import com.software.florence.common.exception.NegocioException;
 import com.software.florence.common.pattern.application.service.GenericService;
-import com.software.florence.entity.DoencaAtual;
+import com.software.florence.common.util.exception.MensagemUtil;
 import com.software.florence.entity.DoencaPrevia;
-import com.software.florence.repository.DoencaAtualRepository;
+import com.software.florence.entity.ProcessoDoacao;
 import com.software.florence.repository.DoencaPreviaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
@@ -17,5 +18,15 @@ public class DoencaPreviaServiceImpl extends GenericService<DoencaPrevia, Long> 
 
     public DoencaPreviaServiceImpl(CrudRepository<DoencaPrevia, Long> repository) {
         super(repository);
+    }
+
+    public Iterable<DoencaPrevia> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        Iterable<DoencaPrevia> retorno = null;
+        try {
+            retorno = this.doencaPreviaRepository.findByProcessoDoacao(processoDoacao);
+        } catch (Exception e) {
+            MensagemUtil.lancarErro(getClass(), e);
+        }
+        return retorno;
     }
 }
