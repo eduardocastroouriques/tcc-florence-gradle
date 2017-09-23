@@ -51,16 +51,16 @@ public class ExameDoacaoResource extends AbstractResource<ExameDoacao, Long> {
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<?> uploadFile(@RequestParam("uploadfile") MultipartFile uploadfile) {
+    public ResponseEntity<?> uploadFile(@RequestParam("upload") MultipartFile upload) {
 
         try {
 
-            String filename = uploadfile.getOriginalFilename();
+            String filename = upload.getOriginalFilename();
             String directory = environment.getProperty("florence.image.exame.doacao");
             String filepath = Paths.get(directory, filename).toString();
 
             BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(new File(filepath)));
-            stream.write(uploadfile.getBytes());
+            stream.write(upload.getBytes());
             stream.close();
 
         }
