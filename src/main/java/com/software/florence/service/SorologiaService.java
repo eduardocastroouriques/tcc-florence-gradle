@@ -5,6 +5,8 @@ import com.software.florence.common.pattern.application.service.Service;
 import com.software.florence.entity.ProcessoDoacao;
 import com.software.florence.entity.Sorologia;
 
+import java.util.List;
+
 public interface SorologiaService extends Service<Sorologia, Long>{
-    Iterable<Sorologia> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
+    List<Sorologia> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
 }
