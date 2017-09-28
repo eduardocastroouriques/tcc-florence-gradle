@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ComunicacaoProcessoDoacaoServiceImpl extends GenericService<ComunicacaoProcessoDoacao, Long> implements ComunicacaoProcessoDoacaoService {
 
@@ -20,8 +22,8 @@ public class ComunicacaoProcessoDoacaoServiceImpl extends GenericService<Comunic
         super(repository);
     }
 
-    public Iterable<ComunicacaoProcessoDoacao> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
-        Iterable<ComunicacaoProcessoDoacao> retorno = null;
+    public List<ComunicacaoProcessoDoacao> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        List<ComunicacaoProcessoDoacao> retorno = null;
         try {
             retorno = this.comunicacaoProcessoDoacaoRepository.findByProcessoDoacao(processoDoacao);
         } catch (Exception e) {
