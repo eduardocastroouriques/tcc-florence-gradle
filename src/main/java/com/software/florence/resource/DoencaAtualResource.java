@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping(path = "/doenca-atual")
 public class DoencaAtualResource extends AbstractResource<DoencaAtual, Long> {
@@ -33,7 +35,7 @@ public class DoencaAtualResource extends AbstractResource<DoencaAtual, Long> {
 
     @GetMapping("/processo-doacao/{id}")
     public ResponseEntity<DoencaAtual> findByProcessoDoacaoId(@PathVariable Long id) {
-        Iterable<DoencaAtual> retorno = null;
+        List<DoencaAtual> retorno = null;
         try {
 
             ProcessoDoacao processoDoacao = processoDoacaoService.findById(id);
@@ -41,6 +43,6 @@ public class DoencaAtualResource extends AbstractResource<DoencaAtual, Long> {
         } catch (NegocioException e) {
             return this.criarRespostaErro(e);
         } // try-catch
-        return this.criarResposta(HttpStatus.OK, retorno);
+        return this.criarResposta(HttpStatus.OK, retorno.get(0));
     }// findById()
 }
