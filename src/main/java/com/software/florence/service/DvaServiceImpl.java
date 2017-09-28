@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class DvaServiceImpl extends GenericService<Dva, Long> implements DvaService {
 
@@ -20,8 +22,8 @@ public class DvaServiceImpl extends GenericService<Dva, Long> implements DvaServ
         super(repository);
     }
 
-    public Iterable<Dva> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
-        Iterable<Dva> retorno = null;
+    public List<Dva> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        List<Dva> retorno = null;
         try {
             retorno = this.dvaRepository.findByProcessoDoacao(processoDoacao);
         } catch (Exception e) {

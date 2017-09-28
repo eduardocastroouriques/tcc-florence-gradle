@@ -5,6 +5,8 @@ import com.software.florence.common.pattern.application.service.Service;
 import com.software.florence.entity.ExameComplementar;
 import com.software.florence.entity.ProcessoDoacao;
 
+import java.util.List;
+
 public interface ExameComplementarService extends Service<ExameComplementar, Long>{
-    Iterable<ExameComplementar> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
+    List<ExameComplementar> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
 }

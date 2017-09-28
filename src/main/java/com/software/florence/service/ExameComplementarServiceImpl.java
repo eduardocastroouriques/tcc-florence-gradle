@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ExameComplementarServiceImpl extends GenericService<ExameComplementar, Long> implements ExameComplementarService {
 
@@ -20,8 +22,8 @@ public class ExameComplementarServiceImpl extends GenericService<ExameComplement
         super(repository);
     }
 
-    public Iterable<ExameComplementar> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
-        Iterable<ExameComplementar> retorno = null;
+    public List<ExameComplementar> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        List<ExameComplementar> retorno = null;
         try {
             retorno = this.exameComplementarRepository.findByProcessoDoacao(processoDoacao);
         } catch (Exception e) {
