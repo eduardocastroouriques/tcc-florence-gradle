@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ObitoServiceImpl extends GenericService<Obito, Long> implements ObitoService {
 
@@ -20,8 +22,8 @@ public class ObitoServiceImpl extends GenericService<Obito, Long> implements Obi
         super(repository);
     }
 
-    public Iterable<Obito> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
-        Iterable<Obito> retorno = null;
+    public List<Obito> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        List<Obito> retorno = null;
         try {
             retorno = this.obitoRepository.findByProcessoDoacao(processoDoacao);
         } catch (Exception e) {
