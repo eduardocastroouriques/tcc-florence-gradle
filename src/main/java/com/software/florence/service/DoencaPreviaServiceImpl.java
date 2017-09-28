@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class DoencaPreviaServiceImpl extends GenericService<DoencaPrevia, Long> implements DoencaPreviaService {
 
@@ -20,8 +22,8 @@ public class DoencaPreviaServiceImpl extends GenericService<DoencaPrevia, Long> 
         super(repository);
     }
 
-    public Iterable<DoencaPrevia> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
-        Iterable<DoencaPrevia> retorno = null;
+    public List<DoencaPrevia> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        List<DoencaPrevia> retorno = null;
         try {
             retorno = this.doencaPreviaRepository.findByProcessoDoacao(processoDoacao);
         } catch (Exception e) {

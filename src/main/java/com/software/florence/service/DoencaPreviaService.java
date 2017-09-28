@@ -5,8 +5,10 @@ import com.software.florence.common.pattern.application.service.Service;
 import com.software.florence.entity.DoencaPrevia;
 import com.software.florence.entity.ProcessoDoacao;
 
+import java.util.List;
+
 public interface DoencaPreviaService extends Service<DoencaPrevia, Long>{
 
-    Iterable<DoencaPrevia> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
+    List<DoencaPrevia> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
 
 }
