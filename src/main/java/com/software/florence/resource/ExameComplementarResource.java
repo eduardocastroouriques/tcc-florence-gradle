@@ -41,6 +41,6 @@ public class ExameComplementarResource extends AbstractResource<ExameComplementa
         } catch (NegocioException e) {
             return this.criarRespostaErro(e);
         } // try-catch
-        return this.criarResposta(HttpStatus.OK, retorno.get(0));
+        return this.criarResposta(HttpStatus.OK, retorno);
     }// findById()
 }
