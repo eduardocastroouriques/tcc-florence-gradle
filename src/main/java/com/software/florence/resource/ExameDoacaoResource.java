@@ -3,6 +3,8 @@ package com.software.florence.resource;
 import com.software.florence.common.exception.NegocioException;
 import com.software.florence.common.pattern.application.resource.AbstractResource;
 import com.software.florence.common.pattern.application.service.Service;
+import com.software.florence.common.util.file.FileUtil;
+import com.software.florence.common.util.ftp.FTPSender;
 import com.software.florence.entity.ExameDoacao;
 import com.software.florence.entity.ProcessoDoacao;
 import com.software.florence.service.ExameDoacaoService;
@@ -35,6 +37,12 @@ public class ExameDoacaoResource extends AbstractResource<ExameDoacao, Long> {
     @Autowired
     Environment environment;
 
+    @Autowired
+    FTPSender ftpSender;
+
+    @Autowired
+    FileUtil fileUtil;
+
     public ExameDoacaoResource(Service<ExameDoacao, Long> service) {
         super(service);
     }
@@ -51,4 +59,17 @@ public class ExameDoacaoResource extends AbstractResource<ExameDoacao, Long> {
         } // try-catch
         return this.criarResposta(HttpStatus.OK, retorno);
     }// findById()
+
+    @PostMapping("/upload")
+    public ResponseEntity<?> uploadFile(@RequestParam("upload") MultipartFile multipartFile) {
+
+        if (!multipartFile.isEmpty()) {
+
+            fileUtil.saveFileLocally(multipartFile, environment.getProperty("florence.image.exame.doacao"));
+            ftpSender.send(environment.getProperty("florence.image.exame.doacao"), multipartFile.getOriginalFilename());
+
+        }
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }

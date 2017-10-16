@@ -2,17 +2,18 @@ package com.software.florence.resource;
 
 import com.software.florence.common.exception.NegocioException;
 import com.software.florence.common.pattern.application.resource.AbstractResource;
+import com.software.florence.common.util.file.FileUtil;
+import com.software.florence.common.util.ftp.FTPSender;
 import com.software.florence.entity.ExameComplementar;
 import com.software.florence.entity.ProcessoDoacao;
 import com.software.florence.service.ExameComplementarService;
 import com.software.florence.service.ProcessoDoacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -25,6 +26,15 @@ public class ExameComplementarResource extends AbstractResource<ExameComplementa
 
     @Autowired
     ProcessoDoacaoService processoDoacaoService;
+
+    @Autowired
+    Environment environment;
+
+    @Autowired
+    FTPSender ftpSender;
+
+    @Autowired
+    FileUtil fileUtil;
 
     public ExameComplementarResource(ExameComplementarService exameComplementarService) {
         super(exameComplementarService);
@@ -43,4 +53,17 @@ public class ExameComplementarResource extends AbstractResource<ExameComplementa
         } // try-catch
         return this.criarResposta(HttpStatus.OK, retorno);
     }// findById()
+
+    @PostMapping("/upload")
+    public ResponseEntity<?> uploadFile(@RequestParam("upload") MultipartFile multipartFile) {
+
+        if (!multipartFile.isEmpty()) {
+
+            fileUtil.saveFileLocally(multipartFile, environment.getProperty("florence.image.exame.complementar"));
+            ftpSender.send(environment.getProperty("florence.image.exame.complementar"), multipartFile.getOriginalFilename());
+
+        }
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }
