@@ -32,6 +32,11 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	// http://localhost:8080/swagger-ui.html#/
 	compile "io.springfox:springfox-swagger2:2.7.0"
+	// https://mvnrepository.com/artifact/commons-net/commons-net
+	compile group: 'commons-net', name: 'commons-net', version: '3.3'
+	// https://mvnrepository.com/artifact/com.jcraft/jsch
+	compile group: 'com.jcraft', name: 'jsch', version: '0.1.54'
+
 	compile 'io.springfox:springfox-swagger-ui:2.7.0'
 
 	runtime('mysql:mysql-connector-java')

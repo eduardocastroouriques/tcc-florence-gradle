@@ -3,7 +3,9 @@ package com.software.florence.common.pattern.application.resource;
 import com.software.florence.common.exception.NegocioException;
 import com.software.florence.common.pattern.application.model.AbstractDomain;
 import com.software.florence.common.pattern.application.service.Service;
+import com.software.florence.common.util.ftp.FTPSender;
 import com.software.florence.common.util.mensagem.MensagemNegocio;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,6 +19,9 @@ import java.io.Serializable;
 import java.util.List;
 
 public abstract class AbstractResource<ENTITY extends AbstractDomain<PK>, PK extends Serializable> {
+
+	@Autowired
+	public FTPSender ftpSender;
 
 	private Service<ENTITY, PK> service;
 	
