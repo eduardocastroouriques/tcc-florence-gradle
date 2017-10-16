@@ -29,7 +29,7 @@ public class ExameComplementar extends AbstractEntity<Long> {
     @Column(name = "MEDICO")
     private String medico;
 
-    @ManyToOne
+    @ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn
     private ProcessoDoacao processoDoacao;
 

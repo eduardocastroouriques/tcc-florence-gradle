@@ -14,7 +14,7 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "ID")
     private Long oid;
 
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "DATA_INICIO")
     private Date dataInicio;
 
