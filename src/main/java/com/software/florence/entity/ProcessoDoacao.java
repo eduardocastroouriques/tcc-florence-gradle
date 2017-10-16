@@ -57,7 +57,7 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "TELEFONE_FAMILIAR", nullable = false)
     private String telefoneFamiliar;
 
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "DATA_NASCIMENTO", nullable = false)
     private Date dataNascimento;
 
