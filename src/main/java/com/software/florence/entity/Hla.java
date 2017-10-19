@@ -1,5 +1,6 @@
 package com.software.florence.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
@@ -14,14 +15,17 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "ID")
     private Long oid;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DATA_INICIO")
     private Date dataInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "HORA_INICIO")
     private Date horaInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "HORA_TERMINO")
     private Date horaTermino;
@@ -29,34 +33,42 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "LABORATORIO")
     private String laboratorio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "CROSS_HCPA_DATA_INICIO")
     private Date crossHcpaDataInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "CROSS_HCPA_HORA_INICIO")
     private Date crossHcpaHoraInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "CROSS_HCPA_DATA_FIM")
     private Date crossHcpaDataFim;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "CROSS_HCPA_HORA_FIM")
     private Date crossHcpaHoraFim;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "CROSS_ISCMPA_DATA_INICIO")
     private Date crossIscmpaDataInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "CROSS_ISCMPA_HORA_INICIO")
     private Date crossIscmpaHoraInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "CROSS_ISCMPA_DATA_FIM")
     private Date crossIscmpaDataFim;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "CROSS_ISCMPA_HORA_FIM")
     private Date crossIscmpaHoraFim;

@@ -1,5 +1,6 @@
 package com.software.florence.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
@@ -19,10 +20,12 @@ public class ExameComplementar extends AbstractEntity<Long> {
     @Column(name = "TIPO_OUTRO")
     private String tipoOutro;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DATA_EXAME")
     private Date dataExame;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "HORA_EXAME")
     private Date horaExame;

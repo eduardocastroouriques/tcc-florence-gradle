@@ -1,5 +1,6 @@
 package com.software.florence.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
@@ -25,6 +26,7 @@ public class Dva extends AbstractEntity<Long>{
     @Column(name = "KG")
     private double kg;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "INICIO")
     private Date inicio;

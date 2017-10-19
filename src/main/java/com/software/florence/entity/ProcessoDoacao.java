@@ -1,5 +1,6 @@
 package com.software.florence.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "HOSPITAL", nullable = false)
     private String hospital;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DATA_INTERNACAO", nullable = false)
     private Date dataInternacao;
@@ -57,6 +59,7 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "TELEFONE_FAMILIAR", nullable = false)
     private String telefoneFamiliar;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DATA_NASCIMENTO", nullable = false)
     private Date dataNascimento;
@@ -97,10 +100,12 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "PROTOCOLO_SEDACAO", nullable = false)
     private String protocoloSedacao;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "PROTOCOLO_DATA_SUSPENSAO", nullable = false)
     private Date protocoloDataSuspensao;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "PROTOCOLO_HORA_SUSPENSAO", nullable = false)
     private Date protocoloHoraSuspensao;

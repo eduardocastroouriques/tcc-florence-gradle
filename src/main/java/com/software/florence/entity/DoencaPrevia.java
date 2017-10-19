@@ -1,5 +1,6 @@
 package com.software.florence.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
@@ -16,6 +17,7 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "HAS")
     private String has;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "HAS_DESDE")
     private Date hasDesde;
@@ -23,6 +25,7 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "DM")
     private String dm;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DM_DESDE")
     private Date dmdesde;
@@ -63,10 +66,12 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "NEOPLASIA")
     private String neoplasia;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DATA_DIAGN")
     private Date dataDiagn;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DATA_CURA")
     private Date dataCura;
@@ -92,6 +97,7 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "TRANFUSAO")
     private String transfusao;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "DATA_TRANSFUSAO")
     private Date dataTransfusao;

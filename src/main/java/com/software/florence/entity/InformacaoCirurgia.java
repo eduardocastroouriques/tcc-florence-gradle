@@ -1,5 +1,6 @@
 package com.software.florence.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
@@ -13,14 +14,17 @@ public class InformacaoCirurgia extends AbstractEntity<Long>{
     @Column(name = "ID")
     private Long oid;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "HORARIO_PREVISTO")
     private Date horarioPrevisto;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "HORARIO_INICIO")
     private Date horarioInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "HORARIO_FIM")
     private Date horarioFim;
@@ -28,10 +32,12 @@ public class InformacaoCirurgia extends AbstractEntity<Long>{
     @Column(name = "LOCAL_DA_RETIRADA")
     private String localDaRetirada;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "DML_INICIO")
     private Date dmlInicio;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "DML_FIM")
     private Date dmlFim;

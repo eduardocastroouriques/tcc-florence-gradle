@@ -1,5 +1,6 @@
 package com.software.florence.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.software.florence.common.pattern.application.model.AbstractEntity;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -69,6 +70,7 @@ public class DoencaAtual extends AbstractEntity<Long>{
     @Column(name = "PRIMEIRA_CREATINA", length = 1)
     private char primeiraCreatinina;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(name = "PRIMEIRA_CREATININA_DATA")
     private Date primeiraCreatininaData;
