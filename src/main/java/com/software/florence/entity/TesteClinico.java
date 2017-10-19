@@ -16,9 +16,13 @@ public class TesteClinico extends AbstractEntity<Long>{
     @Column(name = "NUMERO_TESTE")
     private int numeroTeste;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "DATA_HORA")
-    private Date dataHora;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DATA_TESTE_CLINICO")
+    private Date dataTesteClinico;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "HORA_TESTE_CLINICO")
+    private Date horaTesteClinico;
 
     @Column(name = "MEDICO")
     private String medico;
@@ -45,12 +49,20 @@ public class TesteClinico extends AbstractEntity<Long>{
         this.numeroTeste = numeroTeste;
     }
 
-    public Date getDataHora() {
-        return dataHora;
+    public Date getDataTesteClinico() {
+        return dataTesteClinico;
     }
 
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
+    public void setDataTesteClinico(Date dataTesteClinico) {
+        this.dataTesteClinico = dataTesteClinico;
+    }
+
+    public Date getHoraTesteClinico() {
+        return horaTesteClinico;
+    }
+
+    public void setHoraTesteClinico(Date horaTesteClinico) {
+        this.horaTesteClinico = horaTesteClinico;
     }
 
     public String getMedico() {

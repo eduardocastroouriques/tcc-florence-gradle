@@ -17,7 +17,7 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "HOSPITAL", nullable = false)
     private String hospital;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DATA_INTERNACAO", nullable = false)
     private Date dataInternacao;
 
@@ -57,7 +57,7 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "TELEFONE_FAMILIAR", nullable = false)
     private String telefoneFamiliar;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DATA_NASCIMENTO", nullable = false)
     private Date dataNascimento;
 
@@ -97,9 +97,13 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
     @Column(name = "PROTOCOLO_SEDACAO", nullable = false)
     private String protocoloSedacao;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "PROTOCOLO_DATA_HORA_SUSPENSAO", nullable = false)
-    private Date protocoloDataHoraSuspensao;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "PROTOCOLO_DATA_SUSPENSAO", nullable = false)
+    private Date protocoloDataSuspensao;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "PROTOCOLO_HORA_SUSPENSAO", nullable = false)
+    private Date protocoloHoraSuspensao;
 
     @Column(name = "PROTOCOLO_TEMPERATURA", nullable = false)
     private float protocoloTemperatura;
@@ -333,12 +337,20 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
         this.protocoloSedacao = protocoloSedacao;
     }
 
-    public Date getProtocoloDataHoraSuspensao() {
-        return protocoloDataHoraSuspensao;
+    public Date getProtocoloDataSuspensao() {
+        return protocoloDataSuspensao;
     }
 
-    public void setProtocoloDataHoraSuspensao(Date protocoloDataHoraSuspensao) {
-        this.protocoloDataHoraSuspensao = protocoloDataHoraSuspensao;
+    public void setProtocoloDataSuspensao(Date protocoloDataSuspensao) {
+        this.protocoloDataSuspensao = protocoloDataSuspensao;
+    }
+
+    public Date getProtocoloHoraSuspensao() {
+        return protocoloHoraSuspensao;
+    }
+
+    public void setProtocoloHoraSuspensao(Date protocoloHoraSuspensao) {
+        this.protocoloHoraSuspensao = protocoloHoraSuspensao;
     }
 
     public float getProtocoloTemperatura() {

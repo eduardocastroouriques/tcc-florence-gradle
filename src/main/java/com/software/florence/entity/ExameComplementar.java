@@ -19,9 +19,13 @@ public class ExameComplementar extends AbstractEntity<Long> {
     @Column(name = "TIPO_OUTRO")
     private String tipoOutro;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "DATA_HORA")
-    private Date dataHora;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DATA_EXAME")
+    private Date dataExame;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "HORA_EXAME")
+    private Date horaExame;
 
     @Column(name = "RESULTADO")
     private String resultado;
@@ -59,12 +63,20 @@ public class ExameComplementar extends AbstractEntity<Long> {
         this.tipoOutro = tipoOutro;
     }
 
-    public Date getDataHora() {
-        return dataHora;
+    public Date getDataExame() {
+        return dataExame;
     }
 
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
+    public void setDataExame(Date dataExame) {
+        this.dataExame = dataExame;
+    }
+
+    public Date getHoraExame() {
+        return horaExame;
+    }
+
+    public void setHoraExame(Date horaExame) {
+        this.horaExame = horaExame;
     }
 
     public String getResultado() {

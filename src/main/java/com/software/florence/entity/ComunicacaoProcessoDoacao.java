@@ -13,9 +13,13 @@ public class ComunicacaoProcessoDoacao extends AbstractEntity<Long>{
     @Column(name = "ID")
     private Long oid;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "DATA_HORA")
-    private Date dataHora;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DATA_COMUNICACAO")
+    private Date dataComunicacao;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "HORA_COMUNICACAO")
+    private Date horaComunicacao;
 
     @Column(name = "RGCT")
     private String rgct;
@@ -34,12 +38,20 @@ public class ComunicacaoProcessoDoacao extends AbstractEntity<Long>{
         this.oid = oid;
     }
 
-    public Date getDataHora() {
-        return dataHora;
+    public Date getDataComunicacao() {
+        return dataComunicacao;
     }
 
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
+    public void setDataComunicacao(Date dataComunicacao) {
+        this.dataComunicacao = dataComunicacao;
+    }
+
+    public Date getHoraComunicacao() {
+        return horaComunicacao;
+    }
+
+    public void setHoraComunicacao(Date horaComunicacao) {
+        this.horaComunicacao = horaComunicacao;
     }
 
     public String getRgct() {

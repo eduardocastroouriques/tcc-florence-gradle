@@ -13,9 +13,13 @@ public class SituacaoClinica extends AbstractEntity<Long> {
     @Column(name = "ID")
     private Long oid;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "DATA_HORA")
-    private Date dataHora;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DATA_SITUACAO_CLINICA")
+    private Date dataSituacaoClinica;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "HORA_SITUACAO_CLINICA")
+    private Date horaSituacaoClinica;
 
     @Column(name = "TA")
     private String ta;
@@ -52,12 +56,20 @@ public class SituacaoClinica extends AbstractEntity<Long> {
         this.oid = oid;
     }
 
-    public Date getDataHora() {
-        return dataHora;
+    public Date getDataSituacaoClinica() {
+        return dataSituacaoClinica;
     }
 
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
+    public void setDataSituacaoClinica(Date dataSituacaoClinica) {
+        this.dataSituacaoClinica = dataSituacaoClinica;
+    }
+
+    public Date getHoraSituacaoClinica() {
+        return horaSituacaoClinica;
+    }
+
+    public void setHoraSituacaoClinica(Date horaSituacaoClinica) {
+        this.horaSituacaoClinica = horaSituacaoClinica;
     }
 
     public String getTa() {

@@ -16,7 +16,7 @@ public class Infeccao extends AbstractEntity<Long> {
     @Column(name = "CULT_LOCAL")
     private String CultLocal;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DATA")
     private Date Data;
 

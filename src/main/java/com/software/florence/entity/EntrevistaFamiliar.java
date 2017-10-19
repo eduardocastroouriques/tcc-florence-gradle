@@ -13,9 +13,13 @@ public class EntrevistaFamiliar extends AbstractEntity<Long> {
     @Column(name = "ID")
     private Long oid;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "DATA_HORA")
-    private Date dataHora;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DATA_ENTREVISTA")
+    private Date dataEntrevista;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "HORA_ENTREVISTA")
+    private Date horaEntrevista;
 
     @Column(name = "RESULTADO")
     private int resultado;
@@ -43,12 +47,20 @@ public class EntrevistaFamiliar extends AbstractEntity<Long> {
         this.oid = oid;
     }
 
-    public Date getDataHora() {
-        return dataHora;
+    public Date getDataEntrevista() {
+        return dataEntrevista;
     }
 
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
+    public void setDataEntrevista(Date dataEntrevista) {
+        this.dataEntrevista = dataEntrevista;
+    }
+
+    public Date getHoraEntrevista() {
+        return horaEntrevista;
+    }
+
+    public void setHoraEntrevista(Date horaEntrevista) {
+        this.horaEntrevista = horaEntrevista;
     }
 
     public int getResultado() {

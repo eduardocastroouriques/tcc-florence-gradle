@@ -17,8 +17,13 @@ public class Aprovacao extends AbstractEntity<Long>{
     @Column(name = "TIPO")
     private int tipo;
 
-    @Column(name = "DATA_HORA")
-    private Date dataHora;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DATA_APROVACAO")
+    private Date dataAprovacao;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "HORA_APROVACAO")
+    private Date horaAprovacao;
 
     @Column(name = "HEMOGLOBINA")
     private double hemoglobina;
@@ -117,12 +122,20 @@ public class Aprovacao extends AbstractEntity<Long>{
         this.tipo = tipo;
     }
 
-    public Date getDataHora() {
-        return dataHora;
+    public Date getDataAprovacao() {
+        return dataAprovacao;
     }
 
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
+    public void setDataAprovacao(Date dataAprovacao) {
+        this.dataAprovacao = dataAprovacao;
+    }
+
+    public Date getHoraAprovacao() {
+        return horaAprovacao;
+    }
+
+    public void setHoraAprovacao(Date horaAprovacao) {
+        this.horaAprovacao = horaAprovacao;
     }
 
     public double getHemoglobina() {

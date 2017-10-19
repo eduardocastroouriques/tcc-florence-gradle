@@ -69,7 +69,7 @@ public class DoencaAtual extends AbstractEntity<Long>{
     @Column(name = "PRIMEIRA_CREATINA", length = 1)
     private char primeiraCreatinina;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "PRIMEIRA_CREATININA_DATA")
     private Date primeiraCreatininaData;
 

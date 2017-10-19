@@ -14,7 +14,7 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "ID")
     private Long oid;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DATA_INICIO")
     private Date dataInicio;
 
@@ -29,30 +29,48 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "LABORATORIO")
     private String laboratorio;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "CROSS_HCPA_DATA_HORA_INICIO")
-    private Date crossHcpaDataHoraInicio;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "CROSS_HCPA_DATA_INICIO")
+    private Date crossHcpaDataInicio;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "HCPA_DATA_HORA_FIM")
-    private Date hcpaDataHoraFim;
+    @Temporal(TemporalType.TIME)
+    @Column(name = "CROSS_HCPA_HORA_INICIO")
+    private Date crossHcpaHoraInicio;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "CROSS_ISCMPA_DATA_HORA_INICIO")
-    private Date crossIscmpaDataHoraInicio;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "CROSS_HCPA_DATA_FIM")
+    private Date crossHcpaDataFim;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "ISCMPA_DATA_HORA_FIM")
-    private Date iscmpaDataHoraFim;
+    @Temporal(TemporalType.TIME)
+    @Column(name = "CROSS_HCPA_HORA_FIM")
+    private Date crossHcpaHoraFim;
+
+    @Temporal(TemporalType.DATE)
+    @Column(name = "CROSS_ISCMPA_DATA_INICIO")
+    private Date crossIscmpaDataInicio;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "CROSS_ISCMPA_HORA_INICIO")
+    private Date crossIscmpaHoraInicio;
+
+    @Temporal(TemporalType.DATE)
+    @Column(name = "CROSS_ISCMPA_DATA_FIM")
+    private Date crossIscmpaDataFim;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "CROSS_ISCMPA_HORA_FIM")
+    private Date crossIscmpaHoraFim;
 
     @ManyToOne
     @JoinColumn
     private ProcessoDoacao processoDoacao;
 
+    @Override
     public Long getOid() {
         return oid;
     }
 
+    @Override
     public void setOid(Long oid) {
         this.oid = oid;
     }
@@ -89,36 +107,68 @@ public class Hla extends AbstractEntity<Long>{
         this.laboratorio = laboratorio;
     }
 
-    public Date getCrossHcpaDataHoraInicio() {
-        return crossHcpaDataHoraInicio;
+    public Date getCrossHcpaDataInicio() {
+        return crossHcpaDataInicio;
     }
 
-    public void setCrossHcpaDataHoraInicio(Date crossHcpaDataHoraInicio) {
-        this.crossHcpaDataHoraInicio = crossHcpaDataHoraInicio;
+    public void setCrossHcpaDataInicio(Date crossHcpaDataInicio) {
+        this.crossHcpaDataInicio = crossHcpaDataInicio;
     }
 
-    public Date getHcpaDataHoraFim() {
-        return hcpaDataHoraFim;
+    public Date getCrossHcpaHoraInicio() {
+        return crossHcpaHoraInicio;
     }
 
-    public void setHcpaDataHoraFim(Date hcpaDataHoraFim) {
-        this.hcpaDataHoraFim = hcpaDataHoraFim;
+    public void setCrossHcpaHoraInicio(Date crossHcpaHoraInicio) {
+        this.crossHcpaHoraInicio = crossHcpaHoraInicio;
     }
 
-    public Date getCrossIscmpaDataHoraInicio() {
-        return crossIscmpaDataHoraInicio;
+    public Date getCrossHcpaDataFim() {
+        return crossHcpaDataFim;
     }
 
-    public void setCrossIscmpaDataHoraInicio(Date crossIscmpaDataHoraInicio) {
-        this.crossIscmpaDataHoraInicio = crossIscmpaDataHoraInicio;
+    public void setCrossHcpaDataFim(Date crossHcpaDataFim) {
+        this.crossHcpaDataFim = crossHcpaDataFim;
     }
 
-    public Date getIscmpaDataHoraFim() {
-        return iscmpaDataHoraFim;
+    public Date getCrossHcpaHoraFim() {
+        return crossHcpaHoraFim;
     }
 
-    public void setIscmpaDataHoraFim(Date iscmpaDataHoraFim) {
-        this.iscmpaDataHoraFim = iscmpaDataHoraFim;
+    public void setCrossHcpaHoraFim(Date crossHcpaHoraFim) {
+        this.crossHcpaHoraFim = crossHcpaHoraFim;
+    }
+
+    public Date getCrossIscmpaDataInicio() {
+        return crossIscmpaDataInicio;
+    }
+
+    public void setCrossIscmpaDataInicio(Date crossIscmpaDataInicio) {
+        this.crossIscmpaDataInicio = crossIscmpaDataInicio;
+    }
+
+    public Date getCrossIscmpaHoraInicio() {
+        return crossIscmpaHoraInicio;
+    }
+
+    public void setCrossIscmpaHoraInicio(Date crossIscmpaHoraInicio) {
+        this.crossIscmpaHoraInicio = crossIscmpaHoraInicio;
+    }
+
+    public Date getCrossIscmpaDataFim() {
+        return crossIscmpaDataFim;
+    }
+
+    public void setCrossIscmpaDataFim(Date crossIscmpaDataFim) {
+        this.crossIscmpaDataFim = crossIscmpaDataFim;
+    }
+
+    public Date getCrossIscmpaHoraFim() {
+        return crossIscmpaHoraFim;
+    }
+
+    public void setCrossIscmpaHoraFim(Date crossIscmpaHoraFim) {
+        this.crossIscmpaHoraFim = crossIscmpaHoraFim;
     }
 
     public ProcessoDoacao getProcessoDoacao() {

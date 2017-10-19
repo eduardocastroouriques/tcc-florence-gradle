@@ -13,9 +13,13 @@ public class Obito extends AbstractEntity<Long>{
     @Column(name = "ID")
     private Long oid;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "DATA_HORA")
-    private Date dataHora;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DATA_OBITO")
+    private Date dataObito;
+
+    @Temporal(TemporalType.TIME)
+    @Column(name = "HORA_OBITO")
+    private Date horaObito;
 
     @Column(name = "TIPO")
     private int tipo;
@@ -24,20 +28,30 @@ public class Obito extends AbstractEntity<Long>{
     @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
+    @Override
     public Long getOid() {
         return oid;
     }
 
+    @Override
     public void setOid(Long oid) {
         this.oid = oid;
     }
 
-    public Date getDataHora() {
-        return dataHora;
+    public Date getDataObito() {
+        return dataObito;
     }
 
-    public void setDataHora(Date dataHora) {
-        this.dataHora = dataHora;
+    public void setDataObito(Date dataObito) {
+        this.dataObito = dataObito;
+    }
+
+    public Date getHoraObito() {
+        return horaObito;
+    }
+
+    public void setHoraObito(Date horaObito) {
+        this.horaObito = horaObito;
     }
 
     public int getTipo() {

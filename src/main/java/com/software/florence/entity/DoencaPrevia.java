@@ -16,14 +16,14 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "HAS")
     private String has;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "HAS_DESDE")
     private Date hasDesde;
 
     @Column(name = "DM")
     private String dm;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DM_DESDE")
     private Date dmdesde;
 
@@ -63,11 +63,11 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "NEOPLASIA")
     private String neoplasia;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DATA_DIAGN")
     private Date dataDiagn;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DATA_CURA")
     private Date dataCura;
 
@@ -92,7 +92,7 @@ public class DoencaPrevia extends AbstractEntity<Long>{
     @Column(name = "TRANFUSAO")
     private String transfusao;
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     @Column(name = "DATA_TRANSFUSAO")
     private Date dataTransfusao;
 
