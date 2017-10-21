@@ -8,6 +8,7 @@ import com.software.florence.common.util.ftp.FTPSender;
 import com.software.florence.entity.ExameDoacao;
 import com.software.florence.entity.ProcessoDoacao;
 import com.software.florence.service.ExameDoacaoService;
+import com.software.florence.service.NotificationServiceImpl;
 import com.software.florence.service.ProcessoDoacaoService;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
@@ -43,6 +44,9 @@ public class ExameDoacaoResource extends AbstractResource<ExameDoacao, Long> {
     @Autowired
     FileUtil fileUtil;
 
+    @Autowired
+    NotificationServiceImpl notificationService;
+
     public ExameDoacaoResource(Service<ExameDoacao, Long> service) {
         super(service);
     }
@@ -72,4 +76,15 @@ public class ExameDoacaoResource extends AbstractResource<ExameDoacao, Long> {
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @GetMapping("/notification")
+    public ResponseEntity<ExameDoacao> push() {
+
+        try {
+            this.notificationService.push(null);
+        } catch (NegocioException e) {
+            return this.criarRespostaErro(e);
+        } // try-catch
+        return this.criarResposta(HttpStatus.OK, "FOI");
+    }// findById()
 }

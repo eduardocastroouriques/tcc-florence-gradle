@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.notnoop.apns:apns:0.2.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.notnoop.apns/apns/0.2.3/1bcf83b85a7986e024806a84caa10292aa93281c/apns-0.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.notnoop.apns/apns/0.2.3/afde36203757c245f8cb0f7f247450e728013a10/apns-0.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
