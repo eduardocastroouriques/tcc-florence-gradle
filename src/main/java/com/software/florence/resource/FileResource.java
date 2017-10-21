@@ -36,17 +36,17 @@ public class FileResource extends AbstractResource<ExameDoacao, Long> {
 
             switch (tipo){
 
-                case "exame_doacao":
+                case "exame-doacao":
 
-                    saveFileLocally(multipartFile, environment.getProperty("florence.image.exame.doacao"));
-                    ftpSender.send(environment.getProperty("florence.image.exame.doacao"), multipartFile.getOriginalFilename());
+//                    saveFileLocally(multipartFile, environment.getProperty("florence.image.exame.doacao"));
+                    ftpSender.send(environment.getProperty("florence.image.exame.doacao"), multipartFile);
 
                     break;
 
-                case "exame_complementar":
+                case "exame-complementar":
 
-                    saveFileLocally(multipartFile, environment.getProperty("florence.image.exame.complementar"));
-                    ftpSender.send(environment.getProperty("florence.image.exame.complementar"), multipartFile.getOriginalFilename());
+//                    saveFileLocally(multipartFile, environment.getProperty("florence.image.exame.complementar"));
+                    ftpSender.send(environment.getProperty("florence.image.exame.complementar"), multipartFile);
 
                     break;
             }

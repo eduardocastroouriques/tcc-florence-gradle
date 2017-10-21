@@ -60,7 +60,7 @@ public class ExameComplementarResource extends AbstractResource<ExameComplementa
         if (!multipartFile.isEmpty()) {
 
             fileUtil.saveFileLocally(multipartFile, environment.getProperty("florence.image.exame.complementar"));
-            ftpSender.send(environment.getProperty("florence.image.exame.complementar"), multipartFile.getOriginalFilename());
+            ftpSender.send(environment.getProperty("florence.image.exame.complementar"), multipartFile);
 
         }
 
