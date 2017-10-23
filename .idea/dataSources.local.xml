@@ -11,5 +11,8 @@
       <user-name>florence</user-name>
       <introspection-schemas>*:florence</introspection-schemas>
     </data-source>
+    <data-source name="LOCALHOST" uuid="82aaf80e-587c-4361-bd5d-2c77c8824a4e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
   </component>
 </project>

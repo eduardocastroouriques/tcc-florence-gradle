@@ -6,6 +6,7 @@ import com.software.florence.common.pattern.application.model.AbstractEntity;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 @Entity(name = "PROCESSO_DOACAO")
 public class ProcessoDoacao extends AbstractEntity<Long> {
@@ -115,6 +116,9 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     @Column(name = "PROTOCOLO_TA", nullable = false)
     private String protocoloTa;
+
+    @OneToMany
+    private List<Dva> dvas;
 
     @Override
     public Long getOid() {
@@ -372,5 +376,13 @@ public class ProcessoDoacao extends AbstractEntity<Long> {
 
     public void setProtocoloTa(String protocoloTa) {
         this.protocoloTa = protocoloTa;
+    }
+
+    public List<Dva> getDvas() {
+        return dvas;
+    }
+
+    public void setDvas(List<Dva> dvas) {
+        this.dvas = dvas;
     }
 }
