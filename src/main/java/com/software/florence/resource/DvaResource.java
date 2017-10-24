@@ -2,11 +2,8 @@ package com.software.florence.resource;
 
 import com.software.florence.common.exception.NegocioException;
 import com.software.florence.common.pattern.application.resource.AbstractResource;
-import com.software.florence.entity.Aprovacao;
-import com.software.florence.entity.DoencaPrevia;
 import com.software.florence.entity.Dva;
 import com.software.florence.entity.ProcessoDoacao;
-import com.software.florence.service.DoencaPreviaServiceImpl;
 import com.software.florence.service.DvaService;
 import com.software.florence.service.DvaServiceImpl;
 import com.software.florence.service.ProcessoDoacaoService;
@@ -36,7 +33,7 @@ public class DvaResource extends AbstractResource<Dva, Long> {
     }
 
     @GetMapping("/processo-doacao/{id}")
-    public ResponseEntity<Dva> findByProcessoDoacaoId(@PathVariable Long id) {
+    public ResponseEntity<List<Dva>> findByProcessoDoacaoId(@PathVariable Long id) {
         List<Dva> retorno = null;
         try {
 
@@ -45,6 +42,6 @@ public class DvaResource extends AbstractResource<Dva, Long> {
         } catch (NegocioException e) {
             return this.criarRespostaErro(e);
         } // try-catch
-        return this.criarResposta(HttpStatus.OK, retorno.get(0));
+        return this.criarResposta(HttpStatus.OK, retorno);
     }// findById()
 }
