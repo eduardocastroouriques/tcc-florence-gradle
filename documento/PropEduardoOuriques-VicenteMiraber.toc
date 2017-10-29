@@ -15,9 +15,7 @@
 \contentsline {section}{\numberline {2.4}\MakeTextUppercase {An\IeC {\'a}lise do Processo Atual}}{15}
 \contentsline {section}{\numberline {2.5}\MakeTextUppercase {Computa\IeC {\c c}\IeC {\~a}o na Nuvem}}{16}
 \contentsline {section}{\numberline {2.6}\MakeTextUppercase {Modelos de Implanta\IeC {\c c}\IeC {\~a}o na Nuvem}}{17}
-\contentsline {section}{\numberline {2.7}\MakeTextUppercase {Nuvem Privada}}{17}
-\contentsline {section}{\numberline {2.8}\MakeTextUppercase {Nuvem P\IeC {\'u}blica}}{17}
-\contentsline {section}{\numberline {2.9}\MakeTextUppercase {Seguran\IeC {\c c}a da Informa\IeC {\c c}\IeC {\~a}o}}{17}
+\contentsline {section}{\numberline {2.7}\MakeTextUppercase {Seguran\IeC {\c c}a da Informa\IeC {\c c}\IeC {\~a}o}}{17}
 \contentsline {chapter}{\numberline {3}\MakeTextUppercase {Trabalhos Relacionados}}{19}
 \contentsline {section}{\numberline {3.1}\MakeTextUppercase {Medware Sistemas M\IeC {\'e}dicos Ltda}}{19}
 \contentsline {section}{\numberline {3.2}\MakeTextUppercase {BloodSave}}{20}

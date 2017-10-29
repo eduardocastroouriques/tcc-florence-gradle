@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.9)  29 OCT 2017 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.9)  29 OCT 2017 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1574,18 +1574,8 @@ Underfull \hbox (badness 10000) detected at line 415
  []
 
 
-Underfull \hbox (badness 10000) detected at line 418
-\T1/phv/b/n/12 2.7
- []
-
-
-Underfull \hbox (badness 10000) detected at line 423
-\T1/phv/b/n/12 2.8
- []
-
-
 Underfull \hbox (badness 10000) detected at line 428
-\T1/phv/b/n/12 2.9
+\T1/phv/b/n/12 2.7
  []
 
 [17] [18]
@@ -1984,7 +1974,7 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvro8a.pfb>
-Output written on PropEduardoOuriques-VicenteMiraber.pdf (45 pages, 1711675 byt
+Output written on PropEduardoOuriques-VicenteMiraber.pdf (45 pages, 1711100 byt
 es).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
