@@ -46,6 +46,8 @@
 \contentsline {section}{\numberline {6.3}\MakeTextUppercase {FLORENCE: Tela de Anexo}}{40}
 \contentsline {section}{\numberline {6.4}\MakeTextUppercase {FLORENCE: Tela De Listagem dos Processos}}{41}
 \contentsline {section}{\numberline {6.5}\MakeTextUppercase {FLORENCE: Tela de Configura\IeC {\c c}\IeC {\~a}o}}{41}
-\contentsline {chapter}{\numberline {7}\MakeTextUppercase {Descri\IeC {\c c}\IeC {\~a}o das Atividades}}{43}
-\contentsline {chapter}{\numberline {8}\MakeTextUppercase {Conclus\IeC {\~a}o}}{44}
+\contentsline {chapter}{\numberline {7}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o}}{43}
+\contentsline {section}{\numberline {7.1}\MakeTextUppercase {Novo processo - 50 usu\IeC {\'a}rios - 100 requisi\IeC {\c c}\IeC {\~o}es}}{43}
+\contentsline {section}{\numberline {7.2}\MakeTextUppercase {Novo processo - 500 usu\IeC {\'a}rios - 100 requisi\IeC {\c c}\IeC {\~o}es}}{43}
+\contentsline {section}{\numberline {7.3}\MakeTextUppercase {Novo processo - 1000 usu\IeC {\'a}rios - 100 requisi\IeC {\c c}\IeC {\~o}es}}{44}
 \contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{45}
