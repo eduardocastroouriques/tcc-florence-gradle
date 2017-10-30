@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dee7f6a-dc23-45c4-94f7-d1a57b4c3d08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/SituacaoClinicaResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/SituacaoClinicaResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/entity/ExameDoacao.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/entity/ExameDoacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ExameDoacaoResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ExameDoacaoResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/software/florence/service/ExameDoacaoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/software/florence/service/ExameDoacaoService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -57,59 +59,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dva.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/Dva.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
-                <element signature="e#1154#1155#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1314#1315#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1378#1379#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1475#1476#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1566#1567#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-                <element signature="e#1656#1657#0" expanded="true" />
-                <element signature="e#1684#1685#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
-                <element signature="e#1772#1773#0" expanded="true" />
-                <element signature="e#1842#1843#0" expanded="true" />
-                <element signature="e#1904#1905#0" expanded="true" />
-                <element signature="e#1943#1944#0" expanded="true" />
-                <element signature="e#1978#1979#0" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-                <element signature="e#2082#2083#0" expanded="true" />
-                <element signature="e#2113#2114#0" expanded="true" />
-                <element signature="e#2142#2143#0" expanded="true" />
-                <element signature="e#2184#2185#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2269#2270#0" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
-                <element signature="e#2374#2375#0" expanded="true" />
-                <element signature="e#2426#2427#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dva" pinned="false" current-in-tab="false">
         <entry file="das://table:/8fbafcc2/21ca60b3-d476-4a33-975d-c11c49396ae9/florence.dva">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExameDoacao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/ExameDoacao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExameDoacaoResource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/ExameDoacaoResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Obito.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/Obito.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="77" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SituacaoClinicaResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SituacaoClinicaResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/SituacaoClinicaResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="321">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,16 +132,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="61">
               <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SituacaoClinicaRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/repository/SituacaoClinicaRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -190,6 +164,7 @@
       <find>&quot;CHOQUE&quot;</find>
       <find>&quot;CRANIO</find>
       <find>INFEC</find>
+      <find>@OneToOne</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -558,7 +533,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/service/PushNotificationServiceImpl.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/service/NotificationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ExameDoacaoResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/entity/ProcessoDoacao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ProcessoDoacaoResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/resource/DvaResource.java" />
@@ -566,6 +540,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/entity/DoencaAtual.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/entity/Dva.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/software/florence/resource/SituacaoClinicaResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/entity/ExameDoacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/resource/ExameDoacaoResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/software/florence/service/ExameDoacaoService.java" />
       </list>
     </option>
   </component>
@@ -659,7 +636,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="situacao&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/resource/SituacaoClinicaResource.java&#10;SituacaoCli&#9;PSI&#9;JAVA://com.software.florence.entity.SituacaoClinica&#10;Dva&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Dva.java&#10;cOMU&#9;PSI&#9;JAVA://com.software.florence.entity.ComunicacaoProcessoDoacao&#10;ProcessoDoac&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;app&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties&#10;dvarepo&#9;PSI&#9;JAVA://com.software.florence.repository.DvaRepository&#10;ProcessoDo&#9;PSI&#9;JAVA://com.software.florence.resource.ProcessoDoacaoResource&#10;Processo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;dva&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Dva.java&#10;dvareso&#9;PSI&#9;JAVA://com.software.florence.resource.DvaResource&#10;processo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;ExameDo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/resource/ExameDoacaoResource.java&#10;ExameDoa&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameDoacao.java&#10;TesteC&#9;PSI&#9;JAVA://com.software.florence.entity.TesteClinico&#10;appli&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties" />
+    <property name="SearchEverywhereHistoryKey" value="Examed&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/resource/ExameDoacaoResource.java&#10;examedoa&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameDoacao.java&#10;situacao&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/resource/SituacaoClinicaResource.java&#10;SituacaoCli&#9;PSI&#9;JAVA://com.software.florence.entity.SituacaoClinica&#10;Dva&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Dva.java&#10;cOMU&#9;PSI&#9;JAVA://com.software.florence.entity.ComunicacaoProcessoDoacao&#10;ProcessoDoac&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;app&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties&#10;dvarepo&#9;PSI&#9;JAVA://com.software.florence.repository.DvaRepository&#10;ProcessoDo&#9;PSI&#9;JAVA://com.software.florence.resource.ProcessoDoacaoResource&#10;Processo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;dva&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/Dva.java&#10;dvareso&#9;PSI&#9;JAVA://com.software.florence.resource.DvaResource&#10;processo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ProcessoDoacao.java&#10;ExameDo&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/resource/ExameDoacaoResource.java&#10;ExameDoa&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/java/com/software/florence/entity/ExameDoacao.java&#10;TesteC&#9;PSI&#9;JAVA://com.software.florence.entity.TesteClinico&#10;appli&#9;FILE&#9;file:///home/eduardo-ouriques/workspace/florence-gradle/src/main/resources/application.properties" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
@@ -792,7 +769,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15560000" />
+    <option name="totallyTimeSpent" value="16531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -813,10 +790,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33592534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3437014" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21617419" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3800797" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -891,6 +868,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -988,15 +975,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/common/configuracao/AuthorizationServerConfig.java" />
     <entry file="das://table:/8fbafcc2/82aaf80e-587c-4361-bd5d-2c77c8824a4e/sql10193843.dva" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/common/configuracao/ResourceServerConfig.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.54/91d6069df9be9e076bdb124e82fc2a9af9547616/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Channel.java">
@@ -1014,13 +992,6 @@
             <element signature="e#9123#9124#0" expanded="false" />
             <element signature="e#9149#9150#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/ExameDoacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1092,14 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="32" column="77" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/ExameDoacaoResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1388,8 +1351,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/SituacaoClinicaResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        <state relative-caret-position="321">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/Obito.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/entity/ExameDoacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/service/ExameDoacaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/software/florence/resource/ExameDoacaoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="63" column="51" lean-forward="false" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
           <folding />
         </state>
       </provider>
