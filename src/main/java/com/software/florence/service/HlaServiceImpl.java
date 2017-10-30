@@ -20,8 +20,8 @@ public class HlaServiceImpl extends GenericService<Hla, Long> implements HlaServ
         super(repository);
     }
 
-    public Iterable<Hla> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
-        Iterable<Hla> retorno = null;
+    public Hla findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        Hla retorno = null;
         try {
             retorno = this.hlaRepository.findByProcessoDoacao(processoDoacao);
         } catch (Exception e) {
