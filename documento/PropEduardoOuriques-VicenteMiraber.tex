@@ -104,8 +104,8 @@
 % Opções para o tipo de trabalho (OBRIGATÓRIO)
 %----------------------------------------------------------------
 %\tipotrabalho{\ptci}         % Proposta de Trabalho de Conclusão
-\tipotrabalho{\tci}         % Trabalho de Conclusão I
-%\tipotrabalho{\tcii}        % Trabalho de Conclusão II
+%\tipotrabalho{\tci}         % Trabalho de Conclusão I
+\tipotrabalho{\tcii}        % Trabalho de Conclusão II
 
 %----------------------------------------------------------------
 % Seleção do curso ("este trabalho é um requisito parcial para
@@ -578,10 +578,6 @@ Através da informatização do prontuário, os gastos com comunicação serão 
 \paragraph*{• Agilidade e portabilidade agregada ao processo}
 
 O formulário anteriormente massante e extenso de ser preenchido, agora será modelado através de técnicas de desenvolvimento de interfaces humano computador e experiência de usuário, para melhor atender os responsáveis pelo preenchimento do formulário.
-
-\paragraph*{• Geração de métricas}
-
-Através do histórico de mudanças do formulário gerado pela plataforma, a mesma será capaz de prover métricas, facilitando a identificação de gargalos no processo e eliminação dos mesmos.
 
 \section{Proposta de Arquitetura}
 
@@ -1111,8 +1107,41 @@ Este capítulo apresenta o diagrama de classe para o desenvolvimento do software
 \label{fig:erDiagram}
 \end{figure}
 
-\chapter{Protótipo}
-Este capítulo apresenta e descreve as principais telas do aplicativo móvel, onde os usuários interagem junto a plataforma proposta. É importante salientar que os dados preenchido nas telas são fictícios.
+\chapter{Implementação}
+Este capítulo apresenta os detalhes de implementação do software Florence a fim de esclarecer as principais tomadas de decisões tomadas pelo grupo.
+
+\section{Banco de dados}
+O MySQL é um sistema gerenciador de banco de dados relacional de código aberto e utiliza a linguagem SQL (Structure Query Language – Linguagem de Consulta Estruturada), que é a linguagem mais popular para inserir, acessar e gerenciar o conteúdo armazenado em um banco de dados.
+
+A escolha do grupo por este banco dados foi decidida principalmente pelo fato de ser Open Source e também por oferecer uma melhor segurança no acesso aos dados dos pacientes. 
+%[http://pt.abcarticulos.info/article/vantagens-e-desvantagens-do-mysql]
+
+Além disso, o banco de dados MySql também oferece vários recursos muito úteis para planejar bancos de dados de pequena e larga escala. %[http://www.linuxnewmedia.com.br/images/uploads/pdf_aberto/LM_67_50_53_04_ana_mysql.pdf]
+
+\section{Desenvolvimento Back-End}
+O desenvolvimento do back-end do software Florence foi desenvolvido utilizando Spring framework, linguagem de programação Java e o modelo de três camadas conforme visto abaixo:
+
+\subsection{Linguagem de Programação}
+A linguagem de programação Java 8 foi escolhida pelo grupo porque oferece uma extensa documentação e oferece todos os recursos necessários para desenvolver o software.
+
+\subsection{Modelo de Camadas}
+A fim de oferecer maior agilidade e não replicação de código, o grupo desenvolveu uma implementação abstrata dividida em três camadas:
+
+\subparagraph{• Camada de Persistência}
+A camada de persistência foi utilizada para representar o estado do objeto no banco de dados e está integrada com o framework JPA que oferece uma implementação abstrata de comunicação das classes java e as entidades do banco de dados.
+
+\subparagraph{• Camada de Aplicação}
+A camada de aplicação foi criada para representar as regras de negócio definidas pelo grupo a fim de oferecer uma centralização de negócio por entidade, de maneira que outros recursos possam utilizá-las.
+
+
+\subparagraph{• Camada de Apresentação}
+A camada de apresentação foi implementada com o padrão Facade para representar as operações disponíveis para o cliente localizado nos smartphones, oferecendo uma comunicação via protocolo http entre os dispositivos e os serviços na nuvem.
+
+\section{Desenvolvimento Front-End}
+
+\subparagraph{• Arquitetura}
+
+\subparagraph{• Protótipo}
 
 \section{FLORENCE: Tela de Login}
 A Figura \ref{fig:app-login} apresenta a tela de login no aplicativo móvel para usuários e administradores conforme descrito na Seção \ref{tab:uc-login}.
@@ -1183,36 +1212,142 @@ Nesta tela o usuário tem a opção de selecionar um dos processos e visualizar 
 A Figura \ref{fig:app-config} apresenta a tela para configurar os hospitais de cada OPO que só pode ser acessada por um usuário Administrador. 
 
 \chapter{Avaliação}
-Este capítulo descreve a avaliação realizada no software de captação e doação de órgãos ou tecidos que esclarece alguns pontos técnicos relacionados a performance da aplicação. 
+Este capítulo descreve o teste de performance realizado no software de captação e doação de órgãos ou tecidos a fim de oferecer um melhor entendimento de como o software se comporta nos cenários simulados pelo grupo.
 
-\section{Novo processo - 50 usuários - 100 requisições}
-Esta seção descreve o tempo de resposta, taxa de transferência e uso de memória consumido ao requisitar com 50 usuários e 100 requisições por usuário o serviço de criação de um novo processo de doação.
+Para realizar estes teste foram considerados três cenários, sendo cada um deles com uma avaliação do tempo médio de resposta das requisições, vazão para verificar possíveis gargalos e uso de memória do servidor.
 
-\paragraph*{• Tempo de Resposta}
+O grupo utilizou dados fictícios, instalou e configurou o software em uma nuvem pública da empresa Heroku que provê um servidor rodando Linux com 512MB de memória RAM e 2 núcleos de processamento.  
 
-\paragraph*{• Taxa de Transferência}
-
-\paragraph*{• Uso de memória}
-
-\section{Novo processo - 500 usuários - 100 requisições}
-Esta seção descreve o tempo de resposta, taxa de transferência e uso de memória consumido ao requisitar com 500 usuários e 100 requisições por usuário o serviço de criação de um novo processo de doação
-
-Para avaliar o sistema o grupo utilizou dados fictícios, instalou e configurou o software em uma nuvem pública da empresa Heroku que provê um servidor rodando Linux com 512MB de memória RAM e 2 núcleos de processamento.  
+\section{Novo processo - 50 usuários - 1 requisição}
+Esta seção descreve a performance do software em um cenário com 50 usuários requisitando o software para criar um novo processo de doação.
 
 \paragraph*{• Tempo de Resposta}
+\begin{figure}[htp]
+\centering
+\caption{Tempo de Resposta - 50 usuários - 1 requisição}
+\includegraphics[width=9cm]{50-1-response-time}
+\label{fig:tempo-reposta-50-1}
+\end{figure}
 
-\paragraph*{• Taxa de Transferência}
+A figura \ref{fig:tempo-reposta-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma média de tempo de resposta de 3.327 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
+
+\newpage
+
+\paragraph*{• Vazão}
+\begin{figure}[htp]
+\centering
+\caption{Vazão - 50 usuários - 1 requisição}
+\includegraphics[width=15cm]{50-1-throughput}
+\label{fig:throughput-50-1}
+\end{figure}
+
+A figura \ref{fig:throughput-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma vazão de 1.428 por minuto, o que nos leva a concluir que o software se comportou adequadamente.
 
 \paragraph*{• Uso de memória}
+\begin{figure}[htp]
+\centering
+\caption{Uso de memória - 50 usuários - 1 requisição}
+\includegraphics[width=9cm]{50-1-memory}
+\label{fig:uso-de-memoria-50-1}
+\end{figure}
 
-\section{Novo processo - 1000 usuários - 100 requisições}
-Esta seção descreve o tempo de resposta, taxa de transferência e uso de memória consumido ao requisitar com 1000 usuários e 100 requisições por usuário o serviço de criação de um novo processo de doação.
+A figura \ref{fig:uso-de-memoria-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, foi utilizado 81.3\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM é o suficiente.
+
+\section{Novo processo - 50 usuários - 10 requisições}
+Esta seção descreve a performance do software em um cenário com 50 usuários requisitando 10 vezes cada um o software para criar um novo processo de doação.
 
 \paragraph*{• Tempo de Resposta}
+\begin{figure}[htp]
+\centering
+\caption{Tempo de Resposta - 50 usuários - 10 requisições}
+\includegraphics[width=9cm]{50-10-response-time}
+\label{fig:tempo-reposta-50-10}
+\end{figure}
+A figura \ref{fig:tempo-reposta-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 3.455 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
 
-\paragraph*{• Taxa de Transferência}
+\paragraph*{• Vazão}
+\begin{figure}[htp]
+\centering
+\caption{Vazão - 50 usuários - 10 requisições}
+\includegraphics[width=15cm]{50-10-throughput}
+\label{fig:throughput-50-10}
+\end{figure}
+
+A figura \ref{fig:throughput-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma grande quantidades de dados desviados junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que o servidor em que o software está hospedado deve ser revisado.
 
 \paragraph*{• Uso de memória}
+\begin{figure}[htp]
+\centering
+\caption{Uso de memória - 50 usuários - 10 requisições}
+\includegraphics[width=9cm]{50-10-memory}
+\label{fig:uso-de-memoria-50-10}
+\end{figure}
+
+A figura \ref{fig:uso-de-memoria-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, foi utilizado 102.9\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM não é o suficiente e pode trazer problemas durante o início do processo.
+
+
+\section{Novo processo - 100 usuários - 10 requisições}
+Esta seção descreve a performance do software em um cenário com 100 usuários requisitando 10 vezes cada um o software para criar um novo processo de doação.
+
+\paragraph*{• Tempo de Resposta}
+\begin{figure}[htp]
+\centering
+\caption{Tempo de Resposta - 100 usuários - 10 requisições}
+\includegraphics[width=9cm]{100-10-response-time}
+\label{fig:tempo-reposta-100-10}
+\end{figure}
+
+A figura \ref{fig:tempo-reposta-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 2,687 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
+
+\paragraph*{• Vazão}
+\begin{figure}[htp]
+\centering
+\caption{Vazão - 100 usuários - 10 requisições}
+\includegraphics[width=15cm]{100-10-throughput}
+\label{fig:throughput-100-10}
+\end{figure}
+
+A figura \ref{fig:throughput-100-10} mostra que ao executar este cenário de 100 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve um desvio de mais de 50\% das amostras enviadas junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que a configuração de ambiente existente não é o suficiente para este cenário.
+
+\newpage
+
+\paragraph*{• Uso de memória}
+\begin{figure}[htp]
+\centering
+\caption{Uso de memória - 100 usuários - 10 requisições}
+\includegraphics[width=9cm]{100-10-memory}
+\label{fig:uso-de-memoria-100-10}
+\end{figure}
+A figura \ref{fig:uso-de-memoria-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, foi utilizado 98.2\% da memória do servidor, sendo que atingiu o ponto máximo de 100\% do uso da memória em um determinado momento, o que nos leva a concluir que 512MB de memória RAM não é o suficiente e pode ocasionar possíveis perdas de dados.
+
+\chapter{Conclusão e Trabalhos Futuros}
+Este capítulo descreve a conclusão deste trabalho junto aos ensinamentos e dificuldades encontrados durante o desenvolvimento e também sugestões de trabalhos futuros.
+
+\section{Conclusão}
+Após realizar diversas pesquisas e reuniões com a organização de procura de órgãos localizada no hospital São Lucas, o grupo conclui que o software poderá auxiliar na gestão dessas entidades centralizando todos os dados em um  único lugar e provê uma excelente mobilidade que facilitará o dia-a-dia dos profissionais envolvidos no processo.
+
+O desenvolvimento deste trabalho de conclusão foi de extrema importância para o grupo devido ao fato de que diversos desafios foram superados, agregando conhecimento ao trabalho e ao grupo.
+
+Na parte de pesquisa o grupo aprendeu como funciona e quais são os riscos existentes durante o processo de doação de órgãos no Brasil e em alguns outros países, entendendo o processo desde a primeira comunicação de um possível doador de órgãos até ao comunicado junto a central de distribuição de órgãos localizada em Brasília.
+
+Quanto ao desenvolvimento o grupo enfrentou algumas dificuldades relacionadas a segurança durante o desenvolvimento dos serviços expostos na nuvem, e também em construir todas as telas no aplicativo, devido ao fato de que há uma enorme quantia de dados que devem ser preenchidos para se concluir o processo.
+
+\section{Trabalhos Futuros}
+
+\paragraph{• Consultar Gráficos}
+Desenvolver uma página no aplicativo com gráficos onde os usuários com maior permissão possam acompanhar o desempenho das equipes de organização de procura de órgãos.
+
+\paragraph{• Serviço de Notificação}
+Desenvolver um serviço de notificação junto a central de distribuição de órgãos localizada em brasília a fim de oferecer uma maior agilidade na conclusão dos processos.
+
+\paragraph*{• Site Web}
+Desenvolver um site onde os profissionais envolvidos no processo possam gerenciar os processos de doação existentes pelo computador, afim de oferecer uma melhor flexibilidade na utilização dos serviços web desenvolvidos pelo grupo.
+
+\paragraph*{• Segurança}
+Desenvolver uma camada de segurança aos web services desenvolvidos a fim de oferecer uma melhor segurança aos dados dos pacientes e familiares.
+
+
+
 
 %\cite{NAGAPACKING07}
 %\cite{CORMEMALGORITHMS01}
