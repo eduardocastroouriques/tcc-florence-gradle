@@ -20,8 +20,8 @@ public class ExameDoacaoServiceImpl extends GenericService<ExameDoacao, Long> im
         super(repository);
     }
 
-    public Iterable<ExameDoacao> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
-        Iterable<ExameDoacao> retorno = null;
+    public ExameDoacao findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException {
+        ExameDoacao retorno = null;
         try {
             retorno = this.exameDoacaoRepository.findByProcessoDoacao(processoDoacao);
         } catch (Exception e) {

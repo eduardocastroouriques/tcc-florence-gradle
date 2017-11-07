@@ -6,5 +6,5 @@ import com.software.florence.entity.ExameDoacao;
 import com.software.florence.entity.ProcessoDoacao;
 
 public interface ExameDoacaoService extends Service<ExameDoacao, Long>{
-    Iterable<ExameDoacao> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
+    ExameDoacao findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
 }

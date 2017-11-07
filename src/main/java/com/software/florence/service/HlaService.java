@@ -6,5 +6,5 @@ import com.software.florence.entity.Hla;
 import com.software.florence.entity.ProcessoDoacao;
 
 public interface HlaService extends Service<Hla, Long>{
-    Iterable<Hla> findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
+    Hla findByProcessoDoacao(ProcessoDoacao processoDoacao) throws NegocioException;
 }

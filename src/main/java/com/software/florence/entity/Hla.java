@@ -5,7 +5,6 @@ import com.software.florence.common.pattern.application.model.AbstractEntity;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 @Entity(name = "HLA")
 public class Hla extends AbstractEntity<Long>{
@@ -73,8 +72,8 @@ public class Hla extends AbstractEntity<Long>{
     @Column(name = "CROSS_ISCMPA_HORA_FIM")
     private Date crossIscmpaHoraFim;
 
-    @ManyToOne
-    @JoinColumn
+    @OneToOne
+    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override

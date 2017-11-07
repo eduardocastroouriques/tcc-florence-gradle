@@ -78,12 +78,12 @@ public class DoencaAtual extends AbstractEntity<Long>{
     @Column(name = "OBSERVACAO")
     private String observacao;
 
-    @OneToMany
-    @JoinColumn(name = "DA_FK_INF")
-    private List<Infeccao> infeccao;
+//    @OneToMany
+//    @JoinColumn(name = "DA_FK_INF")
+//    private List<Infeccao> infeccao;
 
     @OneToOne
-    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
+    @JoinColumn(unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override
@@ -256,13 +256,13 @@ public class DoencaAtual extends AbstractEntity<Long>{
         this.observacao = observacao;
     }
 
-    public List<Infeccao> getInfeccao() {
-        return infeccao;
-    }
-
-    public void setInfeccao(List<Infeccao> infeccao) {
-        this.infeccao = infeccao;
-    }
+//    public List<Infeccao> getInfeccao() {
+//        return infeccao;
+//    }
+//
+//    public void setInfeccao(List<Infeccao> infeccao) {
+//        this.infeccao = infeccao;
+//    }
 
     public ProcessoDoacao getProcessoDoacao() {
         return processoDoacao;

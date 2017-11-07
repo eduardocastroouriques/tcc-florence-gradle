@@ -53,7 +53,7 @@ public class ExameDoacaoResource extends AbstractResource<ExameDoacao, Long> {
 
     @GetMapping("/processo-doacao/{id}")
     public ResponseEntity<ExameDoacao> findByProcessoDoacaoId(@PathVariable Long id) {
-        Iterable<ExameDoacao> retorno = null;
+        ExameDoacao retorno = null;
         try {
 
             ProcessoDoacao processoDoacao = processoDoacaoService.findById(id);

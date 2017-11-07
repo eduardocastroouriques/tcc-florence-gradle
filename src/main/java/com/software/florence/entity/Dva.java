@@ -26,6 +26,12 @@ public class Dva extends AbstractEntity<Long>{
     @Column(name = "KG")
     private double kg;
 
+    @Column(name = "DOSE_MAXIMA_ML_POR_HORA")
+    private String doseMaximaMlPorHora;
+
+    @Column(name = "DOSE_MAXIMA_KG")
+    private String doseMaximaKg;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Temporal(TemporalType.TIME)
     @Column(name = "INICIO")
@@ -75,6 +81,22 @@ public class Dva extends AbstractEntity<Long>{
 
     public void setKg(double kg) {
         this.kg = kg;
+    }
+
+    public String getDoseMaximaMlPorHora() {
+        return doseMaximaMlPorHora;
+    }
+
+    public void setDoseMaximaMlPorHora(String doseMaximaMlPorHora) {
+        this.doseMaximaMlPorHora = doseMaximaMlPorHora;
+    }
+
+    public String getDoseMaximaKg() {
+        return doseMaximaKg;
+    }
+
+    public void setDoseMaximaKg(String doseMaximaKg) {
+        this.doseMaximaKg = doseMaximaKg;
     }
 
     public Date getInicio() {

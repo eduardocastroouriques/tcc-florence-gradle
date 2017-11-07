@@ -31,7 +31,7 @@ public class HlaResource extends AbstractResource<Hla, Long> {
 
     @GetMapping("/processo-doacao/{id}")
     public ResponseEntity<Hla> findByProcessoDoacaoId(@PathVariable Long id) {
-        Iterable<Hla> retorno = null;
+        Hla retorno = null;
         try {
 
             ProcessoDoacao processoDoacao = processoDoacaoService.findById(id);

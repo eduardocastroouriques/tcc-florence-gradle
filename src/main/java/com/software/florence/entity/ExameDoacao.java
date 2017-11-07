@@ -28,8 +28,8 @@ public class ExameDoacao extends AbstractEntity<Long>{
     @Column(name = "GASO_PULMAO")
     private String gasoPulmao;
 
-    @ManyToOne(fetch=FetchType.EAGER)
-    @JoinColumn
+    @OneToOne
+    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override
