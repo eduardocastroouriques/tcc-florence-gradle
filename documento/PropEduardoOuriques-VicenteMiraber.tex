@@ -1016,16 +1016,16 @@ RF02, RF03, RF05
 
 
 \section{Diagrama Entidade Relacionamento}
-Esta seção apresenta e descreve o Modelo Entidade Relacionamento representado pela figura \ref{fig:erDiagram}, onde se pode ver todas entidades envolvidas com seus atributos e relacionamentos.
+Esta seção apresenta o Modelo Entidade Relacionamento com todas entidades, chaves primárias e estrangeiras do software Florence, a fim de oferecer um melhor entendimento do relacionamente entre as entidades.
 
 \begin{figure}[htp]
 \centering
 \caption{Diagrama Entidade Relacionamento}
-\includegraphics[width=15cm]{er-diagram}
+\includegraphics[scale=0.68]{er-diagram}
 \label{fig:erDiagram}
 \end{figure}
 
-\newpage
+É importante informar que foi colocado apenas as chaves primárias e estrangeiras para melhorar a visibilidade do diagrama no documento.
 
 \subparagraph{• Processo Doação}
 A entidade \textit{ProcessoDoacao} é utilizada para representar o processo de doação com informações pessoais do paciente, e relaciona-se com as entidades necessárias para representar o processo de captação e doação de órgãos.
@@ -1093,15 +1093,6 @@ A entidade \textit{TipoPermissao} é utilizada para representar as permissões e
 \subparagraph{• Permissão Usuário}
 A entidade \textit{PermissaoUsuario} é utilizada para representar as permissões de cada usuário cadastrado no software de captação e doação de órgãos.
 
-\section{Diagrama de Classe}
-Este capítulo apresenta o diagrama de classe para o desenvolvimento do software de captação e doação de órgãos que é representado pela Figura \ref{fig:erDiagram}.
-
-\begin{figure}[htp]
-\centering
-\caption{Diagrama de Classe}
-\includegraphics[width=15cm]{class-diagram}
-\label{fig:erDiagram}
-\end{figure}
 
 \chapter{Implementação}
 Este capítulo apresenta os detalhes de implementação do software Florence a fim de esclarecer as principais tomadas de decisões tomadas pelo grupo.
@@ -1132,6 +1123,24 @@ A camada de aplicação foi criada para representar as regras de negócio defini
 
 \subparagraph{• Camada de Apresentação}
 A camada de apresentação foi implementada com o padrão Facade para representar as operações disponíveis para o cliente localizado nos smartphones, oferecendo uma comunicação via protocolo http entre os dispositivos e os serviços na nuvem.
+
+\newpage
+
+\section{Diagrama de Classe}
+O diagrama de classe abaixo representa a implementação abstrata que foi desenvolvida para o software Florence.
+
+\begin{figure}[htp]
+\centering
+\caption{Diagrama de Classe}
+\includegraphics[scale=0.44]{class-diagram}
+\label{fig:erDiagram}
+\end{figure}
+
+No diagrama é possível ver as três camadas descritas na seção anterior, onde a classe AbstractResource representa a camada de apresentação, a classe AbstractService representa a camada de aplicação e a classe AbstractEntity representa a camada de persistência.
+
+Para a camada de apresentação e aplicação foi criado uma interface e uma implementação abstrata tal que cada implementação abstrata é genérica e pode ser aplicada para qualquer entidade do software.
+
+Como exemplo de utilização destas camadas, o diagrama apresenta a implementação do serviço que inicia o processo de doação que é representado pela entidade ProcessoDoação.
 
 \section{Desenvolvimento Front-End}
 
