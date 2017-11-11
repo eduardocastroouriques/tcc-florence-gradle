@@ -73,7 +73,7 @@ public class Hla extends AbstractEntity<Long>{
     private Date crossIscmpaHoraFim;
 
     @OneToOne
-    @JoinColumn(unique = true, nullable = false)
+    @JoinColumn(name = "PROCESSO_DOACAO_ID", unique = true, nullable = false)
     private ProcessoDoacao processoDoacao;
 
     @Override

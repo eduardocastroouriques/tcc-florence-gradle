@@ -104,8 +104,8 @@
 % Opções para o tipo de trabalho (OBRIGATÓRIO)
 %----------------------------------------------------------------
 %\tipotrabalho{\ptci}         % Proposta de Trabalho de Conclusão
-\tipotrabalho{\tci}         % Trabalho de Conclusão I
-%\tipotrabalho{\tcii}        % Trabalho de Conclusão II
+%\tipotrabalho{\tci}         % Trabalho de Conclusão I
+\tipotrabalho{\tcii}        % Trabalho de Conclusão II
 
 %----------------------------------------------------------------
 % Seleção do curso ("este trabalho é um requisito parcial para
@@ -231,28 +231,24 @@ Este trabalho apresenta um software para o gerenciamento de processos de captaç
 %\appendix
 %\appendix
 \chapter{Fundamentação Teórica}
-Este capítulo contém a fundamentação teórica que descreve a atual organização do processo de captação de um possível doador de órgãos no Brasil, o conceito de computação na nuvem e segurança da informação.
+Este capítulo apresenta a fundamentação teórica necessária para entender como o software Florence auxilia no processo de captação e doação de órgãos ou tecidos.
 
-\section{Doação de Órgãos no Brasil}
+\section{Organizações}
+Para captar possíveis doadores o Brasil se divide em 4 organizações conforme descrito abaixo:
 
-O atual sistema para maximizar a identificação de potenciais doadores de órgãos no Brasil divide-se em quatro organizações: Organização de procura de Órgãos (OPO); Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos (CIHDOTT); Central Regional de Transplante; Central Nacional de Transplante (CNT).
-
-\subsection{Organização de Procura de Órgãos - OPO}
+\subparagraph{• Organização de Procura de Órgãos - OPO}
 %\subsection*{Organização de Procura de Órgãos - OPO}
 A Organização de Procura de Órgãos, também conhecida como OPO, é uma organização que está vinculada diretamente à Central de Transplantes do estado e caracteriza-se por ser uma organização supra-hospitalar com o objetivo de apoiar e executar as atividades relacionadas à doação de órgãos e tecidos no Brasil.
 
 Este órgão é responsável por realizar visitas aos hospitais, entre outras atividades a fim de identificar potenciais doadores de órgãos e apoiar a gestão do processo\cite{HOSPITALSAOLUCAS}.   %http://www.hospitalsaolucas.pucrs.br/novo_site/doacaoorgaos.php
 
-\subsection{Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos - CIHDOTT}
+\subparagraph{• Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos - CIHDOTT}
 A Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos, também chamada de CIHDOTT, consiste em uma comissão regida pela Portaria número 1262, de 16 de junho de 2006 \cite{HCI}.
 Tem como objetivo a identificação de potenciais doadores que sofreram morte cerebral ou ataque cardíaco em seu hospital vigente. Fazendo a triagem e iniciar o processo de doação de órgãos em parceria com a Central Regional de Transplantes é uma das suas responsabilidades.
-
-
 
 %\subsection*{Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos - CIHDOTT}
 A Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos, também chamada de CIHDOTT, consiste em uma comissão regida pela Portaria nº 1262 de 16 de junho de 2006 \cite{HCI}.
 %http://www.hci.org.br/site/servicos_detalhes.php?codigo=20
-
 
 De acordo com a Seção II da portaria no 2.600 \cite{PORTARIA}, de 21 de outubro de 2009, existem 3 níveis de CIHDOTT conforme descrito pelo Ministério da Saúde:
 
@@ -267,7 +263,7 @@ A criação das CIHDOTT será opcional para todos os demais hospitais que não s
 
 %http://bvsms.saude.gov.br/bvs/saudelegis/gm/2009/prt2600_21_10_2009.html
 
-\subsection{Central Regional de Transplante}
+\subparagraph{• Central Regional de Transplante}
 %\subsection*{Central Estadual de Transplante}
 A partir da aprovação do Regulamento Técnico de Transplantes, o Ministério da Saúde desenvolveu, em parceria com as Secretarias Estaduais de Saúde, um grande esforço no sentido de implantar nos estados as Centrais de Notificação, Captação e Distribuição de Órgãos (CNCDO)\sigla{CNCDO}{Central de Notificação, Captação e Distribuição de Órgãos}, também chamadas de Centrais Estaduais de Transplante \cite{SEST}. 
 %http://www1.saude.rs.gov.br/wsa/portal/index.jsp?menu=servicos&cod=3085
@@ -277,7 +273,7 @@ A CNCDO é o órgão público da secretaria do estado do Rio Grande do Sul que g
 A central tem atividade ininterrupta funcionando 24 horas por dia continuamente nos 7 dias da semana para cumprir suas atribuições, uma vez que o processo de transplante requer decisão e coordenação imediata \cite{SCSCT}.
 %http://www.saude.rs.gov.br/lista/132/Entenda_o_Sistema_Nacional_de_Transplantes
 
-\subsection{Central Nacional de Transplante}
+\subparagraph{• Central Nacional de Transplante}
 %\subsection*{Central Nacional de Transplante}
 %Central Nacional de Transplante
 Como a atividade das Centrais Estaduais se dá no âmbito estadual e com o desenvolvimento e incremento das atividades de transplante no País, surgiu a necessidade da criação de uma estrutura que articulasse as ações interestaduais. Portanto, em 16 de agosto de 2000, foi criada a Central Nacional de Transplantes, que funciona 24 horas por dia no Aeroporto de Brasília. 
@@ -291,7 +287,7 @@ Quando um coração é doado e retirado num estado que não realiza transplante 
 O processo de captação e doação de órgãos é dividido em 5 etapas \cite{EPRECISOEDUCAR} que inicia com o diagnóstico de morte encefálica de um potencial doador e termina na liberação do corpo doador.
 
 %\subsection*{Identificação do Potencial Doador}
-\paragraph*{• Etapa 1 : Identificação do Potencial Doador}
+\subparagraph{• Etapa 1 : Identificação do Potencial Doador}
 
 A identificação de um possível doador com morte encefálica se dá através do preenchimento de um formulário, criado em parceria pelas OPO’s estaduais, com informações pessoais e clínicas.
 
@@ -299,19 +295,19 @@ O primeiro exame é realizado para verificar se o paciente não possui mais refl
 
 Após realizar os primeiros exames a Central de Transplantes é notificada e então inicia o monitoramento do processo em questão.
 
-\paragraph*{• Etapa 2 : Seleção do Receptor}
+\subparagraph{• Etapa 2 : Seleção do Receptor}
 %\subsection*{Seleção do Receptor}
 O processo de seleção dos receptores é feito de forma anônima; Nunca um receptor pode saber quem foi seu doador e vice-versa. O órgão a ser doado é inserido no sistema e através de suas características tal como idade do doador, tipo sanguíneo e demais informações relevantes; Uma lista de possíveis receptores é gerada e organizada por compatibilidade.
 
-\paragraph*{• Etapa 3 : Identificação da Equipe Transplantadora}
+\subparagraph{• Etapa 3 : Identificação da Equipe Transplantadora}
 %\subsection*{Identificação da Equipe Transplantadora}
 Após a seleção do receptor, a Central Regional de Transplantes notifica a equipe de transplantes responsável pelo paciente que dá início ao processo de retirada dos órgãos do doador.
 
-\paragraph*{• Etapa 4 : Retirada dos Órgãos}
+\subparagraph{• Etapa 4 : Retirada dos Órgãos}
 %\subsection*{Retirada dos Órgãos}
 A equipe notificada pela Central Regional de Transplantes se dirige ao hospital onde o doador está internado e inicia o processo da retirada do órgão; Terminado o processo, a equipe se dirige ao hospital do receptor e começa o processo de transplante.
 
-\paragraph*{• Etapa 5 : Liberação do Corpo}
+\subparagraph{• Etapa 5 : Liberação do Corpo}
 %\subsection*{Liberação do Corpo}
 Após a retirada dos órgãos o doador passa por um processo de recomposição para então ser entregue a família.
 
@@ -391,36 +387,36 @@ Uma estratégia para resolver estes problemas é centralizar a informação em u
 %\appendix
 
 
-\section{Computação na Nuvem}
+\section{Computação em Nuvem}
 A computação em nuvem é um modelo para permitir acesso de rede conveniente, sob demanda a um grupo compartilhado de recursos configuráveis de computação (por exemplo, redes, servidores, armazenamento, aplicativos e serviços) que podem ser rapidamente provisionados e lançados com o mínimo de esforço \cite{NIST}.
 
 Esta seção descreve algumas características da computação em nuvem tais como Serviço Sob Demanda; Acesso Amplo de Rede; Agrupamento de Recursos; Elasticidade Rápida; Serviços Sob Medida.
 
-\paragraph*{• Serviço Sob Demanda}
+\subparagraph{• Serviço Sob Demanda}
 O modelo em nuvem pode suprir capacidades de computação unilateralmente, como tempo de servidor e armazenamento de rede, conforme demanda, sem necessidade de interação humana com cada provedor de serviços.
 
-\paragraph*{• Acesso Amplo de Rede}
+\subparagraph{• Acesso Amplo de Rede}
 Os recursos estão disponíveis através da rede e acessadas através de mecanismos padrão que promovem o uso por plataformas de clientes heterogêneos (por exemplo, telefones celulares, tablets, laptops e estações de trabalho).
 
-\paragraph*{• Agrupamento de Recursos}
+\subparagraph{• Agrupamento de Recursos}
 Os recursos de computação da nuvem são agrupados para atender a vários consumidores, com diferentes recursos físicos e virtuais atribuídos dinamicamente de acordo com a demanda do consumidor.
 
-\paragraph*{• Elasticidade Rápida}
+\subparagraph{• Elasticidade Rápida}
 As capacidades podem ser provisionadas e liberadas elasticamente, em alguns casos automaticamente, para escalar rapidamente em conformidade com a demanda.
 Para o consumidor, as capacidades disponíveis para configuração e instalação muitas vezes parecem ser ilimitadas e podem ser apropriadas em qualquer quantidade a qualquer momento.
 
-\paragraph*{• Serviço Medido}
+\subparagraph{• Serviço Medido}
 O uso de recursos (por exemplo, armazenamento, processamento e largura de banda) pode ser monitorado, controlado e reportado, proporcionando transparência tanto para o provedor como para o consumidor do serviço utilizado.
 
 \section{Modelos de Implantação na Nuvem}
 Esta seção descreve os principais modelos de implantação na nuvem, a fim de oferecer um melhor entendimento das características de cada uma delas. 
 
-\paragraph*{• Nuvem Privada}
+\subparagraph{• Nuvem Privada}
 Nuvem privada refere-se aos serviços de computação em nuvem oferecidos pela Internet ou por uma rede interna privada somente a usuários selecionados e não ao público geral.
 
 As nuvens privadas oferecem um maior nível de segurança e privacidade por meio de firewalls da empresa e hosting interno para garantir que as operações e dados confidenciais não possam ser acessados por terceiros \cite{OQUEENUVEM}.
 
-\paragraph*{• Nuvem Pública}
+\subparagraph{• Nuvem Pública}
 Em uma nuvem pública, a infra-estrutura pertence a uma  organização que vende serviços para o público em geral e pode  ser acessada por qualquer usuário que conheça a localização do  serviço, não sendo admitidas técnicas de restrição de acesso ou autenticação \cite{COMPUTACAOEMNUVEM}.
 
 As nuvens públicas tentam fornecer aos clientes elementos de  TI livres de complexidades, onde o provedor da nuvem assume  as responsabilidades de instalação, gerenciamento, disponibilização e manutenção.  
@@ -435,11 +431,11 @@ A privacidade e a segurança da informação no setor da saúde são pontos que 
 Portanto, este capítulo descreve dois tipos de ameaças à privacidade e a segu-rança da informação na área da saúde, conforme citado em um estudo realizado por uma escola de negócio nos Estados Unidos [Gilberto Perez 2010].
 
 
-\paragraph*{• Ameaça Organizacional}
+\subparagraph{• Ameaça Organizacional}
 Este tipo de ameaça se refere aos acessos inapropriados aos dados dos pacien-tes pelos agentes internos que abusam dos seus privilégios ou agentes externos que se aproveitam da vulnerabilidade do sistema de informação.
 
 
-\paragraph*{• Ameaça Sistêmica}
+\subparagraph{• Ameaça Sistêmica}
 Ameaça Sistêmica se refere a um agente na cadeia de fluxo de informações dentro do processo explorando os dados divulgados além do uso pretendido, ou seja, agentes dentro das organizações da saúde que tem acesso a dados privilegiados e que por muitas vezes não possuem autorização.
 
 \chapter{Trabalhos Relacionados}
@@ -528,7 +524,7 @@ Em relação a autorização de recursos no sistema o software eClinicalWorks fo
 \paragraph*{• Certificado Digital}
 Em relação a certificado digital o software da Medware segue as recomendações do Conselho Federal Médico, garantindo maior segurança na troca de informações.
 
-\chapter{Descrição do Trabalho} \label{tab:descricao-trabalho}
+\chapter{Descrição do Software Florence} \label{tab:descricao-trabalho}
 Este capítulo descreve a nova organização dos processos e as definições de projeto para desenvolver o software, a fim de oferecer um melhor entendimento da arquitetura do sistema.
 
 
@@ -561,27 +557,23 @@ Este trabalho tem como objetivo o desenvolvimento de uma plataforma de comunica�
 
 
 \subsection{Objetivo Específico}
-Este capítulo descreve os objetivos específicos do software de captação e doação de órgãos.
+Os objetivos específicos do software Florence são:
 
-\paragraph*{• Redução da latência do processo}
+\subparagraph{• Redução da latência do processo}
 
 Redução no tempo total do processo, desde a abertura do prontuário feita pelo responsável do paciente, até a conclusão do processo de doação quando o paciente é encaminhado para retirada dos órgãos.
 
-\paragraph*{• Aumento na consistência das informações}
+\subparagraph{• Aumento na consistência das informações}
 
 O aumento de consistência do prontuário se dará pela criação de um prontuário eletrônico e único que estará acessível para todos envolvidos em sua mais recente versão através da plataforma.
 
-\paragraph*{• Redução de gastos com comunicação}
+\subparagraph{• Redução de gastos com comunicação}
 
 Através da informatização do prontuário, os gastos com comunicação serão reduzidos como consequência do aumento de acessibilidade e consistência do mesmo.
 
-\paragraph*{• Agilidade e portabilidade agregada ao processo}
+\subparagraph{• Agilidade e portabilidade agregada ao processo}
 
 O formulário anteriormente massante e extenso de ser preenchido, agora será modelado através de técnicas de desenvolvimento de interfaces humano computador e experiência de usuário, para melhor atender os responsáveis pelo preenchimento do formulário.
-
-\paragraph*{• Geração de métricas}
-
-Através do histórico de mudanças do formulário gerado pela plataforma, a mesma será capaz de prover métricas, facilitando a identificação de gargalos no processo e eliminação dos mesmos.
 
 \section{Proposta de Arquitetura}
 
@@ -678,22 +670,22 @@ Esta seção apresenta todos os atores do sistema, focando na hierarquia e suas 
 \label{fig:uc-atores}
 \end{figure}
 
-\paragraph*{• Usuário}
+\subparagraph{• Usuário}
 O ator Usuário representa genericamente os usuários do software de captação e doação de órgão.
 
-\paragraph*{• OPO}
+\subparagraph{• OPO}
 O ator OPO representa os usuários da Organização de Procura de Órgãos.
 
-\paragraph*{• CIHDOTT}
+\subparagraph{• CIHDOTT}
 O ator CIHDOTT representa os usuários da Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos para Transplantes.
 
-\paragraph*{• Hospital}
+\subparagraph{• Hospital}
 O ator HOSPITAL representa os usuários dos hospitais.
 
-\paragraph*{• Administrador}
+\subparagraph{• Administrador}
 O ator ADMINISTRADOR representa genericamente os usuários administradores no sistema.
 
-\paragraph*{• Central}
+\subparagraph{• Central}
 O ator CENTRAL representa os usuários das centrais regionais de transplante no sistema.
 
 \section{Casos de Uso do Sistema}
@@ -707,7 +699,7 @@ Para melhor entendimento, esta seção descreve o diagrama de Caso de Uso do sis
 \label{fig:uc-diagram}
 \end{figure}
 
-\paragraph*{• UC01 - Efetuar Login}\label{tab:uc-login}
+\subparagraph{• UC01 - Efetuar Login}\label{tab:uc-login}
 Para os atores Usuário e Administrador terem acesso as funcionalidades do software é necessário efetuar login com os dados obrigatórios descritos na Tabela \ref{table:uc01}.
 
 
@@ -754,7 +746,7 @@ Requisitos Relacionados & RF01, RF03, RF06
 %-------------------------------------
 %UC02 - Inserir Novo Processo de Doação
 
-\paragraph*{• UC02 - Inserir Novo Processo de Doação} \label{tab:uc-inserir}
+\subparagraph{• UC02 - Inserir Novo Processo de Doação} \label{tab:uc-inserir}
 Para o ator Usuário incluir um novo processo de doação e captação de órgãos no software é necessário fornecer os dados obrigatórios descritos na Tabela \ref{table:uc02}.
 
 \begin{table}
@@ -798,7 +790,7 @@ RF02, RF03, RF04
 %-------------------------------------
 %UC03 - Consultar Processos de Doação
 
-\paragraph*{• UC03 - Consultar Processos de Doação}
+\subparagraph{• UC03 - Consultar Processos de Doação}
 Para consultar os processos de doação e captação de órgãos no software os atores Usuário e Administrador podem fornecer os dados que não são obrigatórios conforme descrito na Tabela \ref{table:uc03}.
 
 \begin{table}
@@ -844,7 +836,7 @@ RF02, RF03, RF06, RF09
 %-------------------------------------
 %UC04 - Atualizar Processos de Doação
 
-\paragraph*{• UC04 - Atualizar Processos de Doação}
+\subparagraph{• UC04 - Atualizar Processos de Doação}
 Para os atores Usuário e Administrador atualizarem os processos de doação e captação de órgãos no software é necessário fornecer os dados obrigatórios descritos na Tabela \ref{table:uc04}.
 
 \begin{table}
@@ -889,7 +881,7 @@ RF02, RF03, RF07, RF11
 %-------------------------------------
 %UC05 - Notificar possível doador a Central
 
-\paragraph*{• UC05 - Notificar possível doador a Central}
+\subparagraph{• UC05 - Notificar possível doador a Central}
 Para os atores CIHDOTT e OPO notificarem um doador de órgãos a Central Regional de Transplates é necessário fornecer os dados obrigatórios descristos na Tabela \ref{table:uc05}. 
 
 \begin{table}
@@ -935,7 +927,7 @@ RF02, RF03, RF12
 %-------------------------------------
 %UC06 - Enviar e-mail
 
-\paragraph*{• UC06 - Enviar e-mail}
+\subparagraph{• UC06 - Enviar e-mail}
 Para o software enviar um e-mail a Central Regional de Transplantes é necessário que os atores insiram ou atualizem um processo respeitando os dados obrigatórios descritos na Tabela \ref{table:uc06}. 
 
 \begin{table}
@@ -981,7 +973,7 @@ RF02, RF03, RF12
 %-------------------------------------
 %UC07 - Consultar gráficos
 
-\paragraph*{• UC07 - Consultar gráficos}
+\subparagraph{• UC07 - Consultar gráficos}
 Para consultar os gráficos que o software fornece os atores Administrador e Usuário precisam estar logados conforme descrito na Tabela \ref{table:uc07}. 
 
 \begin{table}
@@ -1024,95 +1016,137 @@ RF02, RF03, RF05
 
 
 \section{Diagrama Entidade Relacionamento}
-Esta seção apresenta e descreve o Modelo Entidade Relacionamento representado pela figura \ref{fig:erDiagram}, onde se pode ver todas entidades envolvidas com seus atributos e relacionamentos.
+Esta seção apresenta o Modelo Entidade Relacionamento com todas entidades, chaves primárias e estrangeiras do software Florence, a fim de oferecer um melhor entendimento do relacionamente entre as entidades.
 
 \begin{figure}[htp]
 \centering
 \caption{Diagrama Entidade Relacionamento}
-\includegraphics[width=15cm]{er-diagram}
+\includegraphics[scale=0.68]{er-diagram}
 \label{fig:erDiagram}
 \end{figure}
 
-\newpage
+É importante informar que foi colocado apenas as chaves primárias e estrangeiras para melhorar a visibilidade do diagrama no documento.
 
-\paragraph*{• Processo Doação}
+\subparagraph{• Processo Doação}
 A entidade \textit{ProcessoDoacao} é utilizada para representar o processo de doação com informações pessoais do paciente, e relaciona-se com as entidades necessárias para representar o processo de captação e doação de órgãos.
 
-\paragraph*{• Exame Complementar}
+\subparagraph{• Exame Complementar}
 A entidade \textit{ExameComplementar} é utilizada para representar os exames complementares que o paciente deve realizar para iniciar o processo de captação e doação de órgãos.
 
-\paragraph*{• Doença Atual}
+\subparagraph{• Doença Atual}
 A entidade \textit{DoencaAtual} é utilizada para representar as possíveis doenças que o paciente possa ter durante o processo de captação e doação de órgãos.
 
-\paragraph*{• Infecção}
+\subparagraph{• Infecção}
 A entidade \textit{Infeccao} é utilizada para representar todas as infecções que o paciente tem.
 
-\paragraph*{• DVA}
+\subparagraph{• DVA}
 A entidade \textit{DVA} é utilizada para representar todas deficiências de vitamina A que o paciente tem, e então o médico decidir se a cirurgia pode ser realizada.
 
-\paragraph*{• Órgão}
+\subparagraph{• Órgão}
 A entidade \textit{Orgao} é utilizada para representar todos os órgãos que podem ser doados.
 
-\paragraph*{• Informação Cirurgia}
+\subparagraph{• Informação Cirurgia}
 A entidade \textit{InformacaoCirurgia} é utilizada para representar os dados gerais para se realizar uma cirurgia tais como horário inicial, final e outras informações.
 
-\paragraph*{• Cirurgia}
+\subparagraph{• Cirurgia}
 A entidade \textit{Cirurgia} é utilizada para representar todas as cirurgias  de transplante, junto com as informações gerais e quais os órgãos que estão sendo transplantados.
 
-\paragraph*{• HLA}
+\subparagraph{• HLA}
 A entidade \textit{HLA} é utilizada para representar todos os testes para avalia a compatibilidade entre o doador e o receptor.
 
-\paragraph*{• Exame Doação}
+\subparagraph{• Exame Doação}
 A entidade \textit{ExameDoacao} é utilizada para representar os cinco exames necessários antes de realizar a cirurgia no paciente.
 
-\paragraph*{• Doença Prévia}
+\subparagraph{• Doença Prévia}
 A entidade \textit{DoencaPrevia} é utilizada para representar todas as doenças do paciente antes de realizar a cirurgia.
 
-\paragraph*{• Substância Extra}
+\subparagraph{• Substância Extra}
 A entidade \textit{SubstanciaExtra} é utilizada para representar as substâncias que o paciente possa ter adquirido antes de realizar a cirurgia.
 
-\paragraph*{• Aprovação}
+\subparagraph{• Aprovação}
 A entidade \textit{Aprovacao} é utilizada para representar as substâncias que precisam ser verificadas e autorizadas quando o paciente da entrada no hospital. 
 
-\paragraph*{• Teste Clínico}
+\subparagraph{• Teste Clínico}
 A entidade \textit{TesteClinico} é utilizada para representar dois testes clínicos obrigatórios antes de comunicar a central de transplantes.
 
-\paragraph*{• Sorologia}
+\subparagraph{• Sorologia}
 A entidade \textit{Sorologia} é utilizada para representar o diagnóstico e a identificação de anticorpos e antígenos no soro do paciente.
 
-\paragraph*{• Situação Clínica}
+\subparagraph{• Situação Clínica}
 A entidade \textit{SituacaoClinica} é utilizada para representar a situação clínica do paciente que é medida através dos atributos listados na entidade.
 
-\paragraph*{• Entrevista Familiar}
+\subparagraph{• Entrevista Familiar}
 A entidade \textit{EntrevistaFamiliar} é utilizada para representar a entrevista realizada junto a família do paciente.
 
-\paragraph*{• Óbito}
+\subparagraph{• Óbito}
 A entidade \textit{Obito} é utilizada para representar informações básicas do óbito do paciente que estão listadas na entidade.
 
-\paragraph*{• Comunicação Processo Doação}
+\subparagraph{• Comunicação Processo Doação}
 A entidade \textit{ComunicacaoProcessoDoacao} é utilizada para representar a comunicação entre a Central Regional de Órgãos e a Central Nacional de Órgãos.
 
-\paragraph*{• Usuário}
+\subparagraph{• Usuário}
 A entidade \textit{Usuario} é utilizada para representar as informações dos usuários do software de captação e doação de órgãos. 
 
-\paragraph*{• Tipo Permissão}
+\subparagraph{• Tipo Permissão}
 A entidade \textit{TipoPermissao} é utilizada para representar as permissões existentes no software de captação e doação de órgãos.
 
-\paragraph*{• Permissão Usuário}
+\subparagraph{• Permissão Usuário}
 A entidade \textit{PermissaoUsuario} é utilizada para representar as permissões de cada usuário cadastrado no software de captação e doação de órgãos.
 
+
+\chapter{Implementação}
+Este capítulo apresenta os detalhes de implementação do software Florence a fim de esclarecer as principais tomadas de decisões tomadas pelo grupo.
+
+\section{Banco de dados}
+O MySQL é um sistema gerenciador de banco de dados relacional de código aberto e utiliza a linguagem SQL (Structure Query Language – Linguagem de Consulta Estruturada), que é a linguagem mais popular para inserir, acessar e gerenciar o conteúdo armazenado em um banco de dados.
+
+A escolha do grupo por este banco dados foi decidida principalmente pelo fato de ser Open Source e também por oferecer uma melhor segurança no acesso aos dados dos pacientes. 
+%[http://pt.abcarticulos.info/article/vantagens-e-desvantagens-do-mysql]
+
+Além disso, o banco de dados MySql também oferece vários recursos muito úteis para planejar bancos de dados de pequena e larga escala. %[http://www.linuxnewmedia.com.br/images/uploads/pdf_aberto/LM_67_50_53_04_ana_mysql.pdf]
+
+\section{Desenvolvimento Back-End}
+O desenvolvimento do back-end do software Florence foi desenvolvido utilizando Spring framework, linguagem de programação Java e o modelo de três camadas conforme visto abaixo:
+
+\subsection{Linguagem de Programação}
+A linguagem de programação Java 8 foi escolhida pelo grupo porque oferece uma extensa documentação e oferece todos os recursos necessários para desenvolver o software.
+
+\subsection{Modelo de Camadas}
+A fim de oferecer maior agilidade e não replicação de código, o grupo desenvolveu uma implementação abstrata dividida em três camadas:
+
+\subparagraph{• Camada de Persistência}
+A camada de persistência foi utilizada para representar o estado do objeto no banco de dados e está integrada com o framework JPA que oferece uma implementação abstrata de comunicação das classes java e as entidades do banco de dados.
+
+\subparagraph{• Camada de Aplicação}
+A camada de aplicação foi criada para representar as regras de negócio definidas pelo grupo a fim de oferecer uma centralização de negócio por entidade, de maneira que outros recursos possam utilizá-las.
+
+
+\subparagraph{• Camada de Apresentação}
+A camada de apresentação foi implementada com o padrão Facade para representar as operações disponíveis para o cliente localizado nos smartphones, oferecendo uma comunicação via protocolo http entre os dispositivos e os serviços na nuvem.
+
+\newpage
+
 \section{Diagrama de Classe}
-Este capítulo apresenta o diagrama de classe para o desenvolvimento do software de captação e doação de órgãos que é representado pela Figura \ref{fig:erDiagram}.
+O diagrama de classe abaixo representa a implementação abstrata que foi desenvolvida para o software Florence.
 
 \begin{figure}[htp]
 \centering
 \caption{Diagrama de Classe}
-\includegraphics[width=15cm]{class-diagram}
+\includegraphics[scale=0.44]{class-diagram}
 \label{fig:erDiagram}
 \end{figure}
 
-\chapter{Protótipo}
-Este capítulo apresenta e descreve as principais telas do aplicativo móvel, onde os usuários interagem junto a plataforma proposta. É importante salientar que os dados preenchido nas telas são fictícios.
+No diagrama é possível ver as três camadas descritas na seção anterior, onde a classe AbstractResource representa a camada de apresentação, a classe AbstractService representa a camada de aplicação e a classe AbstractEntity representa a camada de persistência.
+
+Para a camada de apresentação e aplicação foi criado uma interface e uma implementação abstrata tal que cada implementação abstrata é genérica e pode ser aplicada para qualquer entidade do software.
+
+Como exemplo de utilização destas camadas, o diagrama apresenta a implementação do serviço que inicia o processo de doação que é representado pela entidade ProcessoDoação.
+
+\section{Desenvolvimento Front-End}
+
+\subparagraph{• Arquitetura}
+
+\subparagraph{• Protótipo}
 
 \section{FLORENCE: Tela de Login}
 A Figura \ref{fig:app-login} apresenta a tela de login no aplicativo móvel para usuários e administradores conforme descrito na Seção \ref{tab:uc-login}.
@@ -1183,36 +1217,143 @@ Nesta tela o usuário tem a opção de selecionar um dos processos e visualizar 
 A Figura \ref{fig:app-config} apresenta a tela para configurar os hospitais de cada OPO que só pode ser acessada por um usuário Administrador. 
 
 \chapter{Avaliação}
-Este capítulo descreve a avaliação realizada no software de captação e doação de órgãos ou tecidos que esclarece alguns pontos técnicos relacionados a performance da aplicação. 
+Este capítulo descreve o teste de performance realizado no software de captação e doação de órgãos ou tecidos a fim de oferecer um melhor entendimento de como o software se comporta nos cenários simulados pelo grupo.
 
-\section{Novo processo - 50 usuários - 100 requisições}
-Esta seção descreve o tempo de resposta, taxa de transferência e uso de memória consumido ao requisitar com 50 usuários e 100 requisições por usuário o serviço de criação de um novo processo de doação.
+Para realizar estes teste foram considerados três cenários, sendo cada um deles com uma avaliação do tempo médio de resposta das requisições, vazão para verificar possíveis gargalos e uso de memória do servidor.
 
-\paragraph*{• Tempo de Resposta}
+O grupo utilizou dados fictícios, instalou e configurou o software em uma nuvem pública da empresa Heroku que provê um servidor rodando Linux com 512MB de memória RAM e 2 núcleos de processamento.  
 
-\paragraph*{• Taxa de Transferência}
+\section{Novo processo - 50 usuários - 1 requisição}
+Esta seção descreve a performance do software em um cenário com 50 usuários requisitando o software para criar um novo processo de doação.
 
-\paragraph*{• Uso de memória}
+\subparagraph{• Tempo de Resposta}
+\begin{figure}[htp]
+\centering
+\caption{Tempo de Resposta - 50 usuários - 1 requisição}
+\includegraphics[width=9cm]{50-1-response-time}
+\label{fig:tempo-reposta-50-1}
+\end{figure}
 
-\section{Novo processo - 500 usuários - 100 requisições}
-Esta seção descreve o tempo de resposta, taxa de transferência e uso de memória consumido ao requisitar com 500 usuários e 100 requisições por usuário o serviço de criação de um novo processo de doação
+A figura \ref{fig:tempo-reposta-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma média de tempo de resposta de 3.327 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
 
-Para avaliar o sistema o grupo utilizou dados fictícios, instalou e configurou o software em uma nuvem pública da empresa Heroku que provê um servidor rodando Linux com 512MB de memória RAM e 2 núcleos de processamento.  
+\newpage
 
-\paragraph*{• Tempo de Resposta}
+\subparagraph{• Vazão}
+\begin{figure}[htp]
+\centering
+\caption{Vazão - 50 usuários - 1 requisição}
+\includegraphics[width=15cm]{50-1-throughput}
+\label{fig:throughput-50-1}
+\end{figure}
 
-\paragraph*{• Taxa de Transferência}
+A figura \ref{fig:throughput-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma vazão de 1.428 por minuto, o que nos leva a concluir que o software se comportou adequadamente.
 
-\paragraph*{• Uso de memória}
+\subparagraph{• Uso de memória}
+\begin{figure}[htp]
+\centering
+\caption{Uso de memória - 50 usuários - 1 requisição}
+\includegraphics[width=9cm]{50-1-memory}
+\label{fig:uso-de-memoria-50-1}
+\end{figure}
 
-\section{Novo processo - 1000 usuários - 100 requisições}
-Esta seção descreve o tempo de resposta, taxa de transferência e uso de memória consumido ao requisitar com 1000 usuários e 100 requisições por usuário o serviço de criação de um novo processo de doação.
+A figura \ref{fig:uso-de-memoria-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, foi utilizado 81.3\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM é o suficiente.
 
-\paragraph*{• Tempo de Resposta}
+\section{Novo processo - 50 usuários - 10 requisições}
+Esta seção descreve a performance do software em um cenário com 50 usuários requisitando 10 vezes cada um o software para criar um novo processo de doação.
 
-\paragraph*{• Taxa de Transferência}
+\subparagraph{• Tempo de Resposta}
+\begin{figure}[htp]
+\centering
+\caption{Tempo de Resposta - 50 usuários - 10 requisições}
+\includegraphics[width=9cm]{50-10-response-time}
+\label{fig:tempo-reposta-50-10}
+\end{figure}
+A figura \ref{fig:tempo-reposta-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 3.455 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
 
-\paragraph*{• Uso de memória}
+\subparagraph{• Vazão}
+\begin{figure}[htp]
+\centering
+\caption{Vazão - 50 usuários - 10 requisições}
+\includegraphics[width=15cm]{50-10-throughput}
+\label{fig:throughput-50-10}
+\end{figure}
+
+A figura \ref{fig:throughput-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma grande quantidades de dados desviados junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que o servidor em que o software está hospedado deve ser revisado.
+
+\subparagraph{• Uso de memória}
+\begin{figure}[htp]
+\centering
+\caption{Uso de memória - 50 usuários - 10 requisições}
+\includegraphics[width=9cm]{50-10-memory}
+\label{fig:uso-de-memoria-50-10}
+\end{figure}
+
+A figura \ref{fig:uso-de-memoria-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, foi utilizado 102.9\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM não é o suficiente e pode trazer problemas durante o início do processo.
+
+
+\section{Novo processo - 100 usuários - 10 requisições}
+Esta seção descreve a performance do software em um cenário com 100 usuários requisitando 10 vezes cada um o software para criar um novo processo de doação.
+
+\subparagraph{• Tempo de Resposta}
+\begin{figure}[htp]
+\centering
+\caption{Tempo de Resposta - 100 usuários - 10 requisições}
+\includegraphics[width=9cm]{100-10-response-time}
+\label{fig:tempo-reposta-100-10}
+\end{figure}
+
+A figura \ref{fig:tempo-reposta-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 2,687 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
+
+\subparagraph{• Vazão}
+\begin{figure}[htp]
+\centering
+\caption{Vazão - 100 usuários - 10 requisições}
+\includegraphics[width=15cm]{100-10-throughput}
+\label{fig:throughput-100-10}
+\end{figure}
+
+A figura \ref{fig:throughput-100-10} mostra que ao executar este cenário de 100 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve um desvio de mais de 50\% das amostras enviadas junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que a configuração de ambiente existente não é o suficiente para este cenário.
+
+\newpage
+
+\subparagraph{• Uso de memória}
+\begin{figure}[htp]
+\centering
+\caption{Uso de memória - 100 usuários - 10 requisições}
+\includegraphics[width=9cm]{100-10-memory}
+\label{fig:uso-de-memoria-100-10}
+\end{figure}
+A figura \ref{fig:uso-de-memoria-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, foi utilizado 98.2\% da memória do servidor, sendo que atingiu o ponto máximo de 100\% do uso da memória em um determinado momento, o que nos leva a concluir que 512MB de memória RAM não é o suficiente e pode ocasionar possíveis perdas de dados.
+
+\chapter{Conclusão e Trabalhos Futuros}
+Este capítulo descreve a conclusão deste trabalho junto aos ensinamentos e dificuldades encontrados durante o desenvolvimento e também sugestões de trabalhos futuros.
+
+\section{Conclusão}
+Após realizar diversas pesquisas e reuniões com a organização de procura de órgãos localizada no hospital São Lucas, o grupo conclui que o software poderá auxiliar na gestão dessas entidades centralizando todos os dados em um  único lugar e provê uma excelente mobilidade que facilitará o dia-a-dia dos profissionais envolvidos no processo.
+
+O desenvolvimento deste trabalho de conclusão foi de extrema importância para o grupo devido ao fato de que diversos desafios foram superados, agregando conhecimento ao trabalho e ao grupo.
+
+Na parte de pesquisa o grupo aprendeu como funciona e quais são os riscos existentes durante o processo de doação de órgãos no Brasil e em alguns outros países, entendendo o processo desde a primeira comunicação de um possível doador de órgãos até ao comunicado junto a central de distribuição de órgãos localizada em Brasília.
+
+Quanto ao desenvolvimento o grupo enfrentou algumas dificuldades relacionadas a segurança durante o desenvolvimento dos serviços expostos na nuvem, e também em construir todas as telas no aplicativo, devido ao fato de que há uma enorme quantia de dados que devem ser preenchidos para se concluir o processo.
+
+\section{Trabalhos Futuros}
+Algumas ideias de trabalhos futuros são:
+
+\subparagraph{• Consultar Gráficos}
+Desenvolver uma página no aplicativo com gráficos onde os usuários com maior permissão possam acompanhar o desempenho das equipes de organização de procura de órgãos.
+
+\subparagraph{• Serviço de Notificação}
+Desenvolver um serviço de notificação junto a central de distribuição de órgãos localizada em brasília a fim de oferecer uma maior agilidade na conclusão dos processos.
+
+\subparagraph{• Site Web}
+Desenvolver um site onde os profissionais envolvidos no processo possam gerenciar os processos de doação existentes pelo computador, afim de oferecer uma melhor flexibilidade na utilização dos serviços web desenvolvidos pelo grupo.
+
+\subparagraph{• Segurança}
+Desenvolver uma camada de segurança aos web services desenvolvidos a fim de oferecer uma melhor segurança aos dados dos pacientes e familiares.
+
+
+
 
 %\cite{NAGAPACKING07}
 %\cite{CORMEMALGORITHMS01}
