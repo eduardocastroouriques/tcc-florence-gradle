@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.9)  14 NOV 2017 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.9)  14 NOV 2017 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1839,251 +1839,251 @@ Underfull \hbox (badness 1112) in paragraph at lines 1124--1125
 []|\T1/phv/m/n/12 DIURESE UL-TI-MAS VINTE E
  []
 
-[35] [36] [37] [38] [39] [40]
+[35] [36] [37] [38] [39] [40] [41]
 6.
 
-Underfull \hbox (badness 10000) detected at line 1416
+Underfull \hbox (badness 10000) detected at line 1537
 \T1/phv/b/n/14.4 6. 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1419
+Underfull \hbox (badness 10000) detected at line 1540
 \T1/phv/b/n/12 6.1
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1427
+Underfull \hbox (badness 10000) detected at line 1548
 \T1/phv/b/n/12 6.2
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1430
+Underfull \hbox (badness 10000) detected at line 1551
 \T1/phv/m/n/12 6.2.1
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1433
+Underfull \hbox (badness 10000) detected at line 1554
 \T1/phv/m/n/12 6.2.2
  []
 
-[41
+[42
 
 ]
-Underfull \hbox (badness 10000) detected at line 1446
+Underfull \hbox (badness 10000) detected at line 1567
 \T1/phv/m/n/12 6.2.3
  []
 
-[42]
-Underfull \hbox (badness 10000) detected at line 1460
+[43]
+Underfull \hbox (badness 10000) detected at line 1581
 \T1/phv/b/n/12 6.3
  []
 
-<images/class-diagram.png, id=155, 1138.2525pt x 850.17625pt>
+<images/class-diagram.png, id=159, 1138.2525pt x 850.17625pt>
 File: images/class-diagram.png Graphic file (type png)
 
 <use images/class-diagram.png>
-Package pdftex.def Info: images/class-diagram.png used on input line 1466.
+Package pdftex.def Info: images/class-diagram.png used on input line 1587.
 (pdftex.def)             Requested size: 500.83266pt x 374.0787pt.
 
-Overfull \hbox (17.13579pt too wide) in paragraph at lines 1466--1468
+Overfull \hbox (17.13579pt too wide) in paragraph at lines 1587--1589
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1476
+Underfull \hbox (badness 10000) detected at line 1597
 \T1/phv/b/n/12 6.4
  []
 
-[43 <./images/class-diagram.png>]
-Underfull \hbox (badness 10000) detected at line 1485
+[44 <./images/class-diagram.png>]
+Underfull \hbox (badness 10000) detected at line 1606
 \T1/phv/m/n/12 6.4.1
  []
 
-[44]
-Overfull \hbox (30.41818pt too wide) in paragraph at lines 1498--1499
+[45]
+Overfull \hbox (30.41818pt too wide) in paragraph at lines 1619--1620
 \T1/phv/m/n/12 da-tas, que foi cri-ado es-ten-dendo o fra-mework FS-Ca-len-dar,
  um fra-mework "open source"altamente
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1512
+Underfull \hbox (badness 10000) detected at line 1633
 \T1/phv/m/n/12 6.4.2
  []
 
-[45]
-Underfull \hbox (badness 10000) detected at line 1517
+[46]
+Underfull \hbox (badness 10000) detected at line 1638
 \T1/phv/m/n/12 6.4.3
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1532
+Underfull \hbox (badness 10000) detected at line 1653
 \T1/phv/m/n/12 6.4.4
  []
 
-[46]
-Underfull \hbox (badness 10000) detected at line 1544
+[47]
+Underfull \hbox (badness 10000) detected at line 1665
 \T1/phv/b/n/12 6.5
  []
 
-<images/app-login.png, id=169, 564.1075pt x 1003.75pt>
+<images/app-login.png, id=172, 564.1075pt x 1003.75pt>
 File: images/app-login.png Graphic file (type png)
 
 <use images/app-login.png>
-Package pdftex.def Info: images/app-login.png used on input line 1550.
+Package pdftex.def Info: images/app-login.png used on input line 1671.
 (pdftex.def)             Requested size: 170.71652pt x 303.76167pt.
 
-Underfull \hbox (badness 10000) detected at line 1560
+Underfull \hbox (badness 10000) detected at line 1681
 \T1/phv/b/n/12 6.6
  []
 
-<images/app-data.png, id=170, 564.1075pt x 1003.75pt>
+<images/app-data.png, id=173, 564.1075pt x 1003.75pt>
 File: images/app-data.png Graphic file (type png)
 
 <use images/app-data.png>
-Package pdftex.def Info: images/app-data.png used on input line 1566.
+Package pdftex.def Info: images/app-data.png used on input line 1687.
 (pdftex.def)             Requested size: 170.71652pt x 303.76167pt.
 
-Underfull \hbox (badness 10000) detected at line 1574
+Underfull \hbox (badness 10000) detected at line 1695
 \T1/phv/b/n/12 6.7
  []
 
-<images/app-attachment.png, id=171, 565.11125pt x 1003.75pt>
+<images/app-attachment.png, id=174, 565.11125pt x 1003.75pt>
 File: images/app-attachment.png Graphic file (type png)
 
 <use images/app-attachment.png>
-Package pdftex.def Info: images/app-attachment.png used on input line 1580.
+Package pdftex.def Info: images/app-attachment.png used on input line 1701.
 (pdftex.def)             Requested size: 142.26378pt x 252.6829pt.
- [47] [48 <./images/app-login.png> <./images/app-data.png>]
-Underfull \hbox (badness 10000) detected at line 1588
+ [48] [49 <./images/app-login.png> <./images/app-data.png>]
+Underfull \hbox (badness 10000) detected at line 1709
 \T1/phv/b/n/12 6.8
  []
 
-<images/app-list.png, id=178, 565.11125pt x 1003.75pt>
+<images/app-list.png, id=182, 565.11125pt x 1003.75pt>
 File: images/app-list.png Graphic file (type png)
 
 <use images/app-list.png>
-Package pdftex.def Info: images/app-list.png used on input line 1594.
+Package pdftex.def Info: images/app-list.png used on input line 1715.
 (pdftex.def)             Requested size: 170.71652pt x 303.22562pt.
 
-Underfull \hbox (badness 10000) detected at line 1601
+Underfull \hbox (badness 10000) detected at line 1722
 \T1/phv/b/n/12 6.9
  []
 
-<images/app-config.png, id=179, 565.11125pt x 1003.75pt>
+<images/app-config.png, id=183, 565.11125pt x 1003.75pt>
 File: images/app-config.png Graphic file (type png)
 
 <use images/app-config.png>
-Package pdftex.def Info: images/app-config.png used on input line 1606.
+Package pdftex.def Info: images/app-config.png used on input line 1727.
 (pdftex.def)             Requested size: 170.71652pt x 303.22562pt.
- [49 <./images/app-attachment.png>] [50 <./images/app-list.png> <./images/app-c
+ [50 <./images/app-attachment.png>] [51 <./images/app-list.png> <./images/app-c
 onfig.png>]
 7.
 
-Underfull \hbox (badness 10000) detected at line 1612
+Underfull \hbox (badness 10000) detected at line 1733
 \T1/phv/b/n/14.4 7. 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1619
+Underfull \hbox (badness 10000) detected at line 1740
 \T1/phv/b/n/12 7.1
  []
 
-<images/50-1-response-time.jpg, id=188, 455.7025pt x 224.84pt>
+<images/50-1-response-time.jpg, id=191, 455.7025pt x 224.84pt>
 File: images/50-1-response-time.jpg Graphic file (type jpg)
 
 <use images/50-1-response-time.jpg>
-Package pdftex.def Info: images/50-1-response-time.jpg used on input line 1626.
+Package pdftex.def Info: images/50-1-response-time.jpg used on input line 1747.
 
 (pdftex.def)             Requested size: 256.0748pt x 126.34868pt.
- [51
+ [52
 
  <./images/50-1-response-time.jpg>]
-<images/50-1-throughput.png, id=192, 944.52875pt x 524.96124pt>
+<images/50-1-throughput.png, id=195, 944.52875pt x 524.96124pt>
 File: images/50-1-throughput.png Graphic file (type png)
 
 <use images/50-1-throughput.png>
-Package pdftex.def Info: images/50-1-throughput.png used on input line 1638.
+Package pdftex.def Info: images/50-1-throughput.png used on input line 1759.
 (pdftex.def)             Requested size: 426.79134pt x 237.20763pt.
 
-<images/50-1-memory.jpg, id=193, 442.65375pt x 264.99pt>
+<images/50-1-memory.jpg, id=196, 442.65375pt x 264.99pt>
 File: images/50-1-memory.jpg Graphic file (type jpg)
 
 <use images/50-1-memory.jpg>
-Package pdftex.def Info: images/50-1-memory.jpg used on input line 1648.
+Package pdftex.def Info: images/50-1-memory.jpg used on input line 1769.
 (pdftex.def)             Requested size: 256.0748pt x 153.3021pt.
 
-Underfull \hbox (badness 10000) detected at line 1654
+Underfull \hbox (badness 10000) detected at line 1775
 \T1/phv/b/n/12 7.2
  []
 
-[52 <./images/50-1-throughput.png> <./images/50-1-memory.jpg>]
-<images/50-10-response-time.jpg, id=197, 537.00626pt x 217.81375pt>
+[53 <./images/50-1-throughput.png> <./images/50-1-memory.jpg>]
+<images/50-10-response-time.jpg, id=200, 537.00626pt x 217.81375pt>
 File: images/50-10-response-time.jpg Graphic file (type jpg)
 
 <use images/50-10-response-time.jpg>
-Package pdftex.def Info: images/50-10-response-time.jpg used on input line 1661
+Package pdftex.def Info: images/50-10-response-time.jpg used on input line 1782
 .
 (pdftex.def)             Requested size: 256.0748pt x 103.86475pt.
 
-<images/50-10-throughput.png, id=198, 949.5475pt x 524.96124pt>
+<images/50-10-throughput.png, id=201, 949.5475pt x 524.96124pt>
 File: images/50-10-throughput.png Graphic file (type png)
 
 <use images/50-10-throughput.png>
-Package pdftex.def Info: images/50-10-throughput.png used on input line 1670.
+Package pdftex.def Info: images/50-10-throughput.png used on input line 1791.
 (pdftex.def)             Requested size: 426.79134pt x 235.95001pt.
- [53 <./images/50-10-response-time.jpg> <./images/50-10-throughput.png>]
-<images/50-10-memory.jpg, id=202, 534.99875pt x 262.9825pt>
+ [54 <./images/50-10-response-time.jpg> <./images/50-10-throughput.png>]
+<images/50-10-memory.jpg, id=205, 534.99875pt x 262.9825pt>
 File: images/50-10-memory.jpg Graphic file (type jpg)
 
 <use images/50-10-memory.jpg>
-Package pdftex.def Info: images/50-10-memory.jpg used on input line 1680.
+Package pdftex.def Info: images/50-10-memory.jpg used on input line 1801.
 (pdftex.def)             Requested size: 256.0748pt x 125.88104pt.
 
-Underfull \hbox (badness 10000) detected at line 1687
+Underfull \hbox (badness 10000) detected at line 1808
 \T1/phv/b/n/12 7.3
  []
 
-<images/100-10-response-time.jpg, id=203, 472.76625pt x 207.77625pt>
+<images/100-10-response-time.jpg, id=206, 472.76625pt x 207.77625pt>
 File: images/100-10-response-time.jpg Graphic file (type jpg)
 
 <use images/100-10-response-time.jpg>
-Package pdftex.def Info: images/100-10-response-time.jpg used on input line 169
-4.
+Package pdftex.def Info: images/100-10-response-time.jpg used on input line 181
+5.
 (pdftex.def)             Requested size: 256.0748pt x 112.54306pt.
- [54 <./images/50-10-memory.jpg> <./images/100-10-response-time.jpg>]
-<images/100-10-throughput.jpg, id=207, 947.54pt x 529.98pt>
+ [55 <./images/50-10-memory.jpg> <./images/100-10-response-time.jpg>]
+<images/100-10-throughput.jpg, id=211, 947.54pt x 529.98pt>
 File: images/100-10-throughput.jpg Graphic file (type jpg)
 
 <use images/100-10-throughput.jpg>
-Package pdftex.def Info: images/100-10-throughput.jpg used on input line 1704.
+Package pdftex.def Info: images/100-10-throughput.jpg used on input line 1825.
 (pdftex.def)             Requested size: 426.79134pt x 238.71521pt.
- [55 <./images/100-10-throughput.jpg>]
-<images/100-10-memory.jpg, id=212, 472.76625pt x 276.03125pt>
+ [56 <./images/100-10-throughput.jpg>]
+<images/100-10-memory.jpg, id=215, 472.76625pt x 276.03125pt>
 File: images/100-10-memory.jpg Graphic file (type jpg)
 
 <use images/100-10-memory.jpg>
-Package pdftex.def Info: images/100-10-memory.jpg used on input line 1716.
+Package pdftex.def Info: images/100-10-memory.jpg used on input line 1837.
 (pdftex.def)             Requested size: 256.0748pt x 149.51373pt.
- [56 <./images/100-10-memory.jpg>]
+ [57 <./images/100-10-memory.jpg>]
 8.
 
-Underfull \hbox (badness 10000) detected at line 1721
+Underfull \hbox (badness 10000) detected at line 1842
 \T1/phv/b/n/14.4 8. 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1724
+Underfull \hbox (badness 10000) detected at line 1845
 \T1/phv/b/n/12 8.1
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1733
+Underfull \hbox (badness 10000) detected at line 1854
 \T1/phv/b/n/12 8.2
  []
 
-[57
+[58
 
-] (./PropEduardoOuriques-VicenteMiraber.bbl [58]) [59
+] (./PropEduardoOuriques-VicenteMiraber.bbl [59]) [60
 
 ]
 (./PropEduardoOuriques-VicenteMiraber.aux)
@@ -2092,10 +2092,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18575 strings out of 493029
- 357490 string characters out of 6136235
- 419098 words of memory out of 5000000
- 21627 multiletter control sequences out of 15000+600000
+ 18581 strings out of 493029
+ 357645 string characters out of 6136235
+ 419170 words of memory out of 5000000
+ 21633 multiletter control sequences out of 15000+600000
  32216 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,65p,719b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2103,11 +2103,11 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvro8a.pfb>
-Output written on PropEduardoOuriques-VicenteMiraber.pdf (59 pages, 1423465 byt
+Output written on PropEduardoOuriques-VicenteMiraber.pdf (60 pages, 1425368 byt
 es).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
+ 243 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1388,29 +1388,150 @@ MEDICO & PROCESSO DOACAO ID\\
 \end{tabular}
 \end{table}
 
+\newpage
+
 \subparagraph{• Sorologia}
 A entidade \textit{Sorologia} é utilizada para representar o diagnóstico e a identificação de anticorpos e antígenos no soro do paciente.
+
+\begin{table}
+\centering
+\caption{Atributos - Sorologia} \label{table:atr-sorologia}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & HORA INICIO\\
+\hline
+HORA RESULTADO & LOCAL\\
+\hline
+ANTI HIV & HBS AG\\
+\hline
+HTLV PRIMEIRO & HTLV SEGUNDO \\
+\hline
+ANTI HBC & ANTI HCV\\
+\hline
+ANTI HBS & TOXO IGG\\
+\hline
+CHAGAS & CMV IGC\\
+\hline
+TOXO IGM & LUES\\
+\hline
+CMVIGM & HEMODILUICAO\\
+\hline
+CALCULO & PROCESSO DOACAO ID\\
+\hline
+
+\end{tabular}
+\end{table}
 
 \subparagraph{• Situação Clínica}
 A entidade \textit{SituacaoClinica} é utilizada para representar a situação clínica do paciente que é medida através dos atributos listados na entidade.
 
+\begin{table}
+\centering
+\caption{Atributos - Situação Clínica} \label{table:atr-situacao-clinica}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID &DATA SITUACAO CLINICA\\
+\hline
+HORA SITUACAO CLINICA & TA\\
+\hline
+DIURESE & SAT\\
+\hline
+PEEP & PINS \\
+\hline
+FR & FIO DOIS\\
+\hline
+PROCESSO DOACAO ID&\\
+\hline
+
+\end{tabular}
+\end{table}
+
 \subparagraph{• Entrevista Familiar}
 A entidade \textit{EntrevistaFamiliar} é utilizada para representar a entrevista realizada junto a família do paciente.
+
+
+\begin{table}
+\centering
+\caption{Atributos - Entrevista Familiar} \label{table:atr-entrevista-familiar}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & DATA ENTREVISTA\\
+\hline
+HORA ENTREVISTA & RESULTADO\\
+\hline
+ENTREVISTADOR & MOTIVO NEGATIVA\\
+\hline
+PROCESSO DOACAO ID & \\
+\hline
+
+\end{tabular}
+\end{table}
+
 
 \subparagraph{• Óbito}
 A entidade \textit{Obito} é utilizada para representar informações básicas do óbito do paciente que estão listadas na entidade.
 
+\begin{table}
+\centering
+\caption{Atributos - Óbito} \label{table:atr-obito}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & DATA OBITO\\
+\hline
+HORA OBITO & TIPO\\
+\hline
+PROCESSO DOACAO ID & \\
+\hline
+
+\end{tabular}
+\end{table}
+
+
 \subparagraph{• Comunicação Processo Doação}
 A entidade \textit{ComunicacaoProcessoDoacao} é utilizada para representar a comunicação entre a Central Regional de Órgãos e a Central Nacional de Órgãos.
+
+\begin{table}
+\centering
+\caption{Atributos - Comunicação Processo Doação} \label{table:atr-comunicacao-processo-doacao}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & DATA COMUNICACAO\\
+\hline
+HORA COMUNICACAO & RGCT\\
+\hline
+PROCESSO DOACAO ID & \\
+\hline
+
+\end{tabular}
+\end{table}
 
 \subparagraph{• Usuário}
 A entidade \textit{Usuario} é utilizada para representar as informações dos usuários do software de captação e doação de órgãos. 
 
-\subparagraph{• Tipo Permissão}
-A entidade \textit{TipoPermissao} é utilizada para representar as permissões existentes no software de captação e doação de órgãos.
+\begin{table}
+\centering
+\caption{Atributos - Usuário} \label{table:atr-usuario}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
 
-\subparagraph{• Permissão Usuário}
-A entidade \textit{PermissaoUsuario} é utilizada para representar as permissões de cada usuário cadastrado no software de captação e doação de órgãos.
+%Atores
+\hline
+ID & USUARIO\\
+\hline
+SENHA & TIPO\\
+\hline
+
+\end{tabular}
+\end{table}
 
 
 \chapter{Implementação}
