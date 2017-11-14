@@ -1,5 +1,17 @@
 \begin{thebibliography}{}
 
+\bibitem[abcarticulso 2017]{MYSQLV}
+abcarticulso (2017).
+\newblock Vantagens e desvantagens do mysql.
+
+\bibitem[Benthin 2016]{PLANBANCODEDADO}
+Benthin, F. (2016).
+\newblock Planejamento de banco de dados com o mysql workbench.
+
+\bibitem[Bertoleti 2017]{CAMADAAPLICACAO}
+Bertoleti, P. (2017).
+\newblock Embarcados.
+
 \bibitem[da~Saúde 2009a]{PORTARIA}
 da~Saúde, M. (2009a).
 \newblock Portaria nº 2.600, de 21 de outubro de 2009.
@@ -57,5 +69,9 @@ Moreira, L. (2015).
 \bibitem[of~Standards and Technology 2016]{NIST}
 of~Standards, N.~I. and Technology (2016).
 \newblock The nist definition of cloud computing.
+
+\bibitem[Santos 2008]{CAMADASPERSISTENCIA}
+Santos, P. I. H.~F. (2008).
+\newblock Arquitetura em camadas e persistência de objetos.
 
 \end{thebibliography}

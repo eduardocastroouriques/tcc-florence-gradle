@@ -3,48 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: PropEduardoOuriques-VicenteMiraber.aux
 The style file: tcc-alpha-full.bst
 Database file #1: reference.bib
+Warning--empty journal in PLANBANCODEDADO
 Warning--empty journal in SANGUE
 Warning--empty journal in COMPUTACAOEMNUVEM
 Warning--empty journal in EPRECISOEDUCAR
-You've used 14 entries,
+Warning--empty journal in CAMADASPERSISTENCIA
+You've used 18 entries,
             1935 wiz_defined-function locations,
-            530 strings with 4933 characters,
-and the built_in function-call counts, 3489 in all, are:
-= -- 341
-> -- 104
-< -- 14
-+ -- 34
-- -- 30
-* -- 227
-:= -- 684
-add.period$ -- 29
-call.type$ -- 14
-change.case$ -- 84
-chr.to.int$ -- 12
-cite$ -- 17
-duplicate$ -- 153
-empty$ -- 234
-format.name$ -- 46
-if$ -- 640
+            547 strings with 5254 characters,
+and the built_in function-call counts, 4489 in all, are:
+= -- 437
+> -- 132
+< -- 18
++ -- 42
+- -- 38
+* -- 293
+:= -- 878
+add.period$ -- 37
+call.type$ -- 18
+change.case$ -- 108
+chr.to.int$ -- 16
+cite$ -- 23
+duplicate$ -- 199
+empty$ -- 304
+format.name$ -- 58
+if$ -- 824
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 60
-num.names$ -- 42
-pop$ -- 70
+missing$ -- 7
+newline$ -- 76
+num.names$ -- 54
+pop$ -- 92
 preamble$ -- 1
-purify$ -- 85
+purify$ -- 109
 quote$ -- 0
-skip$ -- 132
+skip$ -- 172
 stack$ -- 0
-substring$ -- 170
+substring$ -- 218
 swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 82
-warning$ -- 3
-while$ -- 28
+type$ -- 106
+warning$ -- 5
+while$ -- 36
 width$ -- 0
-write$ -- 144
-(There were 3 warnings)
+write$ -- 184
+(There were 5 warnings)

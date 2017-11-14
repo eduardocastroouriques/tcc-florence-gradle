@@ -1538,12 +1538,12 @@ SENHA & TIPO\\
 Este capítulo apresenta os detalhes de implementação do software Florence a fim de esclarecer as principais tomadas de decisões do  grupo.
 
 \section{Banco de dados}
-O MySQL é um sistema gerenciador de banco de dados relacional de código aberto e utiliza a linguagem SQL (Structure Query Language – Linguagem de Consulta Estruturada), que é a linguagem mais popular para inserir, acessar e gerenciar o conteúdo armazenado em um banco de dados.
+O MySQL é um sistema gerenciador de banco de dados relacional de código aberto e utiliza a linguagem SQL, que é a linguagem mais popular para inserir, acessar e gerenciar o conteúdo armazenado em um banco de dados \cite{MYSQLV}.
 
 A escolha do grupo por este banco dados foi decidida principalmente pelo fato de ser Open Source e também por oferecer uma melhor segurança no acesso aos dados dos pacientes. 
 %[http://pt.abcarticulos.info/article/vantagens-e-desvantagens-do-mysql]
 
-Além disso, o banco de dados MySql também oferece vários recursos muito úteis para planejar bancos de dados de pequena e larga escala. %[http://www.linuxnewmedia.com.br/images/uploads/pdf_aberto/LM_67_50_53_04_ana_mysql.pdf]
+Além disso, o banco de dados MySql também oferece vários recursos muito úteis para planejar bancos de dados de pequena e larga escala \cite{PLANBANCODEDADO}. %[http://www.linuxnewmedia.com.br/images/uploads/pdf_aberto/LM_67_50_53_04_ana_mysql.pdf]
 
 \section{Desenvolvimento Back-End}
 O desenvolvimento do back-end do software Florence foi desenvolvido utilizando Spring framework, linguagem de programação Java e o modelo de três camadas conforme visto abaixo:
@@ -1555,10 +1555,10 @@ A linguagem de programação Java 8 foi escolhida pelo grupo porque oferece uma 
 A fim de oferecer maior agilidade e não replicação de código, o grupo desenvolveu uma implementação abstrata dividida em três camadas:
 
 \subparagraph{• Camada de Persistência}
-A camada de persistência foi utilizada para representar o estado do objeto no banco de dados e está integrada com o framework JPA que oferece uma implementação abstrata de comunicação das classes java e as entidades do banco de dados.
+A camada de persistência foi utilizada para representar o estado do objeto no banco de dados \cite{CAMADASPERSISTENCIA} e está integrada com o framework JPA que oferece uma implementação abstrata de comunicação das classes java e as entidades do banco de dados.
 
 \subparagraph{• Camada de Aplicação}
-A camada de aplicação foi criada para representar as regras de negócio definidas pelo grupo a fim de oferecer uma centralização de negócio por entidade, de maneira que outros recursos possam utilizá-las.
+A camada de aplicação foi criada para representar as regras de negócio definidas pelo grupo a fim de oferecer uma centralização de negócio por entidade, de maneira que outros recursos possam utilizá-las \cite{CAMADAAPLICACAO}.
 
 
 \subparagraph{• Camada de Apresentação}
@@ -1837,7 +1837,7 @@ A figura \ref{fig:throughput-100-10} mostra que ao executar este cenário de 100
 \includegraphics[width=9cm]{100-10-memory}
 \label{fig:uso-de-memoria-100-10}
 \end{figure}
-A figura \ref{fig:uso-de-memoria-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, foi utilizado 98.2\% da memória do servidor, sendo que atingiu o ponto máximo de 100\% do uso da memória em um determinado momento, o que nos leva a concluir que 512MB de memória RAM não é o suficiente e pode ocasionar possíveis perdas de dados.
+A figura \ref{fig:uso-de-memoria-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, foi utilizado 98.2\% da memória do servidor, sendo que atingiu o ponto máximo de 100\% do uso da memória em um determinado momento, o que nos leva a concluir que 512MB de memória RAM\sigla{RAM}{Random-access memory} não é o suficiente e pode ocasionar possíveis perdas de dados.
 
 \chapter{Conclusão e Trabalhos Futuros}
 Este capítulo descreve a conclusão deste trabalho junto aos ensinamentos e dificuldades encontrados durante o desenvolvimento e também sugestões de trabalhos futuros.
