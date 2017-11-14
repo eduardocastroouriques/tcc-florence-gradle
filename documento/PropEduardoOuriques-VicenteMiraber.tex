@@ -1095,7 +1095,7 @@ A entidade \textit{PermissaoUsuario} é utilizada para representar as permissõe
 
 
 \chapter{Implementação}
-Este capítulo apresenta os detalhes de implementação do software Florence a fim de esclarecer as principais tomadas de decisões tomadas pelo grupo.
+Este capítulo apresenta os detalhes de implementação do software Florence a fim de esclarecer as principais tomadas de decisões do  grupo.
 
 \section{Banco de dados}
 O MySQL é um sistema gerenciador de banco de dados relacional de código aberto e utiliza a linguagem SQL (Structure Query Language – Linguagem de Consulta Estruturada), que é a linguagem mais popular para inserir, acessar e gerenciar o conteúdo armazenado em um banco de dados.
@@ -1124,6 +1124,18 @@ A camada de aplicação foi criada para representar as regras de negócio defini
 \subparagraph{• Camada de Apresentação}
 A camada de apresentação foi implementada com o padrão Facade para representar as operações disponíveis para o cliente localizado nos smartphones, oferecendo uma comunicação via protocolo http entre os dispositivos e os serviços na nuvem.
 
+\subsection{Frameworks}
+Os seguintes frameworks abaixo foram utilizados para desenvolver o software Florence:
+
+\subparagraph{• Spring Boot}
+Spring Boot é um framework open source que auxilia no desenvolvimento de serviços web, tal como estrutura de código, configurações iniciais e também na publicação do software no servidor de aplicação.
+
+\subparagraph{• Spring Data}
+Spring Data é um framework open source que auxilia o trabalho do desenvolvedor com a persistência dos dados no banco de dados.
+
+\subparagraph{• Swagger}
+Swagger é um framework open source que auxilia os desenvolvedores com a documentar as API's e com ele o grupo se comunicou de maneira mais eficiente.
+
 \newpage
 
 \section{Diagrama de Classe}
@@ -1143,10 +1155,72 @@ Para a camada de apresentação e aplicação foi criado uma interface e uma imp
 Como exemplo de utilização destas camadas, o diagrama apresenta a implementação do serviço que inicia o processo de doação que é representado pela entidade ProcessoDoação.
 
 \section{Desenvolvimento Front-End}
+Escolhas de IDE, Linguagem e Sistema Operacional.
 
-\subparagraph{• Arquitetura}
+O Florence foi desenvolvido utilizando a linguagem de programação Swift 3, a IDE xCode 9.1 e sistema operacional macOS High Sierra.
 
-\subparagraph{• Protótipo}
+O Swift é uma linguagem totalmente desenvolvida e suportada pela sua comunidade "Open Source", embora tenha sido criado e projetado pela empresa Apple. É mais resiliente que seu predecessor o Objetive-C por sua forte tipagem de dados e por seu rigoroso tratamento de erros causando erros de compilação em Swift quando em Objective-C os mesmos seriam erros de execução o que é muito mais grave.
+
+O IDE (Ambiente de Desenvolvimento Integrado) escolhido foi o Xcode 9.1 pelo seu suporte nativo ao Swift e Objective-C além de ser recomendado como ferramenta de desenvolvimento pela Apple. Para a utilização da IDE é necessário um ambiente mac OS, o ambiente utilizado para o desenvolvimento é o macOS High Sierra.
+
+\subsection{Organização de Código}
+A organização do projeto está dividida em 6 grandes sessões: 
+
+\subparagraph{• Modelos}
+Os modelos são as classes que representam cada entidade, são usadas como repositório das informações de cada funcionalidade contida no prontuário de doação. Cada funcionalidade possui seu devido modelo e é totalmente independente.
+
+\subparagraph{• Serviços}
+Para cada modelo foi criada uma classe responsável pela comunicação e realização das inserções, deleções e atualizações. Os serviços foram desenvolvidos de maneira independente, e se comunicam somente com a fachada desenvolvida para fazer a comunicação com o framework de requisições REST Alamofire.
+
+\subparagraph{• Classes Auxiliares}
+Foram criadas classes auxiliares para apresentação de mensagens ao usuário, criamos uma camada de abstração para toda e qualquer mensagem, seja de erro ou sucesso, possibilitando a centralização do comportamento e implementação das mensagens o que acarreta na simplicidade e facilidade para qualquer alteração futura de comportamento ou interface de exibição.
+
+\subparagraph{• Componentes}
+Foram desenvolvidos dois componentes seleção, um para possibilitar a seleção de datas, que foi criado estendendo o framework FSCalendar, um framework "open source" altamente customizável. E um componente para seleção de horário, que foi construído do zero utilizando uma interface de seleção totalmente desenvolvida para o aplicativo.
+
+\subparagraph{• Extensões}
+Desenvolvemos extensões para as views controllers básicas que são responsáveis pela apresentação dos loaders do aplicativo que são ativados quando qualquer requisição http é disparada.
+
+\subparagraph{• Constantes}
+Desenvolvemos classes responsáveis pelo armazenamento de todas as constantes da fachada de serviços e de componentes visuais, como cores, fontes, e demais elementos visuais.
+
+\subparagraph{• Funcionalidades}
+Cada funcionalidade do menu de prontuário foi desenvolvida de maneira independente, pode ser editada, excluída sem qualquer impacto de funcionalidade às demais funcionalidades. Sua interface foi desenvolvida com intuito de tornar o preenchimento do formulário mais simples e eficaz, por isso é rica em componentes de seleção.
+
+\subparagraph{• CocoaPods}
+O gerenciador de frameworks e dependências utilizado foi o CocoaPods, responsável pela inserção, edição e atualização de qualquer framework da plataforma.
+
+\subsection{Arquitetura}
+A arquitetura ModelView-ViewModel foi escolhida pelo distinção de responsabilidades que se dá entre o modelo de visão e seu controlador de visão, possibilitando que a controller seja responsável somente pela interação e resposta ao usuário, quando a responsabilidade do manuseio dos dados fica inteiramente no modelo de visão, tornando assim a leitura e manutenção do código mais clara. 
+
+Quando um erro relacionado a dados ocorre, o problema estará no modelo de visão e quando o erro é relacionado a comportamento estará no controlador de visão.
+
+\subsection{Frameworks}
+Os frameworks utilizados para desenvolver o front-end foram:
+
+\subparagraph{• Alamofire}
+Framework utilizado para requisições HTTP.
+
+\subparagraph{• AlamofireObjectMapper}
+Framework utilizado para mapeamento do JSON response das requisições para modelos do aplicativo.
+
+\subparagraph{• FSCalendar}
+Framework de calendário utilizado para a customização do seletor de datas da plataforma.
+
+\subparagraph{• Whisper}
+Framework Utilizado para centralização e abstração da camada de mensagens ao usuário.
+
+\subsection{Padrão de Projeto}
+Os padrões de projeto utilizados no desenvolvimento da plataforma foram:
+
+\subparagraph{• Fachada}
+Foram criadas fachadas para a comunicação da camada de serviço com o framework de requisições Alamofire e para a comunicação dos controladores de visão com a classe que centraliza as mensagens ao usuário.
+
+\subparagraph{• Singleton}
+A camada de serviço que possui uma fachada também é um singleton, com objetivo de instanciar somente uma vez a classe que será responsável por todas as requisições da plataforma mantendo a consistência das mesmas.
+
+\subparagraph{• Delegação}
+A comunicação entre os modelos de visão e seus controladores de visão se dá por meio de delegates, que são responsáveis pelo gerenciamento das requisições solicitadas pela controller a camada de serviço.
 
 \section{FLORENCE: Tela de Login}
 A Figura \ref{fig:app-login} apresenta a tela de login no aplicativo móvel para usuários e administradores conforme descrito na Seção \ref{tab:uc-login}.
