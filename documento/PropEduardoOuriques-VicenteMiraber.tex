@@ -1025,49 +1025,368 @@ Esta seção apresenta o Modelo Entidade Relacionamento com todas entidades, cha
 \label{fig:erDiagram}
 \end{figure}
 
-É importante informar que foi colocado apenas as chaves primárias e estrangeiras para melhorar a visibilidade do diagrama no documento.
+É importante informar que foi colocado apenas as chaves primárias e estrangeiras para melhorar a visibilidade do diagrama no documento. Os atributos relacionados a cada entidade estão descritos abaixo.
 
 \subparagraph{• Processo Doação}
 A entidade \textit{ProcessoDoacao} é utilizada para representar o processo de doação com informações pessoais do paciente, e relaciona-se com as entidades necessárias para representar o processo de captação e doação de órgãos.
 
+\begin{table}
+\centering
+\caption{Atributos - Processo Doação} \label{table:atr-processo}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & HOSPITAL\\
+\hline
+DATA INTERNACAO & SETOR\\
+\hline
+LEITO & TELEFONE\\
+\hline
+INFORMANTE & NOME \\
+\hline
+RG & CPF\\
+\hline
+CNS & ENDERECO\\
+\hline
+FILIACAO & ESTADO CIVIL\\
+\hline
+TELEFONE FAMILIAR & DATA NASCIMENTO\\
+\hline
+IDADE & SEXO\\
+\hline
+TIPAGEM & PESO\\
+\hline
+ALTURA & PRONTUARIO HOSPITAL\\
+\hline
+CAUSA DA MORTE & CAUSA DA MORTE OUTRA\\
+\hline
+CAUSA DA MORTE DECORRENTE DE & CAUSA DA MORTE CIRCUNSTANCIA\\
+\hline
+CAUSA DA MORTE CIRCUNSTANCIA ACIDENTE & PROTOCOLO SEDACAO\\
+\hline
+PROTOCOLO DATA SUSPENSAO & PROTOCOLO HORA SUSPENSAO\\
+\hline
+PROTOCOLO TEMPERATURA & PROTOCOLO TA\\
+\hline
+
+\end{tabular}
+\end{table}
+
 \subparagraph{• Exame Complementar}
 A entidade \textit{ExameComplementar} é utilizada para representar os exames complementares que o paciente deve realizar para iniciar o processo de captação e doação de órgãos.
+
+\begin{table}
+\centering
+\caption{Atributos - Exame Complementar} \label{table:atr-exame-complementar}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & TIPO\\
+\hline
+TIPO OUTRO & DATA EXAME\\
+\hline
+HORA EXAME & RESULTADO\\
+\hline
+MEDICO & PROCESSO DOACAO ID \\
+\hline
+
+\end{tabular}
+\end{table}
 
 \subparagraph{• Doença Atual}
 A entidade \textit{DoencaAtual} é utilizada para representar as possíveis doenças que o paciente possa ter durante o processo de captação e doação de órgãos.
 
+\begin{table}
+\centering
+\caption{Atributos - Doença Atual} \label{table:atr-doenca-atual}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & MEDICACAO EM USO\\
+\hline
+TRAUMA DE TORAX & TRAUMA DE ABDOME\\
+\hline
+CRANIOTOMIA & CHOQUE\\
+\hline
+VM INICIO & DDAVP\\
+
+\hline
+PCR & PCR NUMERO\\
+\hline
+PCR TEMPO MAXIMO & IRA\\
+
+\hline
+DIALISE & SECRECAO TOT\\
+\hline
+ASPECTO & DIURESE ULTIMAS VINTE E QUATRO HORAS\\
+
+\hline
+DIURESE ULTIMAS SEIS HORAS & FEBRE\\
+\hline
+PRIMEIRA CREATINA & PRIMEIRA CREATININA DATA\\
+\hline
+OBSERVACAO & PROCESSO DOACAO ID\\
+
+\hline
+
+\end{tabular}
+\end{table}
+
 \subparagraph{• Infecção}
-A entidade \textit{Infeccao} é utilizada para representar todas as infecções que o paciente tem.
+A entidade \textit{Infeccao} é utilizada para representar todas as informações relacionadas a a infecção que um paciente possa conter em seu corpo.
+
+\begin{table}
+\centering
+\caption{Atributos - Infecção} \label{table:atr-infeccao}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & CULT LOCAL\\
+\hline
+DATA & TTO\\
+\hline
+DOENCA ATUAL ID & \\
+\hline
+
+\end{tabular}
+\end{table}
+
 
 \subparagraph{• DVA}
 A entidade \textit{DVA} é utilizada para representar todas deficiências de vitamina A que o paciente tem, e então o médico decidir se a cirurgia pode ser realizada.
 
+\begin{table}
+\centering
+\caption{Atributos - DVA} \label{table:atr-dva}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & NOME\\
+\hline
+AMP & ML POR HORA\\
+\hline
+KG & DOSE MAXIMA ML POR HORA\\
+\hline
+DOSE MAXIMA KG & INICIO\\
+\hline
+PROCESSO DOACAO ID &\\
+
+\hline
+
+\end{tabular}
+\end{table}
+
 \subparagraph{• Órgão}
 A entidade \textit{Orgao} é utilizada para representar todos os órgãos que podem ser doados.
+
+\begin{table}
+\centering
+\caption{Atributos - Órgão} \label{table:atr-orgao}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & NOME\\
+\hline
+MOTIVO NAO REMOCAO & DESTINO\\
+\hline
+MOTIVO NAO IMPLANTE & \\
+
+\hline
+
+\end{tabular}
+\end{table}
 
 \subparagraph{• Informação Cirurgia}
 A entidade \textit{InformacaoCirurgia} é utilizada para representar os dados gerais para se realizar uma cirurgia tais como horário inicial, final e outras informações.
 
+\begin{table}
+\centering
+\caption{Atributos - Informação Cirurgia} \label{table:informacao-cirurgia}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & HORARIO PREVISTO\\
+\hline
+HORARIO INICIO & HORARIO FIM\\
+\hline
+LOCAL DA RETIRADA & DML INICIO\\
+\hline
+DML FIM & OBSERVACAO\\
+
+\hline
+CIRURGIA ID & \\
+\hline
+
+\end{tabular}
+\end{table}
+
 \subparagraph{• Cirurgia}
 A entidade \textit{Cirurgia} é utilizada para representar todas as cirurgias  de transplante, junto com as informações gerais e quais os órgãos que estão sendo transplantados.
+
+\begin{table}
+\centering
+\caption{Atributos - Cirurgia} \label{table:cirurgia}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & MOTIVO NAO REMOCAO\\
+\hline
+DESTINO & MOTIVO NAO IMPLANTE\\
+\hline
+INFORMACAO CIRURGIA ID & CIR FK ORG\\
+\hline
+PROCESSO DOACAO ID &\\
+\hline
+
+\end{tabular}
+\end{table}
 
 \subparagraph{• HLA}
 A entidade \textit{HLA} é utilizada para representar todos os testes para avalia a compatibilidade entre o doador e o receptor.
 
-\subparagraph{• Exame Doação}
-A entidade \textit{ExameDoacao} é utilizada para representar os cinco exames necessários antes de realizar a cirurgia no paciente.
+\begin{table}
+\centering
+\caption{Atributos - HLA} \label{table:atr-hla}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & DATA INICIO\\
+\hline
+HORA INICIO & HORA TERMINO\\
+\hline
+LABORATORIO & CROSS HCPA DATA INICIO\\
+\hline
+CROSS HCPA HORA INICIO & CROSS HCPA DATA FIM\\
+
+\hline
+CROSS HCPA HORA FIM & CROSS ISCMPA DATA INICIO\\
+\hline
+CROSS ISCMPA HORA INICIO & CROSS ISCMPA DATA FIM\\
+
+\hline
+CROSS ISCMPA HORA FIM & PROCESSO DOACAO ID\\
+\hline
+
+\end{tabular}
+\end{table}
 
 \subparagraph{• Doença Prévia}
 A entidade \textit{DoencaPrevia} é utilizada para representar todas as doenças do paciente antes de realizar a cirurgia.
 
+\begin{table}
+\centering
+\caption{Atributos - Doença Prévia} \label{table:doenca-previa}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & RX\\
+\hline
+ECQ & ECO CARDIO\\
+\hline
+TCE CO ABD & GASO PULMAO\\
+\hline
+PROCESSO DOACAO ID &\\
+\hline
+
+\end{tabular}
+\end{table}
+
 \subparagraph{• Substância Extra}
 A entidade \textit{SubstanciaExtra} é utilizada para representar as substâncias que o paciente possa ter adquirido antes de realizar a cirurgia.
 
+\begin{table}
+\centering
+\caption{Atributos - Substância Extra} \label{table:substancia-extra}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & NOME\\
+\hline
+RESULTADO & TIPO QUANTO\\
+\hline
+TEMPO & DOENCA PREVIA ID\\
+\hline
+
+\end{tabular}
+\end{table}
+
+\newpage
+
 \subparagraph{• Aprovação}
-A entidade \textit{Aprovacao} é utilizada para representar as substâncias que precisam ser verificadas e autorizadas quando o paciente da entrada no hospital. 
+A entidade \textit{Aprovacao} é utilizada para representar as substâncias que precisam ser verificadas e autorizadas quando o paciente da entrada no h
+
+\begin{table}
+\centering
+\caption{Atributos - Aprovação} \label{table:atr-aprovacao}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & TIPO\\
+\hline
+DATA APROVACAO & HORA APROVACAO\\
+\hline
+HEMOGLOBINA & HEMATOCRITO\\
+\hline
+LEUCOCITOS & BASTOES \\
+\hline
+PLAQUETAS & UREIAS\\
+\hline
+CREATININA & SODIO\\
+\hline
+POTASSIO & GLICEMIA\\
+\hline
+CPK & CKMB\\
+\hline
+AMILASE & TGO\\
+\hline
+TGP & FOS ALCALINA\\
+\hline
+GAMA GT & BIL TOTAL\\
+\hline
+BIL DIRETA & TP\\
+\hline
+KTTP & PH\\
+\hline
+PO 2 & CO 2\\
+\hline
+SAT & PROCESSO DOACAO ID\\
+\hline
+
+\end{tabular}
+\end{table}
+
 
 \subparagraph{• Teste Clínico}
 A entidade \textit{TesteClinico} é utilizada para representar dois testes clínicos obrigatórios antes de comunicar a central de transplantes.
+
+\begin{table}
+\centering
+\caption{Atributos - Teste Clínico} \label{table:atr-teste-clinico}
+\begin{tabular}{ |p{6cm}|p{6cm}| }
+
+%Atores
+\hline
+ID & NUMERO TESTE\\
+\hline
+DATA TESTE CLINICO & HORA TESTE CLINICO\\
+\hline
+MEDICO & PROCESSO DOACAO ID\\
+\hline
+
+\end{tabular}
+\end{table}
 
 \subparagraph{• Sorologia}
 A entidade \textit{Sorologia} é utilizada para representar o diagnóstico e a identificação de anticorpos e antígenos no soro do paciente.
