@@ -69,10 +69,10 @@
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC07 - Consultar gr\IeC {\'a}ficos}}{33}
 \contentsline {section}{\numberline {5.5}\MakeTextUppercase {Diagrama Entidade Relacionamento}}{34}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Processo Doa\IeC {\c c}\IeC {\~a}o}}{34}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Exame Complementar}}{34}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Exame Complementar}}{36}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Doen\IeC {\c c}a Atual}}{36}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Infec\IeC {\c c}\IeC {\~a}o}}{36}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } DVA}}{36}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } DVA}}{37}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } \IeC {\'O}rg\IeC {\~a}o}}{37}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Informa\IeC {\c c}\IeC {\~a}o Cirurgia}}{37}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Cirurgia}}{37}
@@ -138,6 +138,7 @@
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Tempo de Resposta}}{56}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vaz\IeC {\~a}o}}{57}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Uso de mem\IeC {\'o}ria}}{58}
+\contentsline {section}{\numberline {7.4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o Geral}}{58}
 \contentsline {chapter}{\numberline {8}\MakeTextUppercase {Conclus\IeC {\~a}o e Trabalhos Futuros}}{59}
 \contentsline {section}{\numberline {8.1}\MakeTextUppercase {Conclus\IeC {\~a}o}}{59}
 \contentsline {section}{\numberline {8.2}\MakeTextUppercase {Trabalhos Futuros}}{59}

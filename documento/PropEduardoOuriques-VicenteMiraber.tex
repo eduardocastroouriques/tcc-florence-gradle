@@ -38,7 +38,7 @@
 % \RequirePackage{url}
 % \RequirePackage[table]{xcolor}[2007/01/21]
 %----------------------------------------------------------------
-% Para inserção de figuras.
+% Para inserção de Figuras.
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 %\usepackage{longtable}
@@ -54,7 +54,7 @@
 %sections
 \setcounter{tocdepth}{2}
 % Utilize a opção 'pdftex' se você estiver usando o pdflatex (que
-% permite figuras em formatos como .jpg ou .png)
+% permite Figuras em formatos como .jpg ou .png)
 %\usepackage[pdftex]{graphicx}
 
 % Para tabelas com elementos ocupando mais de uma linha
@@ -75,7 +75,7 @@
 \usepackage{caption}
 \usepackage{marginnote}
 
-% Para inserir figuras lado a lado.
+% Para inserir Figuras lado a lado.
 % \usepackage{subfigure}
 % Para formatar algoritmos.
 % A opção [algo2e] é necessária para evitar conflitos
@@ -157,7 +157,7 @@
 % (OBRIGATÓRIO, ao menos para teses e dissertações)
 %----------------------------------------------------------------
 \begin{resumo}{doação de ógãos, computação móvel, computação em nuvem, segurança}
-O processo de doação e captação de órgãos ou tecidos inicia com o diagnóstico de óbito por morte encefálica ou parada cardíaca. Atualmente a comunicação entre as Organizações de Procura de Órgãos (OPO), Comissões Intra-Hospitalares de Doação de Órgãos e Tecidos para Transplantes (CIHDOTT) e Centrais Regionais de Transplante (CRT) ocorre de maneira rudimentar, com o uso do telefone, fax ou prontuários impressos. Este trabalho de conclusão tem como objetivo desenvolver um software para reduzir o tempo gasto no processo, centralizar a comunicação em um aplicativo móvel conectado ao software e melhorar a segurança dos dados dos pacientes.
+O processo de doação e captação de órgãos ou tecidos inicia com o diagnóstico de óbito por morte encefálica ou parada cardíaca. Atualmente a comunicação entre as Organizações de Procura de Órgãos (OPO), Comissões Intra-Hospitalares de Doação de Órgãos e Tecidos para Transplantes (CIHDOTT) e Centrais Regionais de Transplante (CRT) ocorre de maneira rudimentar, com o uso do telefone, fax ou prontuários impressos. Este trabalho apresenta o Florence, um software capaz de gerenciar todo o processo de captação e doação de órgãos e tecidos no Brasil.
 
 \sigla{OPO}{Organização de Procura de Órgãos}
 \sigla{CIHDOTT}{Comissão Intra-Hospitalares de Doação de Órgãos e Tecidos para Transplantes}
@@ -171,14 +171,14 @@ O processo de doação e captação de órgãos ou tecidos inicia com o diagnós
 %----------------------------------------------------------------
 \begin{abstract}{organ donation, mobile computing, cloud computing, security}
 
-The process of organ and tissues donation starts with a diagnosis of encephalic death or cardiac rest. Nowadays the communication between organizations of organ searching (OPO), Intra-Hospital Commissions for Organ Donation and Tissues for Transplants (CIHDOTT) and Regional Transplant Centers (CRT) works rudimentary by phone, fax or printed reports. This final paper has the goal of developing a software to reduce the spending time by the process, centralize the communication in a mobile application connected to the software and improve the patient’s data security.
+The process of organ and tissues donation starts with a diagnosis of encephalic death or cardiac rest. Nowadays the communication between organizations of organ searching (OPO), Intra-Hospital Commissions for Organ Donation and Tissues for Transplants (CIHDOTT) and Regional Transplant Centers (CRT) works rudimentary by phone, fax or printed reports. This final paper presents Florence, a software responsible for managing all the proccess of organ and tissues donations.
 \end{abstract}
 
 %----------------------------------------------------------------
 % Listas e sumário, nessa ordem. Somente o sumário é obrigatório,
 % portanto, comente as outras listas, caso sejam desnecessárias.
 %----------------------------------------------------------------
-\listoffigures       % Lista de figuras      (OPCIONAL)
+\listoffigures       % Lista de Figuras      (OPCIONAL)
 \listoftables        % Lista de tabelas      (OPCIONAL)
 %\listofalgorithms    % Lista de algoritmos   (OPCIONAL)
 \listofacronyms      % Lista de siglas       (OPCIONAL)
@@ -226,7 +226,22 @@ O processo de identificação de um possível doador inicia com o preenchimento 
 
 Com base em reuniões realizadas junto aos profissionais da OPO1 (Hospital São Lucas), OPO2 (Hospital Moinhos de Vento) e a Central Regional de Transplantes do Rio Grande do Sul, foi identificado um grande número de atrasos na liberação de órgãos devido a procedimentos manuais, o alto custo financeiro gerado pelo custo das ligações e a insegurança de dados dos pacientes que são guardados fisicamente dentro de salas sem restrição de acesso.
 
-Este trabalho apresenta um software para o gerenciamento de processos de captação e doação de órgãos, a fim de acelerar e facilitar a comunicação entre os órgãos envolvidos.
+Este trabalho apresenta o software Florence e abaixo contém uma breve descrição do que o leitor vai encontrar neste documento.
+
+O trabalho inicia com a apresentação da fundamentação teórica, descrevendo como está estruturado o processo de captação e doação de órgãos, como o sistema de informação Florence se enquadra na computação em nuvem e descreve detalhes de segurança da informação.
+
+Para os trabalhos relacionados foi realizado um pesquisa e uma  análise em softwares relacionados ao assunto deste trabalho, focando principalmente nas soluções que auxiliam profissionais da saúde a gerenciar os dados dos pacientes.
+
+O terceiro capítulo descreve a nova organização do processo de captação e doação de órgãos ou tecidos com o auxílio do software, solução de arquitetura do software que está focada no modelo como serviço em nuvem e o aplicativo móvel IOS que fornece mobilidade e integração a plataforma desenvolvida.
+
+Para entender melhor quais os requisitos que o software atende o capítulo de modelagem de software descreve todas os requisitos técnicos e de negócio que o software atende, assim como os atores envolvidos e a modelagem das entidades.
+
+O capítulo de implementação descreve todos os detalhes técnicos necessários para o leitor entender como esta solução foi projetada e desenvolvida. Nela o leitor irá encontrar assuntos como linguagem de programação, frameworks utilizados e outros.
+
+A avaliação realizada apresenta testes de desempenho da aplicação rodando na nuvem, com o objetivo de entender qual a disponibilidade do software em caso de aumento no número de usuários.
+
+Por fim o documento apresenta a conclusão e os trabalhos futuros que o grupo identificou que podem ser feitos para aprimorar a gestão dos envolvidos no processo de captação e doação de órgãos no Brasil.
+
 
 %\appendix
 %\appendix
@@ -529,7 +544,7 @@ Este capítulo descreve a nova organização dos processos e as definições de 
 
 
 \section{Nova Organização dos Processos}
-Conforme descrito no Capítulo \ref{tab:detalhamento-problema}, o processo atual de doação de órgãos no Brasil apresenta sérios problemas, desta forma, este trabalho propõem um novo processo usando a tecnologia da informação.
+Conforme descrito no Capítulo \ref{tab:detalhamento-problema}, o processo atual de doação de órgãos no Brasil apresenta sérios problemas, desta forma, este trabalho propõem um novo processo usando a tecnologia da informação. A parte em vermelho mostra exatamente aonde o software auxilia os profissionais.
 
 
 \begin{figure}[htp]
@@ -584,7 +599,7 @@ O formulário anteriormente massante e extenso de ser preenchido, agora será mo
 \label{fig:cliente-servidor}
 \end{figure}
 
-A figura \ref{fig:cliente-servidor} mostra a arquitetura do software baseada em camadas Cliente-Servidor, tal que a camada cliente é representada pelos atores - HOSPITAL, OPO E CIHDOTT - com seus \textit{smartphones} e a camada Servidor é representada por uma nuvem privada que contém o banco de dados e o servidor.
+A Figura \ref{fig:cliente-servidor} mostra a arquitetura do software baseada em camadas Cliente-Servidor, tal que a camada cliente é representada pelos atores - HOSPITAL, OPO E CIHDOTT - com seus \textit{smartphones} e a camada Servidor é representada por uma nuvem privada que contém o banco de dados e o servidor.
 
 
 \section{Modelo de Implantação}
@@ -1072,6 +1087,8 @@ PROTOCOLO TEMPERATURA & PROTOCOLO TA\\
 
 \end{tabular}
 \end{table}
+
+\newpage
 
 \subparagraph{• Exame Complementar}
 A entidade \textit{ExameComplementar} é utilizada para representar os exames complementares que o paciente deve realizar para iniciar o processo de captação e doação de órgãos.
@@ -1731,7 +1748,7 @@ Nesta tela o usuário tem a opção de selecionar um dos processos e visualizar 
 A Figura \ref{fig:app-config} apresenta a tela para configurar os hospitais de cada OPO que só pode ser acessada por um usuário Administrador. 
 
 \chapter{Avaliação}
-Este capítulo descreve o teste de performance realizado no software de captação e doação de órgãos ou tecidos a fim de oferecer um melhor entendimento de como o software se comporta nos cenários simulados pelo grupo.
+Este capítulo descreve o teste de performance realizado no software de captação e doação de órgãos ou tecidos a fim de oferecer um melhor entendimento de como o software se comporta em situações com maior número de usuários acessando o software.
 
 Para realizar estes teste foram considerados três cenários, sendo cada um deles com uma avaliação do tempo médio de resposta das requisições, vazão para verificar possíveis gargalos e uso de memória do servidor.
 
@@ -1748,7 +1765,7 @@ Esta seção descreve a performance do software em um cenário com 50 usuários 
 \label{fig:tempo-reposta-50-1}
 \end{figure}
 
-A figura \ref{fig:tempo-reposta-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma média de tempo de resposta de 3.327 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
+A Figura \ref{fig:tempo-reposta-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma média de tempo de resposta de 3.327 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
 
 \newpage
 
@@ -1760,7 +1777,7 @@ A figura \ref{fig:tempo-reposta-50-1} mostra que ao executar este cenário de 50
 \label{fig:throughput-50-1}
 \end{figure}
 
-A figura \ref{fig:throughput-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma vazão de 1.428 por minuto, o que nos leva a concluir que o software se comportou adequadamente.
+A Figura \ref{fig:throughput-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, o software teve uma vazão de 1.428 por minuto, o que nos leva a concluir que o software se comportou adequadamente.
 
 \subparagraph{• Uso de memória}
 \begin{figure}[htp]
@@ -1770,7 +1787,7 @@ A figura \ref{fig:throughput-50-1} mostra que ao executar este cenário de 50 us
 \label{fig:uso-de-memoria-50-1}
 \end{figure}
 
-A figura \ref{fig:uso-de-memoria-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, foi utilizado 81.3\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM é o suficiente.
+A Figura \ref{fig:uso-de-memoria-50-1} mostra que ao executar este cenário de 50 usuários criando um novo processo de doação, foi utilizado 81.3\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM é o suficiente.
 
 \section{Novo processo - 50 usuários - 10 requisições}
 Esta seção descreve a performance do software em um cenário com 50 usuários requisitando 10 vezes cada um o software para criar um novo processo de doação.
@@ -1782,7 +1799,7 @@ Esta seção descreve a performance do software em um cenário com 50 usuários 
 \includegraphics[width=9cm]{50-10-response-time}
 \label{fig:tempo-reposta-50-10}
 \end{figure}
-A figura \ref{fig:tempo-reposta-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 3.455 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
+A Figura \ref{fig:tempo-reposta-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 3.455 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
 
 \subparagraph{• Vazão}
 \begin{figure}[htp]
@@ -1792,7 +1809,7 @@ A figura \ref{fig:tempo-reposta-50-10} mostra que ao executar este cenário de 5
 \label{fig:throughput-50-10}
 \end{figure}
 
-A figura \ref{fig:throughput-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma grande quantidades de dados desviados junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que o servidor em que o software está hospedado deve ser revisado.
+A Figura \ref{fig:throughput-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma grande quantidades de dados desviados junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que o servidor em que o software está hospedado deve ser revisado.
 
 \subparagraph{• Uso de memória}
 \begin{figure}[htp]
@@ -1802,7 +1819,7 @@ A figura \ref{fig:throughput-50-10} mostra que ao executar este cenário de 50 u
 \label{fig:uso-de-memoria-50-10}
 \end{figure}
 
-A figura \ref{fig:uso-de-memoria-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, foi utilizado 102.9\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM não é o suficiente e pode trazer problemas durante o início do processo.
+A Figura \ref{fig:uso-de-memoria-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, foi utilizado 102.9\% da memória do servidor, o que nos leva a concluir que 512MB de memória RAM não é o suficiente e pode trazer problemas durante o início do processo.
 
 
 \section{Novo processo - 100 usuários - 10 requisições}
@@ -1816,7 +1833,7 @@ Esta seção descreve a performance do software em um cenário com 100 usuários
 \label{fig:tempo-reposta-100-10}
 \end{figure}
 
-A figura \ref{fig:tempo-reposta-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 2,687 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
+A Figura \ref{fig:tempo-reposta-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 2,687 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
 
 \subparagraph{• Vazão}
 \begin{figure}[htp]
@@ -1826,7 +1843,7 @@ A figura \ref{fig:tempo-reposta-100-10} mostra que ao executar este cenário de 
 \label{fig:throughput-100-10}
 \end{figure}
 
-A figura \ref{fig:throughput-100-10} mostra que ao executar este cenário de 100 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve um desvio de mais de 50\% das amostras enviadas junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que a configuração de ambiente existente não é o suficiente para este cenário.
+A Figura \ref{fig:throughput-100-10} mostra que ao executar este cenário de 100 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve um desvio de mais de 50\% das amostras enviadas junto a uma vazão de 23.677 amostras por minuto, o que nos leva a concluir que a configuração de ambiente existente não é o suficiente para este cenário.
 
 \newpage
 
@@ -1837,7 +1854,12 @@ A figura \ref{fig:throughput-100-10} mostra que ao executar este cenário de 100
 \includegraphics[width=9cm]{100-10-memory}
 \label{fig:uso-de-memoria-100-10}
 \end{figure}
-A figura \ref{fig:uso-de-memoria-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, foi utilizado 98.2\% da memória do servidor, sendo que atingiu o ponto máximo de 100\% do uso da memória em um determinado momento, o que nos leva a concluir que 512MB de memória RAM\sigla{RAM}{Random-access memory} não é o suficiente e pode ocasionar possíveis perdas de dados.
+A Figura \ref{fig:uso-de-memoria-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, foi utilizado 98.2\% da memória do servidor, sendo que atingiu o ponto máximo de 100\% do uso da memória em um determinado momento, o que nos leva a concluir que 512MB de memória RAM\sigla{RAM}{Random-access memory} não é o suficiente e pode ocasionar possíveis perdas de dados.
+
+\section{Avaliação Geral}
+O número de usuários acessando o software é fator determinante na hora de desenvolver um software, portanto ao realizar os testes de desempenho do Florence foi constatado que dependendo do número de usuários acessando o software ao mesmo tempo, pode haver problemas quanto a disponibilidade do sistema.
+
+Pelo fato do software estar rodando em nuvem, a solução para este problema é muito fácil, basta contatar a empresa Heroku, empresa na qual disponibilizou os recursos necessários para disponibilizar o software, e então solicitar mais recursos de processamento conforme demanda da aplicação.
 
 \chapter{Conclusão e Trabalhos Futuros}
 Este capítulo descreve a conclusão deste trabalho junto aos ensinamentos e dificuldades encontrados durante o desenvolvimento e também sugestões de trabalhos futuros.
