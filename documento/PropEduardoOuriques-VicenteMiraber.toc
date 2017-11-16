@@ -24,7 +24,7 @@
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Agrupamento de Recursos}}{16}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Elasticidade R\IeC {\'a}pida}}{16}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Servi\IeC {\c c}o Medido}}{17}
-\contentsline {section}{\numberline {2.6}\MakeTextUppercase {Modelos de Implanta\IeC {\c c}\IeC {\~a}o na Nuvem}}{17}
+\contentsline {section}{\numberline {2.6}\MakeTextUppercase {Modelos de Implanta\IeC {\c c}\IeC {\~a}o em nuvem}}{17}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Nuvem Privada}}{17}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Nuvem P\IeC {\'u}blica}}{17}
 \contentsline {section}{\numberline {2.7}\MakeTextUppercase {Seguran\IeC {\c c}a da Informa\IeC {\c c}\IeC {\~a}o}}{17}
