@@ -3,25 +3,25 @@
 \select@language {brazil}
 \contentsline {figure}{Figura\nobreakspace \numberline {2.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Atual Organiza\IeC {\c c}\IeC {\~a}o dos Processos}}{14}
 \contentsline {figure}{Figura\nobreakspace \numberline {3.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tela Principal - \textit {Medware Sistemas M\IeC {\'e}dicos Ltda}}}{19}
-\contentsline {figure}{Figura\nobreakspace \numberline {3.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tela de Login - \textit {BloodSave}}}{20}
-\contentsline {figure}{Figura\nobreakspace \numberline {3.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tela de Login - \textit {eClinicalWorks}}}{20}
-\contentsline {figure}{Figura\nobreakspace \numberline {4.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Nova Organiza\IeC {\c c}\IeC {\~a}o dos Processos}}{23}
-\contentsline {figure}{Figura\nobreakspace \numberline {4.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Arquitetura do software}}{25}
-\contentsline {figure}{Figura\nobreakspace \numberline {5.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Atores do Sistema}}{28}
-\contentsline {figure}{Figura\nobreakspace \numberline {5.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Diagrama de Caso de Uso}}{30}
-\contentsline {figure}{Figura\nobreakspace \numberline {5.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces Diagrama Entidade Relacionamento}}{35}
-\contentsline {figure}{Figura\nobreakspace \numberline {6.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Diagrama de Classe}}{45}
-\contentsline {figure}{Figura\nobreakspace \numberline {6.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela de Login}}{50}
-\contentsline {figure}{Figura\nobreakspace \numberline {6.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela para Cria\IeC {\c c}\IeC {\~a}o de Processo}}{50}
-\contentsline {figure}{Figura\nobreakspace \numberline {6.4\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela para Anexar Documentos}}{51}
-\contentsline {figure}{Figura\nobreakspace \numberline {6.5\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela para listagem dos Processos}}{52}
-\contentsline {figure}{Figura\nobreakspace \numberline {6.6\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela de Configura\IeC {\c c}\IeC {\~a}o}}{52}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tempo de Resposta - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{53}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Vaz\IeC {\~a}o - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{54}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces Uso de mem\IeC {\'o}ria - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{54}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.4\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tempo de Resposta - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{55}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.5\hfil \nobreakspace --\nobreakspace }{\ignorespaces Vaz\IeC {\~a}o - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{55}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.6\hfil \nobreakspace --\nobreakspace }{\ignorespaces Uso de mem\IeC {\'o}ria - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{56}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.7\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tempo de Resposta - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{56}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.8\hfil \nobreakspace --\nobreakspace }{\ignorespaces Vaz\IeC {\~a}o - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{57}
-\contentsline {figure}{Figura\nobreakspace \numberline {7.9\hfil \nobreakspace --\nobreakspace }{\ignorespaces Uso de mem\IeC {\'o}ria - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{58}
+\contentsline {figure}{Figura\nobreakspace \numberline {3.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tela de Login - \textit {BloodSave}}}{21}
+\contentsline {figure}{Figura\nobreakspace \numberline {3.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tela de Login - \textit {eClinicalWorks}}}{21}
+\contentsline {figure}{Figura\nobreakspace \numberline {4.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Nova Organiza\IeC {\c c}\IeC {\~a}o dos Processos}}{24}
+\contentsline {figure}{Figura\nobreakspace \numberline {4.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Arquitetura do software}}{26}
+\contentsline {figure}{Figura\nobreakspace \numberline {5.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Atores do Sistema}}{29}
+\contentsline {figure}{Figura\nobreakspace \numberline {5.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Diagrama de Caso de Uso}}{31}
+\contentsline {figure}{Figura\nobreakspace \numberline {5.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces Diagrama Entidade Relacionamento}}{36}
+\contentsline {figure}{Figura\nobreakspace \numberline {6.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Diagrama de Classe}}{46}
+\contentsline {figure}{Figura\nobreakspace \numberline {6.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela de Login}}{51}
+\contentsline {figure}{Figura\nobreakspace \numberline {6.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela para Cria\IeC {\c c}\IeC {\~a}o de Processo}}{51}
+\contentsline {figure}{Figura\nobreakspace \numberline {6.4\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela para Anexar Documentos}}{52}
+\contentsline {figure}{Figura\nobreakspace \numberline {6.5\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela para listagem dos Processos}}{53}
+\contentsline {figure}{Figura\nobreakspace \numberline {6.6\hfil \nobreakspace --\nobreakspace }{\ignorespaces FLORENCE: Tela de Configura\IeC {\c c}\IeC {\~a}o}}{53}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.1\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tempo de Resposta - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{54}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.2\hfil \nobreakspace --\nobreakspace }{\ignorespaces Vaz\IeC {\~a}o - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{55}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.3\hfil \nobreakspace --\nobreakspace }{\ignorespaces Uso de mem\IeC {\'o}ria - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{55}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.4\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tempo de Resposta - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{56}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.5\hfil \nobreakspace --\nobreakspace }{\ignorespaces Vaz\IeC {\~a}o - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{56}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.6\hfil \nobreakspace --\nobreakspace }{\ignorespaces Uso de mem\IeC {\'o}ria - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{57}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.7\hfil \nobreakspace --\nobreakspace }{\ignorespaces Tempo de Resposta - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{57}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.8\hfil \nobreakspace --\nobreakspace }{\ignorespaces Vaz\IeC {\~a}o - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{58}
+\contentsline {figure}{Figura\nobreakspace \numberline {7.9\hfil \nobreakspace --\nobreakspace }{\ignorespaces Uso de mem\IeC {\'o}ria - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{59}
