@@ -171,7 +171,7 @@ O processo de doação e captação de órgãos ou tecidos inicia com o diagnós
 %----------------------------------------------------------------
 \begin{abstract}{organ donation, mobile computing, cloud computing, security}
 
-The process of organ and tissues donation starts with a diagnosis of encephalic death or cardiac rest. Nowadays the communication between organizations of organ searching (OPO), Intra-Hospital Commissions for Organ Donation and Tissues for Transplants (CIHDOTT) and Regional Transplant Centers (CRT) works rudimentary by phone, fax or printed reports. This final paper presents Florence, a software responsible for managing all the proccess of organ and tissues donations.
+The process of organ and tissues donation starts with a diagnosis of encephalic death or cardiac rest. Nowadays the communication between organizations of organ searching (OPO), Intra-Hospital Commissions for Organ Donation and Tissues for Transplants (CIHDOTT) and Regional Transplant Centers (CRT) works rudimentary by phone, fax or printed reports. This final paper presents Florence, a software responsible for managing all the proccess of organ and tissues donations in Brazil.
 \end{abstract}
 
 %----------------------------------------------------------------
@@ -224,11 +224,11 @@ A recusa familiar representa um grande entrave à realização dos transplantes,
 
 O processo de identificação de um possível doador inicia com o preenchimento de um prontuário médico. A partir do preenchimento deste prontuário a Organização de Procura de Órgãos envia um e-mail a Central Regional de Transplantes que tem a responsabilidade de monitorar possíveis doadores.
 
-Com base em reuniões realizadas junto aos profissionais da OPO1 (Hospital São Lucas), OPO2 (Hospital Moinhos de Vento) e a Central Regional de Transplantes do Rio Grande do Sul, foi identificado um grande número de atrasos na liberação de órgãos devido a procedimentos manuais, o alto custo financeiro gerado pelo custo das ligações e a insegurança de dados dos pacientes que são guardados fisicamente dentro de salas sem restrição de acesso.
+Com base em reuniões realizadas junto aos profissionais da OPO1 (Hospital São Lucas) e a Central Regional de Transplantes do Rio Grande do Sul, foi identificado um grande número de atrasos na liberação de órgãos devido a procedimentos manuais, o alto custo financeiro gerado pelo custo das ligações e a insegurança de dados dos pacientes que são guardados fisicamente dentro de salas sem restrição de acesso.
 
 Este trabalho apresenta o software Florence e abaixo contém uma breve descrição do que o leitor vai encontrar neste documento.
 
-O trabalho inicia com a apresentação da fundamentação teórica, descrevendo como está estruturado o processo de captação e doação de órgãos, como o sistema de informação Florence se enquadra na computação em nuvem e descreve detalhes de segurança da informação.
+O trabalho inicia com a apresentação da fundamentação teórica, descrevendo como está estruturado o processo de captação e doação de órgãos, como o sistema de informação Florence se enquadra na computação em nuvem e também descreve detalhes de segurança da informação.
 
 Para os trabalhos relacionados foi realizado um pesquisa e uma  análise em softwares relacionados ao assunto deste trabalho, focando principalmente nas soluções que auxiliam profissionais da saúde a gerenciar os dados dos pacientes.
 
@@ -236,12 +236,11 @@ O terceiro capítulo descreve a nova organização do processo de captação e d
 
 Para entender melhor quais os requisitos que o software atende o capítulo de modelagem de software descreve todas os requisitos técnicos e de negócio que o software atende, assim como os atores envolvidos e a modelagem das entidades.
 
-O capítulo de implementação descreve todos os detalhes técnicos necessários para o leitor entender como esta solução foi projetada e desenvolvida. Nela o leitor irá encontrar assuntos como linguagem de programação, frameworks utilizados e outros.
+O capítulo de implementação descreve todos os detalhes técnicos necessários para o leitor entender como esta solução foi projetada e desenvolvida. Nela o leitor irá encontrar assuntos como linguagem de programação, frameworks utilizados e diagrama de classes.
 
-A avaliação realizada apresenta testes de desempenho da aplicação rodando na nuvem, com o objetivo de entender qual a disponibilidade do software em caso de aumento no número de usuários.
+A avaliação realizada apresenta testes de desempenho da aplicação rodando na nuvem, com o objetivo de demonstrar qual a disponibilidade do software em caso de aumento no número de usuários.
 
 Por fim o documento apresenta a conclusão e os trabalhos futuros que o grupo identificou que podem ser feitos para aprimorar a gestão dos envolvidos no processo de captação e doação de órgãos no Brasil.
-
 
 %\appendix
 %\appendix
@@ -251,18 +250,20 @@ Este capítulo apresenta a fundamentação teórica necessária para entender co
 \section{Organizações}
 Para captar possíveis doadores o Brasil se divide em 4 organizações conforme descrito abaixo:
 
+
+
 \subparagraph{• Organização de Procura de Órgãos - OPO}
-%\subsection*{Organização de Procura de Órgãos - OPO}
+
 A Organização de Procura de Órgãos, também conhecida como OPO, é uma organização que está vinculada diretamente à Central de Transplantes do estado e caracteriza-se por ser uma organização supra-hospitalar com o objetivo de apoiar e executar as atividades relacionadas à doação de órgãos e tecidos no Brasil.
 
-Este órgão é responsável por realizar visitas aos hospitais, entre outras atividades a fim de identificar potenciais doadores de órgãos e apoiar a gestão do processo\cite{HOSPITALSAOLUCAS}.   %http://www.hospitalsaolucas.pucrs.br/novo_site/doacaoorgaos.php
+Este órgão é responsável por realizar visitas aos hospitais, entre outras atividades a fim de identificar potenciais doadores de órgãos e apoiar a gestão do processo \cite{HOSPITALSAOLUCAS}.   %http://www.hospitalsaolucas.pucrs.br/novo_site/doacaoorgaos.php
 
 \subparagraph{• Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos - CIHDOTT}
-A Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos, também chamada de CIHDOTT, consiste em uma comissão regida pela Portaria número 1262, de 16 de junho de 2006 \cite{HCI}.
-Tem como objetivo a identificação de potenciais doadores que sofreram morte cerebral ou ataque cardíaco em seu hospital vigente. Fazendo a triagem e iniciar o processo de doação de órgãos em parceria com a Central Regional de Transplantes é uma das suas responsabilidades.
+
+A Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos, também chamada de CIHDOTT, consiste em uma comissão regida pela Portaria número 1262, de 16 de junho de 2006 \cite{HCI}. Tem como objetivo a identificação de potenciais doadores que sofreram morte cerebral ou ataque cardíaco em seu hospital vigente. Fazendo a triagem e iniciar o processo de doação de órgãos em parceria com a Central Regional de Transplantes é uma das suas responsabilidades.
 
 %\subsection*{Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos - CIHDOTT}
-A Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos, também chamada de CIHDOTT, consiste em uma comissão regida pela Portaria nº 1262 de 16 de junho de 2006 \cite{HCI}.
+A Comissão Intra-Hospitalar de Doação de Órgãos e Tecidos, também chamada de CIHDOTT, consiste em uma comissão regida pela Portaria nº 1262, de 16 de junho de 2006 \cite{HCI}.
 %http://www.hci.org.br/site/servicos_detalhes.php?codigo=20
 
 De acordo com a Seção II da portaria no 2.600 \cite{PORTARIA}, de 21 de outubro de 2009, existem 3 níveis de CIHDOTT conforme descrito pelo Ministério da Saúde:
@@ -278,7 +279,9 @@ A criação das CIHDOTT será opcional para todos os demais hospitais que não s
 
 %http://bvsms.saude.gov.br/bvs/saudelegis/gm/2009/prt2600_21_10_2009.html
 
+
 \subparagraph{• Central Regional de Transplante}
+
 %\subsection*{Central Estadual de Transplante}
 A partir da aprovação do Regulamento Técnico de Transplantes, o Ministério da Saúde desenvolveu, em parceria com as Secretarias Estaduais de Saúde, um grande esforço no sentido de implantar nos estados as Centrais de Notificação, Captação e Distribuição de Órgãos (CNCDO)\sigla{CNCDO}{Central de Notificação, Captação e Distribuição de Órgãos}, também chamadas de Centrais Estaduais de Transplante \cite{SEST}. 
 %http://www1.saude.rs.gov.br/wsa/portal/index.jsp?menu=servicos&cod=3085
@@ -291,7 +294,7 @@ A central tem atividade ininterrupta funcionando 24 horas por dia continuamente 
 \subparagraph{• Central Nacional de Transplante}
 %\subsection*{Central Nacional de Transplante}
 %Central Nacional de Transplante
-Como a atividade das Centrais Estaduais se dá no âmbito estadual e com o desenvolvimento e incremento das atividades de transplante no País, surgiu a necessidade da criação de uma estrutura que articulasse as ações interestaduais. Portanto, em 16 de agosto de 2000, foi criada a Central Nacional de Transplantes, que funciona 24 horas por dia no Aeroporto de Brasília. 
+Como a atividade das Centrais Estaduais se dá no âmbito estadual e com o desenvolvimento e incremento das atividades de transplante no País, surgiu a necessidade da criação de uma estrutura que articulasse as ações interestaduais. Portanto em 16 de agosto de 2000 foi criada a Central Nacional de Transplantes que funciona 24 horas por dia no Aeroporto de Brasília. 
 
 A Central Nacional articula o trabalho das Centrais Estaduais e provê os meios para as transferências de órgãos entre estados e evita os desperdícios de órgãos sem condições de aproveitamento na sua origem. 
 
@@ -299,11 +302,9 @@ Quando um coração é doado e retirado num estado que não realiza transplante 
 %http://www.saude.rs.gov.br/lista/132/
 
 \section{Processo de Captação e Doação de Órgãos ou Tecidos} \label{tab:processo-captacao-doacao}
-O processo de captação e doação de órgãos é dividido em 5 etapas \cite{EPRECISOEDUCAR} que inicia com o diagnóstico de morte encefálica de um potencial doador e termina na liberação do corpo doador.
+O processo de captação e doação de órgãos é dividido em 5 etapas \cite{EPRECISOEDUCAR}, inicia com o diagnóstico da morte encefálica de um potencial doador e termina na liberação do corpo doador.
 
-%\subsection*{Identificação do Potencial Doador}
 \subparagraph{• Etapa 1 : Identificação do Potencial Doador}
-
 A identificação de um possível doador com morte encefálica se dá através do preenchimento de um formulário, criado em parceria pelas OPO’s estaduais, com informações pessoais e clínicas.
 
 O primeiro exame é realizado para verificar se o paciente não possui mais reflexo cerebral e o outro para diagnosticar a incapacidade de respirar sozinho. Estes exames são realizados em um período pré determinado de horas, dependendo da idade do paciente. 
@@ -484,9 +485,6 @@ O sistema permite gerenciar toda a rede de contatos do usuário, guardando infor
 \subparagraph{• Evento}
 O sistema permite cadastrar novas consultas, notificar pacientes através do módulo de contatos e configurar notificações para os usuários envolvidos na consulta.
 
-\subsection{Avaliação do Software}
-Apesar da enorme quantidade de recursos que o sistema oferece, o grupo não recomenda este software pelo fato dele não oferecer mobilidade aos usuários envolvidos. O grupo acredita que o atendimento aos pacientes seria mais eficaz se os funcionários, médicos e parentes dos pacientes pudessem utilizar o software via celular.
-
 \sigla{CFM}{Conselho Federal de Medicina}
 
 \newpage
@@ -500,9 +498,18 @@ Apesar da enorme quantidade de recursos que o sistema oferece, o grupo não reco
 \label{fig:bloodsave}
 \end{figure}
 
+\subsection{Visão Geral}
 BloodSave é um software desenvolvido para a troca e empréstimo de bolsas de hemocomponentes entre os hospitais no qual evita o desperdício \cite{SANGUE}.
  
 No ponto de vista tecnológico o software demonstra certa preocupação com a exposição dos dados dos pacientes e por isso utilizou a criptografia nos dados e autenticação de usuário para melhorar o nível de segurança.
+
+Abaixo seguem os principais recursos oferecidos pelo software:
+
+\subparagraph{• Visualizar Relatórios}
+O sistema permite visualizar relatórios que fornece relevantes métricas, visualizar os tipos de sangue disponível por período de data, bolsas ativas por período e etc\cite{SANGUE}.
+
+\subparagraph{• Gerenciar Estoque de Bolsas}
+É possíveil gerenciar todo o estoque de bolsas de sangue que existe no hospital, com isso o hospital consegue por exemplo ter um melhor controle da necessidade de novos doadores de sangue para repor o estoque. 
 
 %\newpage
 
@@ -521,38 +528,9 @@ O software é utilizado por diversas organizações da área da saúde e contém
 
 Utilizando a versão free do software foi identificado uma boa preocupação de acesso aos dados, utilizando alguns mecanismos de controle de acesso, tais como autenticação e autorização.
 
-\section{Comparação de sistema}
-Para melhor entendimento, a Tabela \ref{tab:comparativo} compara os trabalhos relacionados que estão descritos no Capítulo \ref{tab:trabalhos-relacionados}, descrevendo quatro mecanismos de segurança da informação, tais como Criptografia, Autenticação, Autorização e Certificado Digital.
+\section{Avaliação dos Trabalhos Relacionados}
+Apesar da enorme quantidade de recursos que os trabalhos descritos acima oferecem, o grupo identificou que estes softwares não atendem a necessidade dos profissionais da saúde, gerenciar os prontuários de qualquer lugar do hospital por exemplo.
 
-\paragraph{ }
-\begin{table}[htb]
-\caption{Tabela Comparativa de Sistemas}\label{tab:comparativo}	
-	\begin{center}
-	\begin{tabular}{lllll}
-	\toprule
-	ID & Funcionalidade & Medware Sistemas & BloodSave & eClinicalWorks\\ 
-	\midrule
-	1 & Criptografia 	& X	& X	&  		\\
-	2 & Autenticação	& X 	& X	& X		\\
-	3 & Autorização 	&  	&  	& X		\\
-    4 & Certificado Digital 	& X 	&  	& X		\\
-	\bottomrule
-	\end{tabular}
-	\end{center}
-\end{table}
-
-
-\paragraph*{• Criptografia}
-Em relação a criptografia dos dados dos pacientes transmitidos na internet, os sistemas Medware e BloodSave apresentaram boa preocupação visto que estes sistemas criptografam os dados, diminuindo a probabilidade de quebra destes dados quando trafegados.
-
-\paragraph*{• Autenticação}
-Em relação a autenticação de usuário, os três softwares analisados apresentaram autenticação própria no sistema, ou seja, sem utilizar autenticação de sistema externo.
-
-\paragraph*{• Autorização}
-Em relação a autorização de recursos no sistema o software eClinicalWorks foi o único que apresentou preocupação garantindo que somente usuários autenticados e autorizados podem executar determinada tarefa dentro do sistema.
-
-\paragraph*{• Certificado Digital}
-Em relação a certificado digital o software da Medware segue as recomendações do Conselho Federal Médico, garantindo maior segurança na troca de informações.
 
 \chapter{Descrição do Software Florence} \label{tab:descricao-trabalho}
 Este capítulo descreve a nova organização dos processos e as definições de projeto para desenvolver o software, a fim de oferecer um melhor entendimento da arquitetura do sistema.
