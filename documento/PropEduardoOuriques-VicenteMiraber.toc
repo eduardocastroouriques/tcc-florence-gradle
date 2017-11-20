@@ -37,119 +37,119 @@
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Prontu\IeC {\'a}rio Eletr\IeC {\^o}nico}}{20}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Agenda de Contatos}}{20}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Evento}}{20}
-\contentsline {section}{\numberline {3.2}\MakeTextUppercase {BloodSave}}{21}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vis\IeC {\~a}o Geral}}{21}
+\contentsline {section}{\numberline {3.2}\MakeTextUppercase {BloodSave}}{20}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vis\IeC {\~a}o Geral}}{20}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Visualizar Relat\IeC {\'o}rios}}{21}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Gerenciar Estoque de Bolsas}}{21}
-\contentsline {section}{\numberline {3.3}\MakeTextUppercase {eClinicalWorks}}{22}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vis\IeC {\~a}o Geral}}{22}
+\contentsline {section}{\numberline {3.3}\MakeTextUppercase {eClinicalWorks}}{21}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vis\IeC {\~a}o Geral}}{21}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } \IeC {\'A}rea de Medicamentos}}{22}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Atendimentos Pendentes}}{22}
-\contentsline {section}{\numberline {3.4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Trabalhos Relacionados}}{23}
-\contentsline {chapter}{\numberline {4}\MakeTextUppercase {Descri\IeC {\c c}\IeC {\~a}o do Software Florence}}{24}
-\contentsline {section}{\numberline {4.1}\MakeTextUppercase {Nova Organiza\IeC {\c c}\IeC {\~a}o dos Processos}}{24}
-\contentsline {section}{\numberline {4.2}\MakeTextUppercase {Objetivo}}{25}
-\contentsline {subsection}{\numberline {4.2.1}\MakeTextUppercase {Objetivo Geral}}{25}
-\contentsline {subsection}{\numberline {4.2.2}\MakeTextUppercase {Objetivo Espec\IeC {\'\i }fico}}{25}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Redu\IeC {\c c}\IeC {\~a}o da lat\IeC {\^e}ncia do processo}}{25}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Aumento na consist\IeC {\^e}ncia das informa\IeC {\c c}\IeC {\~o}es}}{25}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Redu\IeC {\c c}\IeC {\~a}o de gastos com comunica\IeC {\c c}\IeC {\~a}o}}{26}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Agilidade e portabilidade agregada ao processo}}{26}
-\contentsline {section}{\numberline {4.3}\MakeTextUppercase {Proposta de Arquitetura}}{26}
-\contentsline {section}{\numberline {4.4}\MakeTextUppercase {Modelo de Implanta\IeC {\c c}\IeC {\~a}o}}{26}
-\contentsline {section}{\numberline {4.5}\MakeTextUppercase {Plataforma Mobile}}{27}
-\contentsline {chapter}{\numberline {5}\MakeTextUppercase {Modelagem do Software}}{28}
-\contentsline {section}{\numberline {5.1}\MakeTextUppercase {Requisitos Funcionais}}{28}
-\contentsline {section}{\numberline {5.2}\MakeTextUppercase {Requisitos n\IeC {\~a}o Funcionais}}{29}
-\contentsline {section}{\numberline {5.3}\MakeTextUppercase {Atores do Sistema}}{29}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Usu\IeC {\'a}rio}}{30}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } OPO}}{30}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } CIHDOTT}}{30}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Hospital}}{30}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Administrador}}{30}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Central}}{30}
-\contentsline {section}{\numberline {5.4}\MakeTextUppercase {Casos de Uso do Sistema}}{30}
-\contentsline {paragraph}{\MakeTextUppercase {}}{32}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC01 - Efetuar Login}}{32}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC02 - Inserir Novo Processo de Doa\IeC {\c c}\IeC {\~a}o}}{32}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC03 - Consultar Processos de Doa\IeC {\c c}\IeC {\~a}o}}{32}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC04 - Atualizar Processos de Doa\IeC {\c c}\IeC {\~a}o}}{33}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC05 - Notificar poss\IeC {\'\i }vel doador a Central}}{33}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC06 - Enviar e-mail}}{33}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC07 - Consultar gr\IeC {\'a}ficos}}{34}
-\contentsline {section}{\numberline {5.5}\MakeTextUppercase {Diagrama Entidade Relacionamento}}{35}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Processo Doa\IeC {\c c}\IeC {\~a}o}}{35}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Exame Complementar}}{37}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Doen\IeC {\c c}a Atual}}{37}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Infec\IeC {\c c}\IeC {\~a}o}}{37}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } DVA}}{38}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } \IeC {\'O}rg\IeC {\~a}o}}{38}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Informa\IeC {\c c}\IeC {\~a}o Cirurgia}}{38}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Cirurgia}}{38}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } HLA}}{39}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Doen\IeC {\c c}a Pr\IeC {\'e}via}}{39}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Subst\IeC {\^a}ncia Extra}}{39}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Aprova\IeC {\c c}\IeC {\~a}o}}{40}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Teste Cl\IeC {\'\i }nico}}{40}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Sorologia}}{41}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Situa\IeC {\c c}\IeC {\~a}o Cl\IeC {\'\i }nica}}{41}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Entrevista Familiar}}{41}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } \IeC {\'O}bito}}{42}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Comunica\IeC {\c c}\IeC {\~a}o Processo Doa\IeC {\c c}\IeC {\~a}o}}{42}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Usu\IeC {\'a}rio}}{42}
-\contentsline {chapter}{\numberline {6}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o}}{43}
-\contentsline {section}{\numberline {6.1}\MakeTextUppercase {Banco de dados}}{43}
-\contentsline {section}{\numberline {6.2}\MakeTextUppercase {Desenvolvimento Back-End}}{43}
-\contentsline {subsection}{\numberline {6.2.1}\MakeTextUppercase {Linguagem de Programa\IeC {\c c}\IeC {\~a}o}}{43}
-\contentsline {subsection}{\numberline {6.2.2}\MakeTextUppercase {Modelo de Camadas}}{43}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Camada de Persist\IeC {\^e}ncia}}{44}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Camada de Aplica\IeC {\c c}\IeC {\~a}o}}{44}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Camada de Apresenta\IeC {\c c}\IeC {\~a}o}}{44}
-\contentsline {subsection}{\numberline {6.2.3}\MakeTextUppercase {Frameworks}}{44}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Spring Boot}}{44}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Spring Data}}{44}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Swagger}}{45}
-\contentsline {section}{\numberline {6.3}\MakeTextUppercase {Diagrama de Classe}}{46}
-\contentsline {section}{\numberline {6.4}\MakeTextUppercase {Desenvolvimento Front-End}}{47}
-\contentsline {subsection}{\numberline {6.4.1}\MakeTextUppercase {Organiza\IeC {\c c}\IeC {\~a}o de C\IeC {\'o}digo}}{47}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Modelos}}{47}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Servi\IeC {\c c}os}}{47}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Classes Auxiliares}}{47}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Componentes}}{48}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Extens\IeC {\~o}es}}{48}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Constantes}}{48}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Funcionalidades}}{48}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } CocoaPods}}{48}
-\contentsline {subsection}{\numberline {6.4.2}\MakeTextUppercase {Arquitetura}}{48}
-\contentsline {subsection}{\numberline {6.4.3}\MakeTextUppercase {Frameworks}}{49}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Alamofire}}{49}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } AlamofireObjectMapper}}{49}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } FSCalendar}}{49}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Whisper}}{49}
-\contentsline {subsection}{\numberline {6.4.4}\MakeTextUppercase {Padr\IeC {\~a}o de Projeto}}{49}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Fachada}}{50}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Singleton}}{50}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Delega\IeC {\c c}\IeC {\~a}o}}{50}
-\contentsline {section}{\numberline {6.5}\MakeTextUppercase {Prot\IeC {\'o}tipo das Telas}}{51}
-\contentsline {chapter}{\numberline {7}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o}}{54}
-\contentsline {section}{\numberline {7.1}\MakeTextUppercase {Novo processo - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{54}
+\contentsline {section}{\numberline {3.4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Trabalhos Relacionados}}{22}
+\contentsline {chapter}{\numberline {4}\MakeTextUppercase {Descri\IeC {\c c}\IeC {\~a}o do Software Florence}}{23}
+\contentsline {section}{\numberline {4.1}\MakeTextUppercase {Nova Organiza\IeC {\c c}\IeC {\~a}o dos Processos}}{23}
+\contentsline {section}{\numberline {4.2}\MakeTextUppercase {Objetivo}}{24}
+\contentsline {subsection}{\numberline {4.2.1}\MakeTextUppercase {Objetivo Geral}}{24}
+\contentsline {subsection}{\numberline {4.2.2}\MakeTextUppercase {Objetivo Espec\IeC {\'\i }fico}}{24}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Redu\IeC {\c c}\IeC {\~a}o da lat\IeC {\^e}ncia do processo}}{24}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Aumento na consist\IeC {\^e}ncia das informa\IeC {\c c}\IeC {\~o}es}}{24}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Redu\IeC {\c c}\IeC {\~a}o de gastos com comunica\IeC {\c c}\IeC {\~a}o}}{25}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Agilidade e portabilidade agregada ao processo}}{25}
+\contentsline {section}{\numberline {4.3}\MakeTextUppercase {Proposta de Arquitetura}}{25}
+\contentsline {section}{\numberline {4.4}\MakeTextUppercase {Modelo de Implanta\IeC {\c c}\IeC {\~a}o}}{25}
+\contentsline {section}{\numberline {4.5}\MakeTextUppercase {Plataforma Mobile}}{26}
+\contentsline {chapter}{\numberline {5}\MakeTextUppercase {Modelagem do Software}}{27}
+\contentsline {section}{\numberline {5.1}\MakeTextUppercase {Requisitos Funcionais}}{27}
+\contentsline {section}{\numberline {5.2}\MakeTextUppercase {Requisitos n\IeC {\~a}o Funcionais}}{28}
+\contentsline {section}{\numberline {5.3}\MakeTextUppercase {Atores do Sistema}}{28}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Usu\IeC {\'a}rio}}{29}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } OPO}}{29}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } CIHDOTT}}{29}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Hospital}}{29}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Administrador}}{29}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Central}}{29}
+\contentsline {section}{\numberline {5.4}\MakeTextUppercase {Casos de Uso do Sistema}}{29}
+\contentsline {paragraph}{\MakeTextUppercase {}}{31}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC01 - Efetuar Login}}{31}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC02 - Inserir Novo Processo de Doa\IeC {\c c}\IeC {\~a}o}}{31}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC03 - Consultar Processos de Doa\IeC {\c c}\IeC {\~a}o}}{31}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC04 - Atualizar Processos de Doa\IeC {\c c}\IeC {\~a}o}}{32}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC05 - Notificar poss\IeC {\'\i }vel doador a Central}}{32}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC06 - Enviar e-mail}}{32}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } UC07 - Consultar gr\IeC {\'a}ficos}}{33}
+\contentsline {section}{\numberline {5.5}\MakeTextUppercase {Diagrama Entidade Relacionamento}}{34}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Processo Doa\IeC {\c c}\IeC {\~a}o}}{34}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Exame Complementar}}{36}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Doen\IeC {\c c}a Atual}}{36}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Infec\IeC {\c c}\IeC {\~a}o}}{36}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } DVA}}{37}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } \IeC {\'O}rg\IeC {\~a}o}}{37}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Informa\IeC {\c c}\IeC {\~a}o Cirurgia}}{37}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Cirurgia}}{37}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } HLA}}{38}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Doen\IeC {\c c}a Pr\IeC {\'e}via}}{38}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Subst\IeC {\^a}ncia Extra}}{38}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Aprova\IeC {\c c}\IeC {\~a}o}}{39}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Teste Cl\IeC {\'\i }nico}}{39}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Sorologia}}{40}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Situa\IeC {\c c}\IeC {\~a}o Cl\IeC {\'\i }nica}}{40}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Entrevista Familiar}}{40}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } \IeC {\'O}bito}}{41}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Comunica\IeC {\c c}\IeC {\~a}o Processo Doa\IeC {\c c}\IeC {\~a}o}}{41}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Usu\IeC {\'a}rio}}{41}
+\contentsline {chapter}{\numberline {6}\MakeTextUppercase {Implementa\IeC {\c c}\IeC {\~a}o}}{42}
+\contentsline {section}{\numberline {6.1}\MakeTextUppercase {Banco de dados}}{42}
+\contentsline {section}{\numberline {6.2}\MakeTextUppercase {Desenvolvimento Back-End}}{42}
+\contentsline {subsection}{\numberline {6.2.1}\MakeTextUppercase {Linguagem de Programa\IeC {\c c}\IeC {\~a}o}}{42}
+\contentsline {subsection}{\numberline {6.2.2}\MakeTextUppercase {Modelo de Camadas}}{42}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Camada de Persist\IeC {\^e}ncia}}{43}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Camada de Aplica\IeC {\c c}\IeC {\~a}o}}{43}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Camada de Apresenta\IeC {\c c}\IeC {\~a}o}}{43}
+\contentsline {subsection}{\numberline {6.2.3}\MakeTextUppercase {Frameworks}}{43}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Spring Boot}}{43}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Spring Data}}{43}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Swagger}}{44}
+\contentsline {section}{\numberline {6.3}\MakeTextUppercase {Diagrama de Classe}}{44}
+\contentsline {section}{\numberline {6.4}\MakeTextUppercase {Desenvolvimento Front-End}}{45}
+\contentsline {subsection}{\numberline {6.4.1}\MakeTextUppercase {Organiza\IeC {\c c}\IeC {\~a}o de C\IeC {\'o}digo}}{45}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Modelos}}{45}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Servi\IeC {\c c}os}}{45}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Classes Auxiliares}}{46}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Componentes}}{46}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Extens\IeC {\~o}es}}{46}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Constantes}}{46}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Funcionalidades}}{46}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } CocoaPods}}{47}
+\contentsline {subsection}{\numberline {6.4.2}\MakeTextUppercase {Arquitetura}}{47}
+\contentsline {subsection}{\numberline {6.4.3}\MakeTextUppercase {Frameworks}}{47}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Alamofire}}{47}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } AlamofireObjectMapper}}{47}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } FSCalendar}}{47}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Whisper}}{47}
+\contentsline {subsection}{\numberline {6.4.4}\MakeTextUppercase {Padr\IeC {\~a}o de Projeto}}{48}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Fachada}}{48}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Singleton}}{48}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Delega\IeC {\c c}\IeC {\~a}o}}{48}
+\contentsline {section}{\numberline {6.5}\MakeTextUppercase {Prot\IeC {\'o}tipo das Telas}}{48}
+\contentsline {chapter}{\numberline {7}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o}}{52}
+\contentsline {section}{\numberline {7.1}\MakeTextUppercase {Novo processo - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{52}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Tempo de Resposta}}{52}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vaz\IeC {\~a}o}}{53}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Uso de mem\IeC {\'o}ria}}{53}
+\contentsline {section}{\numberline {7.2}\MakeTextUppercase {Novo processo - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{54}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Tempo de Resposta}}{54}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vaz\IeC {\~a}o}}{55}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Uso de mem\IeC {\'o}ria}}{55}
-\contentsline {section}{\numberline {7.2}\MakeTextUppercase {Novo processo - 50 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{56}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vaz\IeC {\~a}o}}{54}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Uso de mem\IeC {\'o}ria}}{54}
+\contentsline {section}{\numberline {7.3}\MakeTextUppercase {Novo processo - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{56}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Tempo de Resposta}}{56}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vaz\IeC {\~a}o}}{56}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Uso de mem\IeC {\'o}ria}}{57}
-\contentsline {section}{\numberline {7.3}\MakeTextUppercase {Novo processo - 100 usu\IeC {\'a}rios - 10 requisi\IeC {\c c}\IeC {\~o}es}}{57}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Tempo de Resposta}}{57}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Vaz\IeC {\~a}o}}{58}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Uso de mem\IeC {\'o}ria}}{59}
-\contentsline {section}{\numberline {7.4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o Geral}}{59}
-\contentsline {chapter}{\numberline {8}\MakeTextUppercase {Conclus\IeC {\~a}o e Trabalhos Futuros}}{60}
-\contentsline {section}{\numberline {8.1}\MakeTextUppercase {Conclus\IeC {\~a}o}}{60}
-\contentsline {section}{\numberline {8.2}\MakeTextUppercase {Trabalhos Futuros}}{60}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Consultar Gr\IeC {\'a}ficos}}{60}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Servi\IeC {\c c}o de Notifica\IeC {\c c}\IeC {\~a}o}}{61}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Site Web}}{61}
-\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Seguran\IeC {\c c}a}}{61}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{62}
+\contentsline {section}{\numberline {7.4}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o Geral}}{58}
+\contentsline {chapter}{\numberline {8}\MakeTextUppercase {Conclus\IeC {\~a}o e Trabalhos Futuros}}{59}
+\contentsline {section}{\numberline {8.1}\MakeTextUppercase {Conclus\IeC {\~a}o}}{59}
+\contentsline {section}{\numberline {8.2}\MakeTextUppercase {Trabalhos Futuros}}{59}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Consultar Gr\IeC {\'a}ficos}}{59}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Servi\IeC {\c c}o de Notifica\IeC {\c c}\IeC {\~a}o}}{60}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Site Web}}{60}
+\contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Seguran\IeC {\c c}a}}{60}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{61}

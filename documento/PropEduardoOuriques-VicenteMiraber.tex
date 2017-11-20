@@ -490,7 +490,6 @@ O sistema permite cadastrar novas consultas, notificar pacientes através do mó
 
 \sigla{CFM}{Conselho Federal de Medicina}
 
-\newpage
 
 \section{BloodSave}
 
@@ -1593,10 +1592,8 @@ Spring Data é um framework open source que auxilia o trabalho do desenvolvedor 
 \subparagraph{• Swagger}
 Swagger é um framework open source que auxilia os desenvolvedores com a documentar as API's e com ele o grupo se comunicou de maneira mais eficiente.
 
-\newpage
-
 \section{Diagrama de Classe}
-O diagrama de classe abaixo representa a implementação abstrata que foi desenvolvida para o software Florence.
+O diagrama de classe demonstrado na Figura \ref{fig:erDiagram} representa a implementação abstrata que foi desenvolvida para o software Florence.
 
 \begin{figure}[htp]
 \centering
@@ -1679,10 +1676,8 @@ A camada de serviço que possui uma fachada também é um singleton, com objetiv
 \subparagraph{• Delegação}
 A comunicação entre os modelos de visão e seus controladores de visão se dá por meio de delegates, que são responsáveis pelo gerenciamento das requisições solicitadas pela controller a camada de serviço.
 
-\newpage
-
 \section{Protótipo das Telas}
-Para acessar o software Florence o usuário do tipo Hospital, CIHDOTT ou OPO, deve realizar o login informando usuário e senha.
+Para acessar o software Florence o usuário do tipo Hospital, CIHDOTT ou OPO, deve realizar o login informando usuário e senha conforme demonstrado na Figura \ref{fig:login}.
 
 \begin{figure}[htp]
 \centering
@@ -1691,7 +1686,7 @@ Para acessar o software Florence o usuário do tipo Hospital, CIHDOTT ou OPO, de
 \label{fig:login}
 \end{figure}
 
-Após o login, o usuário é redirecionado para a tela da Figura \ref{prontuarios} que lista todos os prontuários ativos e disponíveis para visualização e edição.
+Após o login, o usuário é redirecionado para a tela representada pela Figura \ref{fig:prontuarios}, que lista todos os prontuários ativos e disponíveis para visualização e edição.
 
 \begin{figure}[tb]
 \begin{center}
@@ -1699,13 +1694,13 @@ Após o login, o usuário é redirecionado para a tela da Figura \ref{prontuario
    \includegraphics[width=4.5cm,frame]{prontuarios}\quad
    \includegraphics[height=8cm,frame]{dados-gerais}\quad
    \includegraphics[height=8cm,frame]{prontuarios-2}
- \label{prontuarios}
+ \label{fig:prontuarios}
 \end{center}
 \end{figure}
 
-Para a inserção de um novo prontuário basta clicar no símbolo de adição no canto superior direito da tela conforme demonstrado na Figura \ref{prontuarios}. 
+Para a inserção de um novo prontuário basta clicar no símbolo de adição no canto superior direito da tela conforme demonstrado na Figura \ref{fig:prontuarios}. 
 
-O usuário é redirecionado para tela de preenchimento dos dados gerais do prontuário, aonde constam informações como, nome, RG, CPF, e demais informações de preenchimento obrigatório. 
+O usuário é redirecionado para tela representada pela Figura \ref{fig:prontuarios}, nela o usuário preenche os dados gerais do prontuário, aonde constam informações como, nome, RG, CPF, e demais informações de preenchimento obrigatório. 
 
 Após clicar no botão salvar que está no final do prontuário, o usuário é direcionado para listagem de prontuários, aonde já consta o prontuário recém adicionado.
 
@@ -1753,7 +1748,7 @@ Esta seção descreve a performance do software em um cenário com 50 usuários 
 \begin{figure}[htp]
 \centering
 \caption{Tempo de Resposta - 50 usuários - 1 requisição}
-\includegraphics[width=9cm]{50-1-response-time}
+\includegraphics[width=11cm]{50-1-response-time}
 \label{fig:tempo-reposta-50-1}
 \end{figure}
 
@@ -1775,7 +1770,7 @@ A Figura \ref{fig:throughput-50-1} mostra que ao executar este cenário de 50 us
 \begin{figure}[htp]
 \centering
 \caption{Uso de memória - 50 usuários - 1 requisição}
-\includegraphics[width=9cm]{50-1-memory}
+\includegraphics[width=11cm]{50-1-memory}
 \label{fig:uso-de-memoria-50-1}
 \end{figure}
 
@@ -1788,7 +1783,7 @@ Esta seção descreve a performance do software em um cenário com 50 usuários 
 \begin{figure}[htp]
 \centering
 \caption{Tempo de Resposta - 50 usuários - 10 requisições}
-\includegraphics[width=9cm]{50-10-response-time}
+\includegraphics[width=11cm]{50-10-response-time}
 \label{fig:tempo-reposta-50-10}
 \end{figure}
 A Figura \ref{fig:tempo-reposta-50-10} mostra que ao executar este cenário de 50 usuários, requisitando 10 vezes cada um o serviço para criar um novo processo de doação, o software teve uma média de tempo de resposta de 3.455 milisegundos, o que nos leva a concluir que o software respondeu dentro do esperado pelo grupo.
@@ -1807,7 +1802,7 @@ A Figura \ref{fig:throughput-50-10} mostra que ao executar este cenário de 50 u
 \begin{figure}[htp]
 \centering
 \caption{Uso de memória - 50 usuários - 10 requisições}
-\includegraphics[width=9cm]{50-10-memory}
+\includegraphics[width=11cm]{50-10-memory}
 \label{fig:uso-de-memoria-50-10}
 \end{figure}
 
@@ -1821,7 +1816,7 @@ Esta seção descreve a performance do software em um cenário com 100 usuários
 \begin{figure}[htp]
 \centering
 \caption{Tempo de Resposta - 100 usuários - 10 requisições}
-\includegraphics[width=9cm]{100-10-response-time}
+\includegraphics[width=11cm]{100-10-response-time}
 \label{fig:tempo-reposta-100-10}
 \end{figure}
 
@@ -1843,7 +1838,7 @@ A Figura \ref{fig:throughput-100-10} mostra que ao executar este cenário de 100
 \begin{figure}[htp]
 \centering
 \caption{Uso de memória - 100 usuários - 10 requisições}
-\includegraphics[width=9cm]{100-10-memory}
+\includegraphics[width=11cm]{100-10-memory}
 \label{fig:uso-de-memoria-100-10}
 \end{figure}
 A Figura \ref{fig:uso-de-memoria-100-10} mostra que ao executar este cenário de 100 usuários requisitando 10 vezes o serviço para criar um novo processo de doação, foi utilizado 98.2\% da memória do servidor, sendo que atingiu o ponto máximo de 100\% do uso da memória em um determinado momento, o que nos leva a concluir que 512MB de memória RAM\sigla{RAM}{Random-access memory} não é o suficiente e pode ocasionar possíveis perdas de dados.
