@@ -126,11 +126,7 @@
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Fachada}}{49}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Singleton}}{49}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Delega\IeC {\c c}\IeC {\~a}o}}{49}
-\contentsline {section}{\numberline {6.5}\MakeTextUppercase {FLORENCE: Tela de Login}}{49}
-\contentsline {section}{\numberline {6.6}\MakeTextUppercase {FLORENCE: Tela para Cria\IeC {\c c}\IeC {\~a}o de Processo}}{49}
-\contentsline {section}{\numberline {6.7}\MakeTextUppercase {FLORENCE: Tela de Anexo}}{51}
-\contentsline {section}{\numberline {6.8}\MakeTextUppercase {FLORENCE: Tela De Listagem dos Processos}}{51}
-\contentsline {section}{\numberline {6.9}\MakeTextUppercase {FLORENCE: Tela de Configura\IeC {\c c}\IeC {\~a}o}}{51}
+\contentsline {section}{\numberline {6.5}\MakeTextUppercase {Prot\IeC {\'o}tipo das Telas}}{50}
 \contentsline {chapter}{\numberline {7}\MakeTextUppercase {Avalia\IeC {\c c}\IeC {\~a}o}}{53}
 \contentsline {section}{\numberline {7.1}\MakeTextUppercase {Novo processo - 50 usu\IeC {\'a}rios - 1 requisi\IeC {\c c}\IeC {\~a}o}}{53}
 \contentsline {subparagraph}{\MakeTextUppercase {\IeC {\textbullet } Tempo de Resposta}}{53}

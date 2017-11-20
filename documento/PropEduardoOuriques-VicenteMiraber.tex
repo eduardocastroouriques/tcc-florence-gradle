@@ -40,6 +40,7 @@
 %----------------------------------------------------------------
 % Para inserção de Figuras.
 \usepackage{graphicx}
+\usepackage[export]{adjustbox}
 \graphicspath{ {images/} }
 %\usepackage{longtable}
 
@@ -455,7 +456,7 @@ Ameaça Sistêmica se refere a um agente na cadeia de fluxo de informações den
 
 \chapter{Trabalhos Relacionados}
 \label{tab:trabalhos-relacionados}	
-Neste capítulo estão descritos softwares relacionados ao tema deste trabalho com o objetivo de verificar níveis de segurança, e para esta análise três tópicos foram observados: criptografia; autenticação; autorização.
+Neste capítulo estão descritos três softwares relacionados ao gerenciamento de informações no setor da saúde.
 
 \section{Medware Sistemas Médicos Ltda}
 
@@ -1672,73 +1673,65 @@ A camada de serviço que possui uma fachada também é um singleton, com objetiv
 \subparagraph{• Delegação}
 A comunicação entre os modelos de visão e seus controladores de visão se dá por meio de delegates, que são responsáveis pelo gerenciamento das requisições solicitadas pela controller a camada de serviço.
 
-\section{FLORENCE: Tela de Login}
-A Figura \ref{fig:app-login} apresenta a tela de login no aplicativo móvel para usuários e administradores conforme descrito na Seção \ref{tab:uc-login}.
+\newpage
+
+\section{Protótipo das Telas}
+Para acessar o software Florence o usuário do tipo Hospital, CIHDOTT ou OPO, deve realizar o login informando usuário e senha.
 
 \begin{figure}[htp]
 \centering
-\caption{FLORENCE: Tela de Login}
-\includegraphics[width=6cm]{app-login}
-\label{fig:app-login}
+\caption{Florence: Tela de login de usuário}
+\includegraphics[width=5cm, frame]{login}
+\label{fig:login}
 \end{figure}
 
-Nesta tela o usuário deve preencher seu usuário e senha para então o software autenticar se o usuário preenchido existe. Se o usuário existir esta tela é redirecionada para a tela de listagem dos processos.  
+Após o login, o usuário é redirecionado para a tela da Figura \ref{prontuarios} que lista todos os prontuários ativos e disponíveis para visualização e edição.
 
+\begin{figure}[tb]
+\begin{center}
+\caption{Fluxo de inserção de um novo prontuário}
+   \includegraphics[width=4.5cm,frame]{prontuarios}\quad
+   \includegraphics[height=8cm,frame]{dados-gerais}\quad
+   \includegraphics[height=8cm,frame]{prontuarios-2}
+ \label{prontuarios}
+\end{center}
+\end{figure}
 
+Para a inserção de um novo prontuário basta clicar no símbolo de adição no canto superior direito da tela conforme demonstrado na Figura \ref{prontuarios}. 
 
-%\newpage
+O usuário é redirecionado para tela de preenchimento dos dados gerais do prontuário, aonde constam informações como, nome, RG, CPF, e demais informações de preenchimento obrigatório. 
 
-\section{FLORENCE: Tela para Criação de Processo}
-A Figura \ref{fig:app-criacao} apresenta a tela de criação de um novo processo com os dados básicos do paciente, dados estes que são obrigatórios conforme descrito na Seção \ref{tab:uc-inserir}.
+Após clicar no botão salvar que está no final do prontuário, o usuário é direcionado para listagem de prontuários, aonde já consta o prontuário recém adicionado.
+
+\newpage
+
+O menu com todas as seções do paciente deve ser acessado clicando no prontuário específico que está listado.
+
 
 \begin{figure}[htp]
 \centering
-\caption{FLORENCE: Tela para Criação de Processo}
-\includegraphics[width=6cm]{app-data}
-\label{fig:app-criacao}
+\caption{Florence: Tela com menu}
+\includegraphics[width=5cm, frame]{menu}
+\label{fig:menu}
 \end{figure}
 
-Nesta tela o usuário terá a opção de incluir ou editar os dados básicos do paciente, testes clínicos ou anexos vinculados ao processo.
 
-%\newpage
+Para exemplificar a inserção de uma subseção do prontuário, foi utilizado a inserção de um teste clínico. O acesso a lista de testes clínico é realizado pelo botão chamado teste clínico localizado no menu demonstrado na Figura \ref{fig:menu}. 
 
-\section{FLORENCE: Tela de Anexo}
-A Figura \ref{fig:app-anexo} apresenta a tela com todos os arquivos anexados junto ao processo do paciente.
-
-\begin{figure}[htp]
-\centering
-\caption{FLORENCE: Tela para Anexar Documentos}
-\includegraphics[width=5cm]{app-attachment}
-\label{fig:app-anexo}
+\begin{figure}[tb]
+\begin{center}
+\caption{Fluxo de inserção de um novo teste clínico}
+	\includegraphics[height=9cm, frame]{testes-clinicos}\quad
+	\includegraphics[height=9cm, frame]{teste-clinico-numero}\quad
+	\includegraphics[height=9cm, frame]{testes-clinico-filled}
+ \label{fig:inserir}
+\end{center}
 \end{figure}
 
-Nesta tela o usuário pode pode incluir ou editar os documentos vinculados ao processo; Nesta tela o usuário tem a opção de ir para a tela de Dados ou Testes.
+No caso, este prontuário previamente adicionado ainda não possui nenhum teste clínico conforme visto na Figura \ref{fig:inserir}, será exibido uma lista vazia e a opção de adição no canto superior direito. 
 
-%\newpage
+Clicando no botão de adicionar, o usuário é levado para uma nova tela com as informações do teste clínico, após preenchê-las, basta clicar em salvar e o usuário retornará para tela de lista de testes clínicos com seu novo teste clínico inserido e disponível para qualquer outra entidade que deseje visualizá-lo.
 
-\section{FLORENCE: Tela De Listagem dos Processos}
-A Figura \ref{fig:app-list} apresenta a tela com a lista de todos os processos vinculados ao usuário logado.
-
-\begin{figure}[htp]
-\centering
-\caption{FLORENCE: Tela para listagem dos Processos}
-\includegraphics[width=6cm]{app-list}
-\label{fig:app-list}
-\end{figure}
-
-Nesta tela o usuário tem a opção de selecionar um dos processos e visualizar os dados básicos do paciente, testes clínicos e os documentos anexados.
-%\newpage
-
-\section{FLORENCE: Tela de Configuração}
-
-\begin{figure}[htp]
-\centering
-\caption{FLORENCE: Tela de Configuração}
-\includegraphics[width=6cm]{app-config}
-\label{fig:app-config}
-\end{figure}
-
-A Figura \ref{fig:app-config} apresenta a tela para configurar os hospitais de cada OPO que só pode ser acessada por um usuário Administrador. 
 
 \chapter{Avaliação}
 Este capítulo descreve o teste de performance realizado no software de captação e doação de órgãos ou tecidos a fim de oferecer um melhor entendimento de como o software se comporta em situações com maior número de usuários acessando o software.
